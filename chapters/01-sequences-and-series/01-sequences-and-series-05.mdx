@@ -1,0 +1,377 @@
+## 1.5 Finite geometric series (EMCDZ)
+
+When we sum a known number of terms in a geometric sequence, we get a finite geometric series. We generate a
+      geometric sequence using the general form:
+
+    \[{T}_{n} = a \cdot {r}^{n-1}\]
+
+
+
+where
+
+- \(n\) is the position of the sequence;
+- \({T}_{n}\) is the \(n\)\(^{\text{th}}\) term of the sequence;
+- \(a\) is the first term;
+- \(r\) is the constant ratio.
+
+### General formula for a finite geometric series (EMCF2)
+
+      \begin{align*}
+      {S}_{n} &= a+ ar+ a{r}^{2}+\cdots + a{r}^{n-2} + a{r}^{n-1} \ldots (1) \\
+      r \times {S}_{n} &= \qquad ar+ a{r}^{2}+\cdots + a{r}^{n-2} + a{r}^{n-1} + ar^{n} \ldots \ldots (2) \\
+      \text{Subtract eqn. } (2) &\text{ from eqn. } (1) \\
+      \therefore {S}_{n} - r{S}_{n} &= a + 0 + 0 + \cdots - ar^{n} \\
+      {S}_{n} - r{S}_{n} &= a - ar^{n} \\
+      {S}_{n}(1 - r) &= a(1 - r^{n}) \\
+      \therefore {S}_{n} &= \frac{a(1 - r^{n})}{1 - r} \quad (\text{where } r \ne 1)
+      \end{align*}
+
+The general formula for determining the sum of a geometric series is given by:
+
+        \[{S}_{n} = \frac{a(1 - r^{n})}{1 - r} \qquad \text{where } r \ne 1\]
+
+
+
+This formula is easier to use when \(r < 1\).
+
+**Alternative formula: **
+
+      \begin{align*}
+      {S}_{n} &= a+ ar+ a{r}^{2}+\cdots + a{r}^{n-2} + a{r}^{n-1} \ldots \ldots (1) \\
+      r \times {S}_{n} &= \qquad ar+ a{r}^{2}+\cdots + a{r}^{n-2} + a{r}^{n-1} + ar^{n} \ldots \ldots (2) \\
+      \text{Subtract eqn. } (1) &\text{ from eqn. } (2) \\
+      \therefore r{S}_{n} - {S}_{n} &= ar^{n} - a \\
+      {S}_{n}(r - 1) &= a(r^{n}-1) \\
+      \therefore {S}_{n} &= \frac{a(r^{n}-1)}{r - 1} \quad (\text{ where } r \ne 1)
+      \end{align*}
+
+The general formula for determining the sum of a geometric series is given by:
+
+        \[{S}_{n} = \frac{a(r^{n}-1)}{r - 1} \qquad \text{where } r \ne 1\]
+
+
+
+This formula is easier to use when \(r > 1\).
+
+<Callout type="note" title="Note">
+<VideoPlayer src="https://www.youtube.com/embed/mYg5gKlJjHc" title="Video: 2875" />
+</Callout>
+
+<Callout type="tip" title="Worked example 11: Sum of a geometric series">
+**Question:**
+Calculate: \[\sum _{k = 1}^{6}{32 \left( \frac{1}{2} \right)^{k-1}}\]
+
+**Write down the first three terms of the series:**
+\begin{align*}
+          k=1; \quad T_{1}&= {32 \left( \frac{1}{2} \right)^{0}} = 32 \\
+          k=2; \quad T_{2}&= {32 \left( \frac{1}{2} \right)^{2-1}} = 16 \\
+          k=3; \quad T_{3}&= {32 \left( \frac{1}{2} \right)^{3-1}} = 8
+          \end{align*}
+
+
+We have generated the series \(32 + 16 + 8 + \cdots\)
+
+**Determine the values of \(a\) and \(r\):**
+\begin{align*}
+          a &= T_{1} = 32 \\
+          r &= \frac{T_{2}}{T_{1}} = \frac{T_{3}}{T_{2}} = \frac{1}{2}
+          \end{align*}
+
+**Use the general formula to find the sum of the series:**
+\begin{align*}
+          {S}_{n} &= \frac{a(1 - r^{n})}{1 - r}\\
+          {S}_{6} &= \frac{32(1 - \left( \frac{1}{2} \right)^{6})}{1 - \frac{1}{2}} \\
+          &= \frac{32\left(1 - \frac{1}{64} \right)}{\frac{1}{2}} \\
+          &= 2 \times 32 \left( \frac{63}{64} \right) \\
+          &= 64 \left( \frac{63}{64} \right) \\
+          &= 63
+          \end{align*}
+
+**Write the final answer:**
+\[\sum _{k = 1}^{6}{32 \left( \frac{1}{2} \right)^{k-1}} = 63\]
+</Callout>
+
+<QuizCard id="m12-01-05a" title="Interactive Exercise 1.12" question="You are given a geometric series made up of \(3\) terms with a constant ratio of \(\frac{1}{4}\) and the first term equal to \(\frac{1}{4}\) . Evaluate its sum. INSTRUCTION: Give your answer as a simplified fraction." options=[] answer="21/64" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Select the version of the general formula to use We are told in the question that there are a specific number of terms, \(3\) . This means that we are dealing with a finite geometric series. Furthermore, we are given the first term and the constant ratio.  				We  now have enough information to expand the series fully. The first three terms of our series are: \[ 		    	\begin{aligned} 		  			\frac{1}{4} \, ; \frac{1}{16} \, ; \frac{1}{64} \, ;  \ldots 		  		\end{aligned}             \] However, writing out all the terms for a series can be tedious.  				 Luckily, mathematicians have derived a general formula for calculating the sum of a finite geometric series.  				 There are two forms of the general formula: \[ 		      	\begin{aligned} 		      		S_n & = \frac{a(1-r^n)}{1-r} \quad \text{ OR }\quad  S_n=\frac{a(r^n-1)}{r-1} 		       	\end{aligned} 		    \] The first version of the formula is easier to use when \(r \lt 1\) and the second when \(r \gt 1\) . As \(r \lt 1\) , we will use the first form of the formula. Substitute in the given values Our final step is to substitute the values given in the question into the appropriate general formula: \[\begin{aligned}S_n &= \frac{a(1-r^{n})}{1-r} \\S_{3} &=\frac{\frac{1}{4} (1 - \left(\frac{1}{4}\right)^{3})}{1 - \left(\frac{1}{4}\right)} \\S_{3} &=\frac{\frac{1}{4} \left(\dfrac{\text{63}}{\text{64}}\right)}{\frac{3}{4}} \\S_{3} &=\dfrac{\text{21}}{\text{64}}\end{aligned}\] Therefore, the sum of the geometric series is \(\dfrac{\text{21}}{\text{64}}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-05a" title="Interactive Exercise 1.12" question="Determine the constant ratio for the series if the constant ratio is positive." options=[] answer="1/2" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Use the terms given to calculate the constant ratio We have the values for two terms in a geometric series, and we need to find the constant ratio, \(r\) , of the series. To begin, it will be helpful to write down what we know:                          the eighth term is \(\frac{\text{1}}{\text{256}}\) , which means \(T_{8} = \frac{\text{1}}{\text{256}}\) . Similarly, the tenth term is \(\frac{\text{1}}{\text{1 024}}\) , and we can write \(T_{10} = \frac{\text{1}}{\text{1 024}}\) . \(T_{8}\) and \(T_{10}\) are not consecutive terms, so we cannot use the usual formula \(r = \dfrac{T_{n}}{T_{n-1}}\) to find \(r\) . Instead, we will use the formula \(T_{n} = ar^{n-1}\) . Based on this formula we can write \(T_{8} = a r^{7}\) and \(T_{10} = a r^{9}\) . Now we can create a ratio of these two expressions in order to find \(r\) . Start with the ratio \(\dfrac{T_{10}}{T_{8}}\) and then substitute in the expressions with \(a\) and \(r\) : \[                         \begin{aligned}                             \frac{T_{10}}{T_{8}} & = \frac{a r^{9}}{a r^{7}} \\     \frac{\left(\frac{\text{1}}{\text{1 024}}\right)}{\left(\frac{\text{1}}{\text{256}}\right)} & = \frac{a r^{9}}{a r^{7}}                         \end{aligned}                     \] Now we can simplify the fractions on both sides of the equation. Then solve for \(r\) . \[                 \begin{aligned}\frac{1}{4} & = r^{2} \\         \pm \sqrt{\frac{1}{4}} & = \sqrt{r^{2}} \\         \pm \frac{1}{2} & = r\end{aligned}                   \] We get two answers from the calculation because of the \"plus-minus\" which comes in with the square root. However, the question told us that the constant ratio is positive. Therefore, we should throw out the negative answer. The correct answer for the constant ratio is \(r = \frac{1}{2}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-05a" title="Interactive Exercise 1.12" question="Determine the value of \(r\) for the series if the value of \(r\) is positive." options=[] answer="3" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Use the terms given to calculate the constant ratio We have the values for two terms in a geometric series, and we need to find the constant ratio, \(r\) , of the series. To begin, it will be helpful to write down what we know:                          the third term is \(\text{18}\) , which means \(T_{3} = \text{18}\) . Similarly, the fifth term is \(\text{162}\) , and we can write \(T_{5} = \text{162}\) . \(T_{3}\) and \(T_{5}\) are not consecutive terms, so we cannot use the usual formula \(r = \dfrac{T_{n}}{T_{n-1}}\) to find \(r\) . Instead, we will use the formula \(T_{n} = ar^{n-1}\) . Based on this formula we can write \(T_{3} = a r^{2}\) and \(T_{5} = a r^{4}\) . Now we can create a ratio of these two expressions in order to find \(r\) . Start with the ratio \(\dfrac{T_{5}}{T_{3}}\) and then substitute in the expressions with \(a\) and \(r\) : \[                         \begin{aligned}                             \frac{T_{5}}{T_{3}} & = \frac{a r^{4}}{a r^{2}} \\     \frac{\text{162}}{\text{18}} & = \frac{a r^{4}}{a r^{2}}                         \end{aligned}                     \] Now we can simplify the fractions on both sides of the equation. Then solve for \(r\) . \[                 \begin{aligned}9 & = r^{2} \\         \pm \sqrt{9} & = \sqrt{r^{2}} \\         \pm 3 & = r\end{aligned}                   \] We get two answers from the calculation because of the \"plus-minus\" which comes in with the square root. However, the question told us that the constant ratio is positive. Therefore, we should throw out the negative answer. The correct answer for the constant ratio is \(r = 3\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-05a" title="Interactive Exercise 1.12" question="Compute the value of \(r\) for the terms in the series." options=[] answer="1/2" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Use the terms given to calculate the constant ratio We need to find the constant ratio, \(r\) , of the series. We have two terms in the series, and we can find \(r\) using them. \(T_{1}\) and \(T_{4}\) are not successive terms, so we need to put the formula \(T_n = ar^{n-1}\) to use. In particular, we know that \(T_{1} = a\) and \(T_{4} = a r^{3}\) . Now we can create a ratio of these two expressions in order to find \(r\) . Start with the ratio \(\dfrac{T_{4}}{T_{1}}\) and then substitute in the expressions with \(a\) and \(r\) : \[                         \begin{aligned}                         \frac{T_{4}}{T_{1}} & = \frac{a r^{3}}{a} \\     \frac{\left(\frac{\text{1}}{\text{4}}\right)}{\text{2}} & = \frac{a r^{3}}{a}                         \end{aligned}                     \] Now we can simplify the fractions on both sides of the equation. Then solve for \(r\) . \[ \begin{aligned}\frac{1}{8} & = r^{3} \\             \sqrt[3]{\frac{1}{8}} & = \sqrt[3]{r^{3}} \\             \frac{1}{2} & = r \end{aligned} \] The constant ratio is \(r = \frac{\text{1}}{\text{2}}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-05a" title="Interactive Exercise 1.12" question="Determine the constant ratio for the terms in the series if the constant ratio is negative." options=[] answer="-3" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Use the terms given to calculate the constant ratio We need to find the constant ratio, \(r\) , of the series. We have two terms in the series, and we can find \(r\) using them. \(T_{2}\) and \(T_{4}\) are not consecutive terms, so we need to put the formula \(T_n = ar^{n-1}\) to use. In particular, we know that \(T_{2} = a r\) and \(T_{4} = a r^{3}\) . Now we can create a ratio of these two expressions in order to find \(r\) . Start with the ratio \(\dfrac{T_{4}}{T_{2}}\) and then substitute in the expressions with \(a\) and \(r\) : \[                         \begin{aligned}                         \frac{T_{4}}{T_{2}} & = \frac{a r^{3}}{a r} \\     \frac{-\text{27}}{-\text{3}} & = \frac{a r^{3}}{a r}                         \end{aligned}                     \] Now we can simplify the fractions on both sides of the equation. Then solve for \(r\) . \[ \begin{aligned}9 & = r^{2} \\         \pm \sqrt{9} & = \sqrt{r^{2}} \\         \pm 3 & = r \end{aligned} \] We get two answers from the calculation. However, remember that the question told us that the constant ratio is negative. Therefore, we should throw out the positve answer. The correct answer for the constant ratio is \(r = -\text{3}\) . Submit your answer as:" />
+
+<Callout type="tip" title="Worked example 12: Sum of a geometric series">
+**Question:**
+Given a geometric series with \(T_{1} = -4\) and \(T_{4} = 32\). Determine the values of \(r\) and \(n\) if
+            \(S_{n} = 84\).
+
+**Determine the values of \(a\) and \(r\):**
+\begin{align*}
+          a &= T_{1} = -4 \\
+          T_{4} &= ar^{3} = 32 \\
+          \therefore -4 r^{3} &= 32 \\
+          r^{3} &= -8 \\
+          \therefore r &= -2
+          \end{align*}
+
+
+Therefore the geometric series is \(-4 + 8 -16 + 32 \ldots\) Notice that the signs of the terms alternate
+            because \(r < 0\).
+
+We write the general term for this series as \(T_{n} = -4(-2)^{n-1}\).
+
+**Use the general formula for the sum of a geometric series to determine the value of \(n\):**
+\begin{align*}
+          {S}_{n} &= \frac{a(1 - r^{n})}{1 - r}\\
+          \therefore 84 &= \frac{-4(1 - (-2)^{n})}{1 - (-2)} \\
+          84 &= \frac{-4(1 - (-2)^{n})}{3} \\
+          - \frac{3}{4} \times 84 &= 1 - (-2)^{n} \\
+          - 63 &= 1 - (-2)^{n} \\
+          (-2)^{n} &= 64 \\
+          (-2)^{n} &= (-2)^{6} \\
+          \therefore n &= 6
+          \end{align*}
+
+**Write the final answer:**
+\[r = -2 \text{ and } n = 6\]
+</Callout>
+
+<QuizCard id="m12-01-05b" title="Interactive Exercise 1.13" question="Determine the value of \(k\) in the following equation. \[                 \begin{aligned}                     \sum_{m = -1}^{3} k \left( 3 \right)^{m} = \frac{\text{242}}{\text{9}}                 \end{aligned}             \]" options=[] answer="2/3" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Expand the sum to find the first three terms of the series Whenever you have a series written in sigma notation, it is a good idea to write out the first three terms to see the pattern in the terms more clearly. For this sum we get: \[                     \begin{aligned}                         \sum_{m = -1}^{3} k \left( 3 \right)^{m} &= k \left(3 \right)^{-1} + k \left(3 \right)^{0} + k \left(3 \right)^{1} + \ldots \\                         &= k \left(\frac{1}{3} \right) + k \left(1\right) + k \left(3\right) + \ldots                     \end{aligned}                 \] We can take out a common factor of \(k\) from all of the terms and write the series as: \(k \left( \left(\frac{1}{3}\right) + \left(1\right) + \left(3\right) + \ldots \right)\) . Notice that the variable \(k\) is now separated from the sum. Calculate the constant ratio, \(r\) and the number of terms, \(n\) Now we want to evaluate the sum \(\left( \left(\frac{1}{3}\right) + \left(1\right) + \left(3\right) + \ldots \right)\) . To do this, we need the first term and the constant ratio. \[                     \begin{aligned}                         a &= \frac{1}{3} \\                         r &= \frac{T_{2}}{T_{1}} = \frac{\text{1}}{\left(\frac{\text{1}}{\text{3}}\right)}  = \text{3}                     \end{aligned}                 \] We also need the number of terms in the sum. Remember that the number of terms in a sum with sigma notation is the difference between the end index and the start index plus \(\text{1}\) . In this case that means: \[                     \begin{aligned}                         n = 3 - (-1) + 1 = 5                     \end{aligned}                 \] Use the general formula to calculate the value of the series Now use the values from above to work out the sum \(\left( \left(\frac{1}{3}\right) + \left(1\right) + \left(3\right) + \ldots \right)\) . (We are ignoring the \(k\) for the moment.)                      Use the general formula, \(S_{n} = \frac{a(1 - r^{n})}{(1 - r)}, r \neq 0\) . \[                     \begin{aligned}                         S_{n} &= a\frac{(1 - r^{n})}{(1 - r)} \\                         &= \left(\frac{1}{3}\right) \frac{1 - \left(3\right)^{5}}{1 - \left(3\right)} \\                         &= \left(\frac{1}{3}\right) \frac{1 - \left(\text{243}\right)}{-2} \\                         &= \left(\frac{1}{3}\right) \frac{-\text{242}}{-\text{2}} \\                         &= \left(\frac{1}{3}\right)\left(\text{121}\right) \\                         &= \frac{\text{121}}{\text{3}}                     \end{aligned}                 \] Solve for \(k\) We can now substitute \(\frac{\text{121}}{\text{3}}\) in place of the series in the expanded expression.                      Then we can solve for \(k\) . \[                     \begin{aligned}                         k \left( \left(\frac{1}{3}\right) + \left(1\right) + \left(3\right) + \ldots \right) & = \frac{\text{242}}{\text{9}} \\                         k \left(\frac{\text{121}}{\text{3}} \right) &= \frac{\text{242}}{\text{9}} \\                         \frac{\text{121}}{\text{3}}k &= \frac{\text{242}}{\text{9}} \\                         k &= \frac{\text{242}}{\text{9}} \left( \frac{\text{3}}{\text{121}} \right) \\                         k &= \frac{\text{2}}{\text{3}}                     \end{aligned}                 \] For the equation \(\sum_{m =                      -1}^{3} k \left( 3 \right)^{m} = \frac{\text{242}}{\text{9}}\) , the value of the variable is \(k = \frac{\text{2}}{\text{3}}\) . Submit your answer as:" />
+
+<Callout type="tip" title="Worked example 13: Sum of a geometric series">
+**Question:**
+Use the general formula for the sum of a geometric series to determine \(k\) if \[\sum _{n = 1}^{8}{k
+            \left( \frac{1}{2} \right)^{n}} = \frac{255}{64 }\]
+
+**Write down the first three terms of the series:**
+\begin{align*}
+          n=1; \quad T_{1}&= {k \left( \frac{1}{2} \right)^{1}} = \frac{1}{2}k \\
+          n=2; \quad T_{2}&= {k \left( \frac{1}{2} \right)^{2}} = \frac{1}{4}k \\
+          n=3; \quad T_{3}&= {k \left( \frac{1}{2} \right)^{3}} = \frac{1}{8}k
+          \end{align*}
+
+
+We have generated the series \(\frac{1}{2}k + \frac{1}{4}k + \frac{1}{8}k + \cdots\)
+
+We can take out the common factor \(k\) and write the series as: \(k \left( \frac{1}{2} + \frac{1}{4} +
+            \frac{1}{8} + \cdots \right)\)
+
+          \[\therefore k \sum _{n = 1}^{8}{\left( \frac{1}{2} \right)^{n}} = \frac{255}{64}\]
+
+**Determine the values of \(a\) and \(r\):**
+\begin{align*}
+          a &= T_{1} = \frac{1}{2} \\
+          r &= \frac{T_{2}}{T_{1}} = \frac{T_{3}}{T_{2}} = \frac{1}{2}
+          \end{align*}
+
+**Calculate the sum of the first eight terms of the geometric series:**
+\begin{align*}
+          \therefore {S}_{n} &= \frac{a(1 - r^{n})}{1 - r}\\
+          {S}_{8} &= \frac{\frac{1}{2}(1 - \left( \frac{1}{2} \right)^{8})}{1 - \frac{1}{2}}\\
+          &= \frac{\frac{1}{2}(1 - \left( \frac{1}{2} \right)^{8})}{\frac{1}{2}}\\
+          &= 1 - \frac{1}{256} \\
+          &= \frac{255}{256} \\
+          & \\
+          \therefore \sum _{n = 1}^{8}{\left( \frac{1}{2} \right)^{n}} &= \frac{255}{256}
+          \end{align*}
+
+
+So then we can write:
+
+          \begin{align*}
+          k \sum _{n = 1}^{8}{\left( \frac{1}{2} \right)^{n}} &= \frac{255}{64} \\
+          k \left( \frac{255}{256} \right) &= \frac{255}{64} \\
+          \therefore k &= \frac{255}{64} \times \frac{256}{255} \\
+          &= \frac{256}{64} \\
+          &= 4
+          \end{align*}
+
+**Write the final answer:**
+\[k = 4\]
+</Callout>
+
+<QuizCard id="m12-01-05c" title="Interactive Exercise 1.14" question="Use the general formula for the sum of a geometric series to find \(k\) if: \[                 \begin{aligned}                     \sum_{n = -2}^{2} \frac{k}{2} \left( \frac{1}{2} \right)^{n} = -\frac{\text{31}}{\text{3}}                 \end{aligned}             \]" options=[] answer="-8/3" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Expand the sum to find the first three terms of the series Whenever you have a series written in sigma notation, it is a good idea to write out the first three terms to see the pattern in the terms more clearly. For this sum we get: \[                     \begin{aligned}                         \sum_{n = -2}^{2} \frac{k}{2} \left( \frac{1}{2} \right)^{n} &= \frac{k}{2} \left(\frac{1}{2} \right)^{-2} + \frac{k}{2} \left(\frac{1}{2} \right)^{-1} + \frac{k}{2} \left(\frac{1}{2} \right)^{0} + \ldots \\                         &= \frac{k}{2} \left(4 \right) + \frac{k}{2} \left(2\right) + \frac{k}{2} \left(1\right) + \ldots                     \end{aligned}                 \] We can take out a common factor of \(\frac{k}{2}\) from all of the terms and write the series as: \(\frac{k}{2} \left( \left(4\right) + \left(2\right) + \left(1\right) + \ldots \right)\) . Notice that the variable \(k\) is now separated from the sum. Calculate the constant ratio, \(r\) and the number of terms, \(n\) Now we want to evaluate the sum \(\left( \left(4\right) + \left(2\right) + \left(1\right) + \ldots \right)\) . To do this, we need the first term and the constant ratio. \[                     \begin{aligned}                         a &= 4 \\                         r &= \frac{T_{2}}{T_{1}} = \frac{\text{2}}{\text{4}}  = \frac{\text{1}}{\text{2}}                     \end{aligned}                 \] We also need the number of terms in the sum. Remember that the number of terms in a sum with sigma notation is the difference between the end index and the start index plus \(\text{1}\) . In this case that means: \[                     \begin{aligned}                         n = 2 - (-2) + 1 = 5                     \end{aligned}                 \] Use the general formula to calculate the value of the series Now use the values from above to work out the sum \(\left( \left(4\right) + \left(2\right) + \left(1\right) + \ldots \right)\) . (We are ignoring the \(\frac{k}{2}\) for the moment.)                      Use the general formula, \(S_{n} = \frac{a(1 - r^{n})}{(1 - r)}, r \neq 0\) . \[                     \begin{aligned}                         S_{n} &= a\frac{(1 - r^{n})}{(1 - r)} \\                         &= \left(4\right) \frac{1 - \left(\frac{1}{2}\right)^{5}}{1 - \left(\frac{1}{2}\right)} \\                         &= \left(4\right) \frac{1 - \left(\frac{\text{1}}{\text{32}}\right)}{\frac{1}{2}} \\                         &= \left(4\right) \frac{\frac{\text{31}}{\text{32}}}{\frac{\text{1}}{\text{2}}} \\                         &= \left(4\right)\left(\frac{\text{31}}{\text{16}}\right) \\                         &= \frac{\text{31}}{\text{4}}                     \end{aligned}                 \] Solve for \(k\) We can now substitute \(\frac{\text{31}}{\text{4}}\) in place of the series in the expanded expression.                      Then we can solve for \(k\) . \[                     \begin{aligned}                         \frac{k}{2} \left( \left(4\right) + \left(2\right) + \left(1\right) + \ldots \right) & = -\frac{\text{31}}{\text{3}} \\                         \frac{k}{2} \left(\frac{\text{31}}{\text{4}} \right) &= -\frac{\text{31}}{\text{3}} \\                         \frac{\text{31}}{\text{8}}k &= -\frac{\text{31}}{\text{3}} \\                         k &= -\frac{\text{31}}{\text{3}} \left( \frac{\text{8}}{\text{31}} \right) \\                         k &= -\frac{\text{8}}{\text{3}}                     \end{aligned}                 \] For the equation \(\sum_{n =                      -2}^{2} \frac{k}{2} \left( \frac{1}{2} \right)^{n} = -\frac{\text{31}}{\text{3}}\) , the value of the variable is \(k = -\frac{\text{8}}{\text{3}}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-05c" title="Interactive Exercise 1.14" question="The first term of a geometric series is \(\frac{1}{2}\) and the constant ratio is \(-2\) . If the series consists of \(6\) terms, determine  the sum of the series. INSTRUCTION: Give your answer as a simplified fraction." options=[] answer="-21/2" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Select the version of the general formula to use We are told in the question that there are a specific number of terms, \(6\) . This means that we are dealing with a finite geometric series. Furthermore, we are given the first term and the constant ratio.  				We  now have enough information to expand the series fully. The first three terms of our series are: \[ 		    	\begin{aligned} 		  			\frac{1}{2} \, ; -1 \, ; 2 \, ;  \ldots 		  		\end{aligned}             \] However, writing out all the terms for a series can be tedious.  				 Luckily, mathematicians have derived a general formula for calculating the sum of a finite geometric series.  				 There are two forms of the general formula: \[ 		      	\begin{aligned} 		      		S_n & = \frac{a(1-r^n)}{1-r} \quad \text{ OR }\quad  S_n=\frac{a(r^n-1)}{r-1} 		       	\end{aligned} 		    \] The first version of the formula is easier to use when \(r \lt 1\) and the second when \(r \gt 1\) . As \(r \lt 1\) , we will use the first form of the formula. Substitute in the given values Our final step is to substitute the values given in the question into the appropriate general formula: \[\begin{aligned}S_n &= \frac{a(1-r^{n})}{1-r} \\S_{6} &=\frac{\frac{1}{2} (1 - \left(-2\right)^{6})}{1 - \left(-2\right)} \\S_{6} &=\frac{\frac{1}{2} \left(-\text{63}\right)}{3} \\S_{6} &=-\dfrac{\text{21}}{\text{2}}\end{aligned}\] Therefore, the sum of the geometric series is \(-\dfrac{\text{21}}{\text{2}}\) . Submit your answer as:" />
+
+## Sum of a geometric series
+
+### Textbook Exercise 1.9
+
+**Problem:**
+Prove that \(a + ar + a{r}^{2} + \cdots + a{r}^{n-1} = \frac{a(r^{n} - 1) }{r - 1}\) and state any
+                restrictions.
+
+**Solution:**
+\begin{align*}
+              {S}_{n} &= a+ ar+ a{r}^{2}+\cdots + a{r}^{n-2} + a{r}^{n-1} \ldots (1) \\
+              r \times {S}_{n} &= \qquad ar+ a{r}^{2}+\cdots + a{r}^{n-2} + a{r}^{n-1} + ar^{n} \ldots (2) \\
+              \text{Subtract eqn. } (1) &\text{ from eqn. } (2) \\
+              \therefore r{S}_{n} - {S}_{n} &= ar^{n} - a \\
+              {S}_{n}(r - 1) &= a(r^{n} - 1) \\
+              \therefore {S}_{n} &= \frac{a(r^{n} - 1) }{r - 1}
+              \end{align*}
+
+
+
+where \(r \ne 1\).
+
+Given the geometric sequence \(1; -3; 9; \ldots\) determine:
+
+**Problem:**
+The eighth term of the sequence.
+
+**Solution:**
+\begin{align*}
+                a &= 1 \\
+                r &= \frac{T_{2}}{T_{1}} = -3 \\
+                T_{n} &= ar^{n-1} \\
+                \therefore T_{8} &= (1)(-3)^{8-1} \\
+                &= (1)(-3)^{7} \\
+                &= -2187
+                \end{align*}
+
+**Problem:**
+The sum of the first eight terms of the sequence.
+
+**Solution:**
+\begin{align*}
+                S_{n} &= \frac{a(1-r^{n})}{1 - r}\\
+                \therefore S_{8} &= \frac{(1)(1-(-3)^{8})}{1 - (-3)}\\
+                &= \frac{1 - 6561}{4}\\
+                &= -\frac{6560}{4}\\
+                &= -1640
+                \end{align*}
+
+**Problem:**
+Determine:
+
+              \[\sum _{n=1}^{4}3 \cdot {2}^{n-1}\]
+
+**Solution:**
+\begin{align*}
+              S_{4} &= 3 + 6 + 12 + 24 \\
+              &= 45
+              \end{align*}
+
+**Problem:**
+Find the sum of the first \(\text{11}\) terms of the geometric series \(6+3+\frac{3}{2}+\frac{3}{4}+
+                \cdots\)
+
+**Solution:**
+\begin{align*}
+              a &= 6 \\
+              r &= \frac{1}{2} \\
+              S_{n} &= \frac{a(1 - r^{n})}{1 - r} \\
+              S_{11} &= \frac{6(1 - \left( \frac{1}{2} \right)^{11})}{1 - \left( \frac{1}{2} \right)} \\
+              &= 12 \left( 1 - \frac{1}{2048} \right) \\
+              &= 12 \left( \frac{2047}{2048} \right) \\
+              &= \frac{6141}{512}
+              \end{align*}
+
+**Problem:**
+Show that the sum of the first \(n\) terms of the geometric series \(54+18+6+\cdots +5
+                {\left(\frac{1}{3}\right)}^{n-1}\) is given by \(\left( 81-{3}^{4-n} \right)\).
+
+**Solution:**
+\begin{align*}
+              a &= 54 \\
+              r &= \frac{1}{3} \\
+              S_{n} &= \frac{a(1 - r^{n})}{1 - r} \\
+              &= \frac{54(1 - \left( \frac{1}{3} \right)^{n})}{1 - \left( \frac{1}{3} \right)} \\
+              &= \frac{54(1 - \left( \frac{1}{3} \right)^{n})}{ \frac{2}{3} } \\
+              &= 81 ( 1 - 3^{-n}) \\
+              &= 81 - 81 \cdot 3^{-n} \\
+              &= 81 - (3^{4} \cdot 3^{-n}) \\
+              &= 81 - 3^{4-n}
+              \end{align*}
+
+**Problem:**
+The eighth term of a geometric sequence is \(\text{640}\). The third term is \(\text{20}\). Find the
+                sum of the first \(\text{7}\) terms.
+
+**Solution:**
+\begin{align*}
+              T_{8} &= 640 = ar^{7} \\
+              T_{3} &= 20 = ar^{2} \\
+              \therefore \frac{T_{8}}{T_{3}} &= \frac{640}{20} \\
+              \frac{640}{20} &= \frac{ar^{7}}{ar^{2}} \\
+              32 &= r^{5} \\
+              \therefore 2 &= r \\
+              \text{And } 20 &= ar^{2} \\
+              20 &= a(2)^{2} \\
+              \frac{20}{4} &= a \\
+              \therefore 5 &= a \\
+              r &= 2 \\
+              S_{n} &= \frac{a(r^{n} - 1)}{r - 1} \\
+              S_{7} &= \frac{5((2)^{7} - 1)}{2 - 1} \\
+              &= 5(128 - 1) \\
+              &= 635
+              \end{align*}
+
+Given:
+
+              \[\sum _{t=1}^{n}8 {\left(\frac{1}{2}\right)}^{t}\]
+
+
+**Problem:**
+Find the first three terms in the series.
+
+**Solution:**
+\begin{align*}
+                t = 1: \quad T_{1} &= 4 \\
+                t = 2: \quad T_{2} &= 2 \\
+                t = 3: \quad T_{3} &= 1 \\
+                4; & 2; 1
+                \end{align*}
+
+**Problem:**
+Calculate the number of terms in the series if \(S_{n}=7\frac{63}{64}\).
+
+**Solution:**
+\begin{align*}
+                a &= 4 \\
+                r &= \frac{1}{2} \\
+                S_{n} &= \frac{a(1 - r^{n})}{1 - r} \\
+                \frac{511}{64} &= \frac{4(1 - \left( \frac{1}{2} \right)^{n})}{1 - \left( \frac{1}{2} \right)} \\
+                &= \frac{4 - 4\left( \frac{1}{2} \right)^{n}}{\frac{1}{2}} \\
+                \frac{511}{128} &= 4 - (2^{2} \cdot 2^{-n}) \\
+                2^{2 - n}&= 4 - \frac{511}{128} \\
+                2^{2 - n}&= \frac{1}{128} \\
+                2^{2 - n}&= 2^{-7}\\
+                2 - n &= -7 \\
+                \therefore 9 &= n
+                \end{align*}
+
+**Problem:**
+The ratio between the sum of the first three terms of a geometric series and the sum of the
+                \(\text{4}\)\(^{\text{th}}\), \(\text{5}\)\(^{\text{th}}\) and \(\text{6}\)\(^{\text{th}}\) terms of the
+                same series is \(8:27\). Determine the constant ratio and the first \(\text{2}\) terms if the third term
+                is \(\text{8}\).
+
+**Solution:**
+\begin{align*}
+              T_{1} + T_{2} + T_{3} &= a + ar + ar^{2} \\
+              &= a(1 + r + r^{2}) \\
+              T_{4} + T_{5} + T_{6} &= ar^{3} + ar^{4} + ar^{5} \\
+              &= ar^{3}(1 + r + r^{2}) \\
+              \therefore \frac{T_{1} + T_{2} + T_{3} }{T_{4} + T_{5} + T_{6}} &= \frac{a(1 + r + r^{2})}{ar^{3}(1 +
+              r + r^{2})} \\
+              \text{And } \quad \frac{T_{1} + T_{2} + T_{3} }{T_{4} + T_{5} + T_{6}} &= \frac{8}{27} \\
+              \therefore \frac{8}{27} &= \frac{a(1 + r + r^{2})}{ar^{3}(1 + r + r^{2})} \\
+              &=\frac{1}{r^{3}} \\
+              \therefore r^{3} &= \frac{27}{8} \\
+              &= \left( \frac{3}{2} \right)^{3} \\
+              \therefore r &= \frac{3}{2}
+              \end{align*}
+              \begin{align*}
+              \text{And } T_{3} &= 8 \\
+              \therefore ar^{2} &= 8 \\
+              a \left( \frac{3}{2} \right)^{2} &= 8 \\
+              \therefore a &= 8 \times \frac{4}{9} \\
+              \therefore T_{1} &= \frac{32}{9} \\
+              T_{2} &= ar \\
+              &= \frac{32}{9} \times \frac{3}{2} \\
+              &= \frac{16}{3}
+              \end{align*}

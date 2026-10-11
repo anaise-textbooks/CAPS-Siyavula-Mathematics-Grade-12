@@ -1,0 +1,755 @@
+## 3.4 Present value annuities (EMCG4)
+
+For present value annuities, regular equal payments/installments are made to pay back a loan or bond
+                        over a given time period. The reducing balance of the loan is usually charged compound interest
+                        at a certain rate. In this section we learn how to determine the present value of a series of
+                        payments.
+
+Consider the following example:
+
+Kate needs to withdraw \(\text{R}\,\text{1 000}\) from her bank account every year for the next three
+                        years. How much must she deposit into her account, which earns \(\text{10}\%\) per annum, to be
+                        able to make these withdrawals in the future? We will assume that these are the only withdrawals
+                        and that there are no bank charges on her account.
+
+To calculate Kate's deposit, we make \(P\) the subject of the compound interest formula:
+
+                \begin{align*}
+                A &= P \left( 1 + i \right)^{n} \\
+                \frac{A}{\left( 1 + i \right)^{n}} &= P \\
+                \therefore P &= A \left( 1 + i \right)^{-n}
+                \end{align*}
+
+
+We determine how much Kate must deposit for the first withdrawal:
+
+                \begin{align*}
+                P &= \text{1 000} \left( 1 + \text{0,1} \right)^{-1} \\
+                &= \text{909,09}
+                \end{align*}
+
+
+We repeat this calculation to determine how much must be deposited for the second and third
+                        withdrawals:
+
+                \begin{align*}
+                \text{Second withdrawal: } P &= \text{1 000} \left( 1 + \text{0,1} \right)^{-2} \\
+                &= \text{826,45} \\
+                \text{Third withdrawal: } P &= \text{1 000} \left( 1 + \text{0,1} \right)^{-3} \\
+                &= \text{751,31}
+                \end{align*}
+
+
+Notice that for each year's withdrawal, the deposit required gets smaller and smaller because it will
+                        be in the bank account for longer and therefore earn more interest. Therefore, the total amount
+                        is:
+
+                \[\text{R}\,\text{909,09} + \text{R}\,\text{826,45} + \text{R}\,\text{751,31} = \text{R}\,\text{2
+                486,85}\]
+
+
+
+We can check these calculations by determining the accumulated amount in Kate's bank account after
+                        each withdrawal:
+
+|  | Calculation | Accumulated amount |
+| --- | --- | --- |
+| Initial deposit |  | \(\text{R}\,\text{2 486,85}\) |
+| Amount after one year | = \(\text{2 486,85}\left(1+\text{0,1}\right)\) | = \(\text{R}\,\text{2 735,54}\) |
+| Amount after first withdrawal | = \(\text{R}\,\text{2 735,54} - \text{R}\,\text{1 000}\) | = \(\text{R}\,\text{1 735,54}\) |
+| Amount after two years | = \(\text{1 735,54} \left(1+\text{0,1}\right)\) | = \(\text{R}\,\text{1 909,09}\) |
+| Amount after second withdrawal | = \(\text{R}\,\text{1 909,09}- \text{R}\,\text{1 000}\) | = \(\text{R}\,\text{909,09}\) |
+| Amount after three years | = \(\text{909,09}\left(1+\text{0,1}\right)\) | = \(\text{R}\,\text{1 000}\) |
+| Amount after third withdrawal | = \(\text{R}\,\text{1 000} - \text{R}\,\text{1 000}\) | = \(\text{R}\,\text{0}\) |
+
+Completing this table for a three year period does not take too long. However, if Kate needed to make
+                        annual payments for \(\text{20}\) years, then the calculation becomes very repetitive and
+                        time-consuming. Therefore, we need a more efficient method for performing these calculations.
+
+### Deriving the formula (EMCG5)
+
+In the example above, Kate needed to deposit:
+
+                        \(\begin{array}{c@{\;}l@{\;}l@{\;}l@{\;}}
+                        \text{R}\,\text{2 486,55} &= \text{R}\,\text{909,09} \quad \quad + &
+                        \text{R}\,\text{826,45} \quad \quad + & \text{R}\,\text{751,31} \\
+                        &= \text{1 000}(1 + \text{0,1})^{-1} \enspace + & \text{1 000}(1 +
+                        \text{0,1})^{-2} \enspace + & \text{1 000}(1 + \text{0,1})^{-3}
+                        \end{array}\)
+
+
+We notice that this is a geometric series with a constant ratio \(r = (1 +
+                                \text{0,1})^{-\text{1}}\).
+
+Using the formula for the sum of a geometric series:
+
+                        \begin{align*}
+                        a &= \text{1 000}(1 + \text{0,1})^{-1} \\
+                        r &= (1 + \text{0,1})^{-\text{1}} \\
+                        n &= 3
+                        \end{align*}\begin{align*}
+                        S_{n} &= \frac{a \left({1 - r}^{n}\right)}{1 - r} \qquad (\text{for } r < 1)\\
+                        &= \frac{\text{1 000}(1 + \text{0,1})^{-1}\left[ 1 - \left( (1 +
+                        \text{0,1})^{-\text{1}} \right)^{3}\right]}{1 - (1 + \text{0,1})^{-\text{1}}} \\
+                        &= \frac{\text{1 000} \left[ 1 - \left( 1 + \text{0,1}\right)^{-3}\right]}{(1 +
+                        \text{0,1})[1 - (1 + \text{0,1})^{-\text{1}}]} \\
+                        &= \frac{\text{1 000} \left[ 1 - \left( 1 + \text{0,1}\right)^{-3}\right]}{(1 +
+                        \text{0,1})- 1} \\
+                        &= \frac{\text{1 000} \left[ 1 - \left( 1 + \text{0,1}\right)^{-3}\right]}{ \text{0,1}}
+                        \\
+                        &= \text{2 486,85}
+                        \end{align*}
+
+
+We can therefore use the formula for the sum of a geometric series to derive a formula for
+                                the present value (\(P\)) of a series of (\(n\)) regular payments of an amount (\(x\))
+                                which are subject to an interest rate (\(i\)):
+
+                        \begin{align*}
+                        a &= x (1 + i)^{-1} \\
+                        r &= (1 + i)^{-1} \\
+                        & \\
+                        S_{n} &= \frac{a \left(1 - {r}^{n}\right)}{1 - r} \qquad (\text{for } r < 1)\\
+                        \therefore P &= \frac{x (1 + i)^{-1} \left[1 - ((1 + i)^{-1})^{n}\right]}{1 - (1 + i)^{-1}}
+                        \\
+                        &= \frac{x \left[1 - (1 + i)^{-n} \right]}{(1 + i)[1 - (1 + i)^{-1}]} \\
+                        &= \frac{x \left[1 - (1 + i)^{-n} \right]}{1 + i - 1} \\
+                        &= \frac{x \left[1 - (1 + i)^{-n} \right]}{i}
+                        \end{align*}
+
+**Present value of a series of payments: **
+
+                                \[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+
+If we are given the present value of a series of payments, we can calculate the value of the
+                                payments by making \(x\) the subject of the above formula.
+
+**Payment amount: **
+
+                                \[x = \frac{P \times i}{\left[1 - (1 + i)^{-n}\right]}\]
+
+
+<Callout type="tip" title="Worked example 8: Present value annuities">
+**Question:**
+Andre takes out a student loan for his first year of civil engineering. The
+                                                loan agreement states that the repayment period is equal to
+                                                \(\text{1,5}\) years for every year of financial assistance granted and
+                                                that the loan is subject to an interest rate of \(\text{10,5}\%\) p.a.
+                                                compounded monthly.
+
+2. If Andre pays a monthly installment of \(\text{R}\,\text{1
+                                                           446,91}\), calculate the loan amount.
+4. Determine how much interest Andre will have paid on his student loan
+                                                           at the end of the \(\text{18}\) months.
+
+**Write down the given information and the present value formula:**
+\[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+                                        \begin{align*}
+                                        x &= \text{1 446,91} \\
+                                        i &= \frac{\text{0,105}}{12} \\
+                                        n &= \text{1,5} \times 12 = \text{18}
+                                        \end{align*}
+
+
+Substitute the known values and determine \(P\):
+
+                                        \begin{align*}
+                                        P &= \dfrac{\text{1 446,91} \left[1 - (1 +
+                                        \frac{\text{0,105}}{12})^{-18} \right]}{\frac{\text{0,105}}{12}} \\
+                                        &= \text{R}\,\text{24 000,14}
+                                        \end{align*}
+
+
+Therefore, Andre took out a student loan for \(\text{R}\,\text{24 000}\).
+
+**Calculate the total amount of interest:**
+At the end of the \(\text{18}\) month period:
+
+                                        \begin{align*}
+                                        \text{Total amount repaid for loan: } &= \text{R}\,\text{1 446,91} \times 18
+                                        \\
+                                        &= \text{R}\,\text{26 044,38} \\
+                                        \text{Total amount of interest: } &= \text{R}\,\text{26 044,38} -
+                                        \text{R}\,\text{24 000} \\
+                                        &= \text{R}\,\text{2 044,38}
+                                        \end{align*}
+</Callout>
+
+<Callout type="tip" title="Worked example 9: Calculating the monthly payments">
+**Question:**
+Hristo wants to buy a small wine farm worth \(\text{R}\,\text{8 500 000}\).
+                                                He plans to sell his current home for \(\text{R}\,\text{3 400 000}\)
+                                                which he will use as a deposit for the purchase of the farm. He secures
+                                                a loan with HBP Bank with a repayment period of \(\text{10}\) years and
+                                                an interest rate of \(\text{9,5}\%\) compounded monthly.
+
+2. Calculate his monthly repayments.
+4. Determine how much interest Hristo will have paid on his loan by the
+                                                           end of the \(\text{10}\) years.
+
+**Write down the given information and the present value formula:**
+\[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+
+
+To determine the monthly repayment amount, we make \(x\) the subject of the
+                                                formula:
+
+                                        \[x = \frac{P \times i}{\left[1 - (1 + i)^{-n}\right]}\]
+                                        \begin{align*}
+                                        P &= \text{R}\,\text{8 500 000} - \text{R}\,\text{3 400 000} =
+                                        \text{R}\,\text{5 100 000} \\
+                                        i &= \frac{\text{0,095}}{12} \\
+                                        n &= 10 \times 12 = \text{120}
+                                        \end{align*}
+
+**Substitute the known values and calculate \(x\):**
+\begin{align*}
+                                        x &= \dfrac{\text{5 100 000} \times
+                                        \frac{\text{0,095}}{12}}{\left[1 - \left(1 +
+                                        \frac{\text{0,095}}{12}\right)^{-120}\right]} \\
+                                        &= \text{R}\,\text{65 992,75}
+                                        \end{align*}
+
+
+Therefore, Hristo must pay \(\text{R}\,\text{65 992,75}\) per month to repay
+                                                his loan over the \(\text{10}\) year period.
+
+**Calculate the total amount of interest:**
+At the end of the \(\text{10}\) year period:
+
+                                        \begin{align*}
+                                        \text{Total amount repaid for loan: } &= \text{R}\,\text{65 992,75} \times
+                                        10 \times 12 \\
+                                        &= \text{R}\,\text{7 919 130} \\
+                                        \text{Total amount of interest: } &= \text{R}\,\text{7 919 130} -
+                                        \text{R}\,\text{5 100 000} \\
+                                        &= \text{R}\,\text{2 819 130}
+                                        \end{align*}
+</Callout>
+
+**Prime lending rate**
+
+The prime lending rate is a benchmark rate at which private banks lend out money to the
+                                public. It is used as a reference rate for determining interest rates on many types of
+                                loans, including small business loans, home loans and personal loans. Some interest
+                                rates may be expressed as a percentage above or below prime rate. For calculations in
+                                this chapter, we will assume the prime lending rate is \(\text{8,5}\%\) per annum.
+
+<Callout type="tip" title="Worked example 10: Calculating the outstanding balance of a loan">
+**Question:**
+A school sells its old bus and uses the proceeds as a \(\text{15}\%\) deposit
+                                                for the purchase of the new bus, which costs \(\text{R}\,\text{330
+                                                000}\). To finance the balance of the purchase, the school takes out a
+                                                loan that is subject to an interest rate of \(\text{prime } +
+                                                \text{1}\%\) compounded monthly. The repayment period of the loan is
+                                                \(\text{3}\) years.
+
+2. Calculate the monthly repayments.
+4. Determine the balance of the loan at the end of the first year,
+                                                           immediately after the \(12^{\text{th}}\) payment.
+
+**Write down the given information and the present value formula:**
+\[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+
+
+To determine the monthly repayment amount, we make \(x\) the subject of the
+                                                formula:
+
+                                        \[x = \frac{P \times i}{\left[1 - (1 + i)^{-n}\right]}\]
+                                        \begin{align*}
+                                        P &= \text{R}\,\text{330 000} - \left(\frac{15}{100} \times
+                                        \text{R}\,\text{330 000} \right) \\
+                                        &= \text{R}\,\text{330 000} - \text{R}\,\text{49 500} \\
+                                        & = \text{R}\,\text{280 500} \\
+                                        i &= \frac{\text{0,095}}{12} \\
+                                        n &= 3 \times 12 = \text{36}
+                                        \end{align*}
+
+**Substitute the known values and calculate \(x\):**
+\begin{align*}
+                                        x &= \dfrac{\text{280 500} \times \frac{\text{0,095}}{12}}{\left[1 -
+                                        \left(1 + \frac{\text{0,095}}{12}\right)^{-36}\right]} \\
+                                        &= \text{R}\,\text{8 985,24}
+                                        \end{align*}
+
+
+Therefore, the school must pay \(\text{R}\,\text{8 985,24}\) per month to
+                                                repay the loan over the \(\text{3}\) year period.
+
+**Calculate the balance of the loan at the end of the first year:**
+We can calculate the balance of the loan at the end of the first year by
+                                                determining the present value of the remaining \(\text{24}\) payments:
+
+                                        \begin{align*}
+                                        P &= \dfrac{\text{8 985,24} \left[1 - (1 +
+                                        \frac{\text{0,095}}{12})^{-24} \right]}{\frac{\text{0,095}}{12}} \\
+                                        &= \text{R}\,\text{195 695,07}
+                                        \end{align*}
+
+
+Therefore, the school must still pay \(\text{R}\,\text{195 695,07}\) of the
+                                                loan.
+
+Alternative method: we can also calculate the balance of the loan at the end
+                                                of the first year by determining the accumulated amount of the loan for
+                                                the first year less the future value of the first \(\text{12}\)
+                                                payments:
+
+                                        \begin{align*}
+                                        \text{Balance} &= A(\text{loan and accrued interest}) - F(\text{first year's
+                                        payments and interest}) \\
+                                        &= \text{280 500} \left(1 + \frac{\text{0,095}}{12} \right)^{\text{12}}
+                                        - \frac{\text{8 985,24}\left[(1 +
+                                        \frac{\text{0,095}}{12})^{\text{12}}-1\right]}{ \frac{\text{0,095}}{12}} \\
+                                        &= \text{R}\,\text{308 338,94} \ldots - \text{R}\,\text{112 643,79} \ldots
+                                        \\
+                                        &= \text{R}\,\text{195 695,15}
+                                        \end{align*}
+
+
+Therefore, the school must still pay \(\text{R}\,\text{195 695,15}\) of the
+                                                loan.
+
+(Note the difference of \(\text{8}\) cents due to rounding).
+</Callout>
+
+<QuizCard id="m12-03-04a" title="Interactive Exercise 3.6" question="Kutlwano borrows \(\text{R}\,\text{14 000}\) from Snap Save Bank.  The bank charges \(\text{17,9}\%\) p.a. compounded monthly for this bond (loan).  What is the monthly payment Kutlwano will owe if it takes \(\text{10}\) years to pay back the loan?" options=[] answer="251.36" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Write down the present value formula This is a present value problem because it involves a loan and the loan will be repaid with regular payments. Let's write down what we know and what we need to find: \[                         \begin{aligned}                             P & = \frac{x\left[1 - (1+i)^{-n}\right]}{i} \\                             \text{Where: }  \quad & \\                             P & = \text{the present value of the loan} = \text{14 000}  \\                             x & = \; \text{the regular payment}\; = \text{?}    \\                             i &= \; \text{the interest rate} \; = \text{17,9}\% = \text{0,179}          \\                             n & = \; \text{the number of years} \; = \text{10}                         \end{aligned}                     \] Substitute the formula with known values and simplify Now it is time to substitute into the formula and solve for the value of \(x\) . Don't forget that you must adjust the interest rate and the number of years because there are 12 payments per year: \( \; i = \text{0,179} \rightarrow \frac{\text{0,179}}{12} \;  \) and \( \; n = \text{10} \rightarrow \text{10} \times 12 \; \) . Also remember that you must not round off the numbers until the end - leave the decimals in your calculator, and write your work as shown here. \[                         \begin{aligned}                             \text{14 000} & = \frac{x \left[ 1 - \left(1 + \frac{\text{0,179}}{12}\right) ^{-(\text{10} \times 12)} \right]}  {\left(\frac{\text{0,179}}{12} \right)} \\                             \text{14 000} & = \frac{x \left[1 - \left( \text{1,01491...} \right) ^{-\text{120}} \right]}  {\text{0,01491...}} \\                             \text{14 000} & = \frac{x \left[1 - (\text{0,16918...}) \right]}  {\text{0,01491...}} \\                             \text{14 000} & = \frac{x \left[ \text{0,83081...} \right]}  {\text{0,01491...}}                         \end{aligned}                     \] Solve for \(x\) , the monthly payment Whew - almost there!  Notice that up to this point we have done lots of calculations just so that we can simplify the denominator and the square brackets on the right side of the equation. After the brackets are as simple as possible, it is time to work on isolating \(x\) . \[                         \begin{aligned}                             (\text{0,01491...})(\text{14 000}) & = x \left(\text{0,83081...} \right)      \\                             \text{208,83333...} & = x \left( \text{0,83081...} \right) \\                             \frac{\text{208,83333...}}{\left( \text{0,83081...} \right)} & = x \\ 		                    \therefore x &= \text{251,358667445} \\ 		                    x &= \text{R}\,\text{251,36}                         \end{aligned}                     \] Kutlwano must pay \(\text{R}\,\text{251,36}\) each month to pay off the loan after \(\text{10}\) years. Submit your answer as:" />
+
+<QuizCard id="m12-03-04a" title="Interactive Exercise 3.6" question="Mark borrows \(\text{R}\,\text{14 500}\) from Save More Bank.  The bank charges \(\text{17,6}\%\) p.a. compounded monthly for this bond (loan).  What is the monthly payment Mark will owe if it takes \(\text{6}\) years to pay back the loan?" options=[] answer="327.44" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Write down the present value formula This is a present value problem because it involves a loan and the loan will be repaid with regular payments. Let's write down what we know and what we need to find: \[                         \begin{aligned}                             P & = \frac{x\left[1 - (1+i)^{-n}\right]}{i} \\                             \text{Where: }  \quad & \\                             P & = \text{the present value of the loan} = \text{14 500}  \\                             x & = \; \text{the regular payment}\; = \text{?}    \\                             i &= \; \text{the interest rate} \; = \text{17,6}\% = \text{0,176}          \\                             n & = \; \text{the number of years} \; = \text{6}                         \end{aligned}                     \] Substitute the formula with known values and simplify Now it is time to substitute into the formula and solve for the value of \(x\) . Don't forget that you must adjust the interest rate and the number of years because there are 12 payments per year: \( \; i = \text{0,176} \rightarrow \frac{\text{0,176}}{12} \;  \) and \( \; n = \text{6} \rightarrow \text{6} \times 12 \; \) . Also remember that you must not round off the numbers until the end - leave the decimals in your calculator, and write your work as shown here. \[                         \begin{aligned}                             \text{14 500} & = \frac{x \left[ 1 - \left(1 + \frac{\text{0,176}}{12}\right) ^{-(\text{6} \times 12)} \right]}  {\left(\frac{\text{0,176}}{12} \right)} \\                             \text{14 500} & = \frac{x \left[1 - \left( \text{1,01466...} \right) ^{-\text{72}} \right]}  {\text{0,01466...}} \\                             \text{14 500} & = \frac{x \left[1 - (\text{0,35052...}) \right]}  {\text{0,01466...}} \\                             \text{14 500} & = \frac{x \left[ \text{0,64947...} \right]}  {\text{0,01466...}}                         \end{aligned}                     \] Solve for \(x\) , the monthly payment Whew - almost there!  Notice that up to this point we have done lots of calculations just so that we can simplify the denominator and the square brackets on the right side of the equation. After the brackets are as simple as possible, it is time to work on isolating \(x\) . \[                         \begin{aligned}                             (\text{0,01466...})(\text{14 500}) & = x \left(\text{0,64947...} \right)      \\                             \text{212,66666...} & = x \left( \text{0,64947...} \right) \\                             \frac{\text{212,66666...}}{\left( \text{0,64947...} \right)} & = x \\ 		                    \therefore x &= \text{327,442609672} \\ 		                    x &= \text{R}\,\text{327,44}                         \end{aligned}                     \] Mark must pay \(\text{R}\,\text{327,44}\) each month to pay off the loan after \(\text{6}\) years. Submit your answer as:" />
+
+<QuizCard id="m12-03-04a" title="Interactive Exercise 3.6" question="Calculate the present value of the loan (the capital outstanding) when there are \(\text{13}\) years                     remaining for Sandile to pay off the loan. INSTRUCTION: Round your answer to two decimal places ." options=[] answer=" ['805404.25', '8.05e+5', '805402.83'] " hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="To find the present value of a loan (the capital outstanding) you must use the present value formula: \[                         \begin{aligned}                         P & = \frac{x\left[1 - (1+i)^{-n} \right]}{i} \\                         \text{Where: }  \quad & \\                         P & = \text{the value of the loan when } n \text{ years remain} \\                         x & = \; \text{the regular payment}\; =  \text{R}\,\text{35 266,63} \\                         i &= \; \text{the interest rate} \; = \text{14,90}\%                         = \text{0,149} \\                         n & = \; \text{the number of years to repay loan}  \; = \text{13}                         \end{aligned}                     \] To help make sense of what we are trying to find in this question, look at the graph below.  It shows the relationship between the                         number of years remaining for the loan (on the horizontal axis) and the outstanding balance of the loan (on the vertical axis). This graph is quite unusual in a way: to read it properly you must read it backwards: the endpoint on the right is actually where                         the loan starts . At this starting point, there are \(\text{30}\) years                         remaining to pay off the loan, and the amount of the loan is equal to the principal ( \(\text{R}\,\text{935 000}\) ).                         Then as time passes from the beginning of the loan (as the number of years remaining decreases) you follow the graph back toward the                         origin (there are no more years remaining to pay, and the loan has been repaid in full). You can see from the graph that the present value when there are \(\text{13}\) years remaining is                         very close to \(\text{R}\,\text{800 000}\) . To help remind yourself that you are calculating the present value (capital outstanding) of the mortgage when there are \(\text{13}\) years remaining before the end of the loan, you can write \( \; P_{\text{13}} \; \) to label when the calculation is for: \[                         \begin{aligned}                         P_{\text{13}} &                         = \frac{\text{35 266,63} \left[1 - \left(1 + \frac{\text{0,149}}                         {\text{4}}\right) ^{-(\text{13} \times                         \text{4})} \right]}  {\left(\frac{\text{0,149}}                         {\text{4}} \right)} \\                         & = \text{R}\,\text{805 404,25}                         \end{aligned}                     \] When there are \(\text{13}\) years remaining for Sandile to pay off the loan, he will                         still owe the bank \(\text{R}\,\text{805 404,25}\) . (Look back up at the graph and you will remember that we thought the answer would be very close to \(\text{R}\,\text{800 000}\) , the answer we calculated agrees.) Submit your answer as:" />
+
+<QuizCard id="m12-03-04a" title="Interactive Exercise 3.6" question="Determine the payments due each month to repay the loan if the prime lending rate is \(\text{8,5}\%\) ." options=[] answer="
+                        ['6618.45', '6.62e+3']
+                    " hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Calculate the amount needed for the loan We have a lot of information about a loan and we need to determine the monthly repayment amount for the loan. Since we are dealing                         with a loan, we will use the present value formula for this question. First, we need to find the amount of the loan. The transport company will not borrow \(\text{R}\,\text{350 000}\) because it will use the money it gets from selling its old                         bus to cover \(\text{11}\%\) of the cost. That means that                         the transport company only needs to borrow \(\text{89}\%\) of the cost of                         the new bus (because \(\text{89}\% +                         \text{11}\% = \text{100}\%\) ). Therefore the amount that                         the transport company needs to borrow, \(P\) , is: \[                         \begin{aligned}                         P & = \text{89}\% \times \text{R}\,\text{350 000} \\                         & = \text{0,89} (\text{R}\,\text{350 000}) \\                         & = \text{R}\,\text{311 500}                         \end{aligned}                     \] Arrange the formula for \(x\) ; then substitute and solve The present value formula is \(P = \frac{x [1 - (1 + i)^{-n}]}{i}\) , where \(x\) represents the monthly repayment amount. Rearrange the equation to make \(x\) the subject: \[                         \begin{aligned}                         P & = \frac{x [1 - (1 + i)^{-n}] }{i} \\                         P(i) & = \left(\frac{x [1 - (1 + i)^{-n}] }{i}\right) (i) \\                         \frac{P(i)}{[1 - (1 + i)^{-n}]}  & = \frac{x [1 - (1 + i)^{-n}]}{[1 - (1 + i)^{-n}]} \\                         \frac{Pi}{ [1 - (1 + i)^{-n}]} & = x \\                         \therefore \; x & = \frac{Pi}{ [1 - (1 + i)^{-n}]}                         \end{aligned}                     \] The value of \(n\) is \(\text{5} \times 12 =                         \text{60}\) , because the payments are made monthly.                         For the interest rate, we are told that it is \"the prime lending rate + \(\text{1,5}\%\) \",                         so \(i = \text{8,5}\% + \text{1,5}\% =                         \text{10}\%\) . Substitute these values, along with \(P = \text{311 500}\) into the formula. \[                         \begin{aligned}                         x & = \frac{(\text{311 500})                         \left( \frac{\text{0,1}}{12} \right)}                         { \left[1 - \left( 1 + \frac{\text{0,1}}{12} \right)^{-60} \right]} \\                         & = \text{R}\,\text{6 618,45}                         \end{aligned}                     \] The monthly payment for the loan is \(\text{R}\,\text{6 618,45}\) . Submit your answer as:" />
+
+## Present value annuities
+
+### Textbook Exercise 3.4
+
+**Problem:**
+A property costs \(\text{R}\,\text{1 800 000}\). Calculate
+                                                                the monthly repayments if the interest rate is
+                                                                \(\text{14}\%\) p.a. compounded monthly and the loan
+                                                                must be paid off in \(\text{20}\) years' time.
+
+**Solution:**
+Write down the given information and the present value
+                                                                formula:
+
+                                                        \[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+
+
+To determine the monthly repayment amount, we make \(x\) the
+                                                                subject of the formula:
+
+                                                        \[x = \frac{P \times i}{\left[1 - (1 + i)^{-n}\right]}\]
+
+                                                        \begin{align*}
+                                                        P &= \text{R}\,\text{1 800 000} \\
+                                                        i &= \frac{\text{0,14}}{12} \\
+                                                        n &= 20 \times 12 = \text{240}
+                                                        \end{align*}
+
+
+
+Substitute the known values and calculate \(x\):
+
+                                                        \begin{align*}
+                                                        x &= \dfrac{\text{1 800 000} \times
+                                                        \frac{\text{0,14}}{12}}{\left[1 - \left(1 +
+                                                        \frac{\text{0,14}}{12}\right)^{-240}\right]} \\
+                                                        &= \text{R}\,\text{22 383,37}
+                                                        \end{align*}
+
+**Problem:**
+A loan of \(\text{R}\,\text{4 200}\) is to be returned in two
+                                                                equal annual installments. If the rate of interest is
+                                                                \(\text{10}\%\) compounded annually, calculate the
+                                                                amount of each installment.
+
+**Solution:**
+Write down the given information and the present value
+                                                                formula:
+
+                                                        \[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+
+
+To determine the monthly repayment amount, we make \(x\) the
+                                                                subject of the formula:
+
+                                                        \[x = \frac{P \times i}{\left[1 - (1 + i)^{-n}\right]}\]
+
+                                                        \begin{align*}
+                                                        P &= \text{R}\,\text{4 200} \\
+                                                        i &= \text{0,10} \\
+                                                        n &= \text{2}
+                                                        \end{align*}
+
+
+
+Substitute the known values and calculate \(x\):
+
+                                                        \begin{align*}
+                                                        x &= \dfrac{\text{4 200} \times \text{0,10}}{\left[1 -
+                                                        \left(1 + \text{0,10}\right)^{-2}\right]} \\
+                                                        &= \text{R}\,\text{2 420,00}
+                                                        \end{align*}
+
+**Problem:**
+Stefan and Marna want to buy a flat that costs R
+                                                                \(\text{1,2}\) million. Their parents offer to put down
+                                                                a \(\text{20}\%\) payment towards the cost of the house.
+                                                                They need to get a mortgage for the balance. What is the
+                                                                monthly repayment amount if the term of the home loan is
+                                                                \(\text{30}\) years and the interest is \(\text{7,5}\%\)
+                                                                p.a. compounded monthly?
+
+**Solution:**
+Write down the given information and the present value
+                                                                formula:
+
+                                                        \[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+
+
+To determine the monthly repayment amount, we make \(x\) the
+                                                                subject of the formula:
+
+                                                        \[x = \frac{P \times i}{\left[1 - (1 + i)^{-n}\right]}\]
+
+                                                        \begin{align*}
+                                                        P &= \text{R}\,\text{1 200 000} - \left(\text{R}\,\text{1
+                                                        200 000} \times \frac{20}{100} \right) \\
+                                                        &= \text{R}\,\text{960 000} \\
+                                                        i &= \frac{\text{0,075}}{12} \\
+                                                        n &= 30 \times 12 = \text{360}
+                                                        \end{align*}
+
+
+
+Substitute the known values and calculate \(x\):
+
+                                                        \begin{align*}
+                                                        x &= \dfrac{\text{960 000} \times
+                                                        \frac{\text{0,075}}{12}}{\left[1 - \left(1 +
+                                                        \frac{\text{0,075}}{12}\right)^{-360}\right]} \\
+                                                        &= \text{R}\,\text{6 712,46}
+                                                        \end{align*}
+
+**Problem:**
+Ziyanda arranges a bond for \(\text{R}\,\text{17
+                                                                        000}\) from Langa Bank. If the bank charges
+                                                                        \(\text{16,0}\%\) p.a. compounded monthly,
+                                                                        determine Ziyanda's monthly repayment if she is
+                                                                        to pay back the bond over \(\text{9}\) years.
+
+**Solution:**
+\begin{align*}
+                                                                P & = \frac{x\left[1 - (1+i)^{-n}\right]}{i} \\
+                                                                \text{Where: } \quad & \\
+                                                                P & = \text{17 000} \\
+                                                                i & = \text{0,16} \\
+                                                                n & = \text{9}
+                                                                \end{align*}
+
+                                                                \begin{align*}
+                                                                \text{17 000} & = \frac{x \left[ 1 - \left(1 +
+                                                                \frac{\text{0,16}}{12}\right) ^{-(\text{9} \times 12)}
+                                                                \right]} {\left(\frac{\text{0,16}}{12} \right)} \\
+                                                                \therefore x & = \frac{\text{17 000} \times
+                                                                \left(\frac{\text{0,16}}{12} \right)} { \left[ 1 -
+                                                                \left(1 + \frac{\text{0,16}}{12}\right) ^{-(\text{9}
+                                                                \times 12)} \right]} \\
+                                                                & = \text{297,93}
+                                                                \end{align*}
+
+
+
+Ziyanda must pay \(\text{R}\,\text{297,93}\) each
+                                                                        month.
+
+**Problem:**
+What is the total cost of the bond?
+
+**Solution:**
+Total cost: \(\text{R}\,\text{297,93} \times
+                                                                        \text{12} \times \text{9} = \text{R}\,\text{32
+                                                                        176,44}\)
+
+Ziyanda paid the bank a total of \(\text{R}\,\text{32
+                                                                        176,44}\).
+
+Dullstroom Bank offers personal loans at an interest rate of
+                                                                \(\text{15,63}\%\) p.a. compounded twice a year.
+                                                                Lubabale borrows \(\text{R}\,\text{3 000}\) and must pay
+                                                                \(\text{R}\,\text{334,93}\) every six months until the
+                                                                loan is fully repaid.
+
+**Problem:**
+How long will it take Lubabale to repay the loan?
+
+**Solution:**
+\begin{align*}
+                                                                P & = \frac{x\left[1 - (1+i)^{-n}\right]}{i} \\
+                                                                P & = \text{3 000} \\
+                                                                x & = \text{334,93} \\
+                                                                i & = \text{0,1563}
+                                                                \end{align*}
+
+                                                                \begin{align*}
+                                                                \text{3 000} & = \frac{\text{334,93} \left[ 1 -
+                                                                \left(1 + \frac{\text{0,1563}}{\text{2}}\right) ^{-(n
+                                                                \times \text{2} )} \right]}
+                                                                {\left(\frac{\text{0,1563}}{\text{2}} \right)} \\
+                                                                \text{3 000} & = \frac{\text{334,93} \left[1 -
+                                                                \left( \text{1,07815} \ldots \right) ^{-\text{2}n}
+                                                                \right]} {\text{0,07815} \ldots}
+                                                                \end{align*}
+
+                                                                \begin{align*}
+                                                                (\text{0,07815}\ldots) (\text{3 000}) & =
+                                                                \text{334,93} \left[1 - \left( \text{1,07815}\ldots
+                                                                \right) ^{-\text{2}n} \right] \\
+                                                                \frac{(\text{234,45})}{(\text{334,93})} & = 1 -
+                                                                \left( \text{1,07815}\ldots \right) ^{-\text{2}n} \\
+                                                                \text{0,69999} \ldots& = 1 - \left( \text{1,07815}
+                                                                \ldots\right) ^{-\text{2}n} \\
+                                                                -\text{0,30001}\ldots & = - \left(
+                                                                \text{1,07815}\ldots \right) ^{-\text{2}n} \\
+                                                                \text{0,3} \ldots & = \left( \text{1,07815}
+                                                                \ldots\right) ^{-\text{2}n}
+                                                                \end{align*}
+
+                                                                \begin{align*}
+                                                                -\text{2}n & = \log_{\text{1,07815}\ldots}
+                                                                (\text{0,3}\ldots) \\
+                                                                -\text{2}n & = -\text{16} \\
+                                                                n & = \frac{-\text{16}}{-\text{2}} \\
+                                                                n & = \text{8}
+                                                                \end{align*}
+
+
+
+It will take \(\text{8}\) years.
+
+**Problem:**
+How much interest will Lubabale pay for this loan?
+
+**Solution:**
+The total cost of the loan: \(\text{334,93} \times
+                                                                        \text{2} \times \text{8} = \text{R}\,\text{5
+                                                                        358,88}\).
+
+The total amount of interest Lubabale pays is:
+                                                                        \(\text{5 358,88} - \text{3 000} =
+                                                                        \text{R}\,\text{2 358,88}\)
+
+Likengkeng has just started a new job and wants to buy a car
+                                                                that costs \(\text{R}\,\text{232 000}\). She visits the
+                                                                Soweto Savings Bank, where she can arrange a loan with
+                                                                an interest rate of \(\text{15,7}\%\) p.a. compounded
+                                                                monthly. Likengkeng has enough money saved to pay a
+                                                                deposit of \(\text{R}\,\text{50 000}\). She arranges a
+                                                                loan for the balance of the payment, which is to be paid
+                                                                over a period of \(\text{6}\) years.
+
+**Problem:**
+What is Likengkeng's monthly repayment on her loan?
+
+**Solution:**
+The balance of the payment: \(\text{R}\,\text{232
+                                                                        000} - \text{R}\,\text{50 000} =
+                                                                        \text{R}\,\text{182 000}\) \(\)
+
+Therefore, Likengkeng takes out a loan for
+                                                                        \(\text{R}\,\text{182 000}\).
+
+                                                                \begin{align*}
+                                                                P & = \frac{x\left[1 - (1+i)^{-n}\right]}{i} \\
+                                                                P & = \text{182 000} \\
+                                                                i & = \text{0,157} \\
+                                                                n & = \text{6}
+                                                                \end{align*}
+
+                                                                \begin{align*}
+                                                                \text{182 000} & = \frac{x \left[ 1 - \left(1 +
+                                                                \frac{\text{0,157}}{12}\right) ^{-(\text{6} \times 12)}
+                                                                \right]} {\left(\frac{\text{0,157}}{12} \right)} \\
+                                                                \therefore x &= \frac{\text{182 000} \times
+                                                                \left(\frac{\text{0,157}}{12} \right)}{ \left[ 1 -
+                                                                \left(1 + \frac{\text{0,157}}{12}\right) ^{-(\text{6}
+                                                                \times 12)} \right]} \\
+                                                                &= \text{R}\,\text{3 917,91}
+                                                                \end{align*}
+
+
+
+Likengkeng must pay \(\text{R}\,\text{3 917,91}\)
+                                                                        each month.
+
+**Problem:**
+How much will the car cost Likengkeng?
+
+**Solution:**
+The total amount paid: \(\text{R}\,\text{3 917,91}
+                                                                        \times 12 \times \text{6} = \text{R}\,\text{282
+                                                                        089,87}\)
+
+Therefore, Likengkeng paid a total of
+                                                                        \(\text{R}\,\text{282 089,87} +
+                                                                        \text{R}\,\text{50 000} = \text{R}\,\text{332
+                                                                        089,87}\)
+
+Anathi is a wheat farmer and she needs to buy a new holding
+                                                                tank which costs \(\text{R}\,\text{219 450}\). She
+                                                                bought her old tank \(\text{14}\) years ago for
+                                                                \(\text{R}\,\text{196 000}\). The value of the old grain
+                                                                tank has depreciated at a rate of \(\text{12,1}\%\) per
+                                                                year on a reducing balance, and she plans to trade it in
+                                                                for its current value. Anathi will then need to arrange
+                                                                a loan for the balance of the cost of the new grain
+                                                                tank.
+
+Orsmond bank offers loans with an interest rate of
+                                                                \(\text{9,71}\%\) p.a. compounded monthly for any loan
+                                                                up to \(\text{R}\,\text{170 000}\) and \(\text{9,31}\%\)
+                                                                p.a. compounded monthly for a loan above that amount.
+                                                                The loan agreement allows Anathi a grace period for the
+                                                                first six months (no payments are made) and it states
+                                                                that the loan must be repaid over \(\text{30}\) years.
+
+**Problem:**
+Determine the monthly repayment amount.
+
+**Solution:**
+Anathi will trade in the old grain tank to offset
+                                                                        some of the cost of the new one. Therefore, we
+                                                                        need to determine the current value of the old
+                                                                        grain tank:
+
+                                                                \begin{align*}
+                                                                A & = P(1 - i)^{n} \\
+                                                                & = \text{196 000}(1 - \text{0,121}
+                                                                )^{\text{14}} \\
+                                                                & = \text{196 000}( \text{0,16437} \ldots ) \\
+                                                                &= \text{32 218,12946} \ldots
+                                                                \end{align*}
+
+
+
+The value of the old grain tank for the trade in is
+                                                                        \(\text{R}\,\text{32 218,13}\).
+
+Therefore, the loan amount for the new tank is:
+
+                                                                \[\text{R}\,\text{219 450} - \text{R}\,\text{32 218,13}
+                                                                = \text{R}\,\text{187 231,87}\]
+
+
+
+Determine which interest rate to use: the loan amount
+                                                                        is more than \(\text{R}\,\text{170 000,00}\),
+                                                                        therefore Anathi gets the lower interest rate of
+                                                                        \(\text{9,31}\%\).
+
+Calculate how much the loan will be worth at the end
+                                                                        of the grace period:
+
+                                                                \begin{align*}
+                                                                A & = P(1 + i)^{n} \\
+                                                                & = \text{187 231,87} \left( 1 +
+                                                                \frac{\text{0,0931}}{12} \right)^{\text{6}} \\
+                                                                &= \text{196 118,31962} \ldots
+                                                                \end{align*}
+
+
+
+After the first six months of the loan period, the
+                                                                        amount she owes increases to
+                                                                        \(\text{R}\,\text{196 118,32}\).
+
+Now we can use the present value formula to solve for
+                                                                        the value of \(x\). Remember that the time
+                                                                        period for this calculation is \(\text{29,5}\)
+                                                                        years.
+
+                                                                \begin{align*}
+                                                                \text{196 118,32} & = \frac{x \left[ 1 -
+                                                                \left(1 + \frac{\text{0,0931}}{12}\right)
+                                                                ^{-(\text{29,5} \times 12)} \right]}
+                                                                {\left(\frac{\text{0,0931}}{12} \right)} \\
+                                                                x & = \frac{\text{196 118,32} \times
+                                                                \frac{\text{0,0931}}{12} } { \left[ 1 - \left(1 +
+                                                                \frac{\text{0,0931}}{12}\right) ^{-(\text{29,5} \times
+                                                                12)} \right]} \\
+                                                                x &= \text{1 627,0471} \ldots
+                                                                \end{align*}
+
+
+
+Therefore, Anathi must pay \(\text{R}\,\text{1
+                                                                        627,05}\) each month.
+
+**Problem:**
+What is the total amount of interest Anathi will pay
+                                                                        for the loan?
+
+**Solution:**
+The total cost of the loan is:
+
+\[\quad \text{R}\,\text{1 627,05} \times 12 \times
+                                                                        \text{29,5} = \text{R}\,\text{575 975,70}\]
+
+Therefore, the amount of interest is:
+
+\[\text{R}\,\text{575 975,70} - \text{R}\,\text{187
+                                                                        231,87} = \text{R}\,\text{388 743,83}\]
+
+The total amount of interest Anathi paid is
+                                                                        \(\text{R}\,\text{388 743,83}\).
+
+**Problem:**
+How much money would Anathi have saved if she did not
+                                                                        take the six month grace period?
+
+**Solution:**
+For this calculation the loan amount is
+                                                                        \(\text{R}\,\text{187 231,87}\) and the time
+                                                                        period is \(\text{30}\) years:
+
+                                                                \begin{align*}
+                                                                \text{187 231,87} & = \frac{x \left[ 1 -
+                                                                \left(1 + \frac{\text{0,0931}}{12}\right) ^{-(\text{30}
+                                                                \times 12)} \right]} {\left(\frac{\text{0,0931}}{12}
+                                                                \right)} \\
+                                                                x & = \frac{\text{187 231,87} \times
+                                                                \frac{\text{0,0931}}{12} } { \left[ 1 - \left(1 +
+                                                                \frac{\text{0,0931}}{12}\right) ^{- \text{360} }
+                                                                \right]} \\
+                                                                x &= \text{1 548,458} \ldots
+                                                                \end{align*}
+
+
+
+Therefore, Anathi would pay \(\text{R}\,\text{1
+                                                                        548,46}\) each month.
+
+The total cost of the loan would be:
+
+\[\quad \text{R}\,\text{1 548,46} \times 12 \times
+                                                                        \text{30} = \text{R}\,\text{557 445,60}\]
+
+The amount of interest:
+
+\[\text{R}\,\text{557 445,60} - \text{R}\,\text{187
+                                                                        231,87} = \text{R}\,\text{370 213,73}\]
+
+Anathi would have saved: \[\text{R}\,\text{388
+                                                                        743,83} - \text{R}\,\text{370 213,73} =
+                                                                        \text{R}\,\text{18 530,10}\]

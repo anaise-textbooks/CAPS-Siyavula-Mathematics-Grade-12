@@ -1,0 +1,336 @@
+## 6.3 Rules for differentiation (EMCH7)
+
+Determining the derivative of a function from first principles requires a long calculation and it is
+                        easy to make mistakes. However, we can use this method of finding the derivative from first
+                        principles to obtain rules which make finding the derivative of a function much simpler.
+
+## Rules for differentiation
+
+2. Differentiate the following from first principles:
+   2. \(f\left(x\right)=x\)
+   4. \(f\left(x\right)=-4x\)
+   6. \(f\left(x\right)={x}^{2}\)
+   8. \(f\left(x\right)=3{x}^{2}\)
+   10. \(f\left(x\right)=-{x}^{3}\)
+   12. \(f\left(x\right)=2{x}^{3}\)
+   14. \(f\left(x\right)=\frac{1}{x}\)
+   16. \(f\left(x\right)=-\frac{2}{x}\)
+4. Complete the table:
+   | \(f\left(x\right)\) | \({f}'\left(x\right)\) |
+   | --- | --- |
+   | \(x\) |  |
+   | \(-4x\) |  |
+   | \(x^{2}\) |  |
+   | \(3x^{2}\) |  |
+   | \(-x^{3}\) |  |
+   | \(2x^{3}\) |  |
+   | \(\frac{1}{x}\) |  |
+   | \(-\frac{2}{x}\) |  |
+6. Can you identify a pattern for determining the derivative?
+
+**Rules for differentiation**
+
+- General rule for differentiation:
+                                          \[\frac{d}{dx}\left[{x}^{n}\right]=n{x}^{n-1}, \text{ where } n \in \mathbb{R}
+                                          \text{ and } n \ne 0.\]
+- The derivative of a constant is equal to zero.
+                                          \[\frac{d}{dx}\left[k\right]= 0\]
+- The derivative of a constant multiplied by a function is equal to the
+                                                  constant multiplied by the derivative of the function.
+                                          \[\frac{d}{dx}\left[k \cdot f\left(x\right) \right]=k \frac{d}{dx}\left[
+                                          f\left(x\right) \right]\]
+- The derivative of a sum is equal to the sum of the derivatives.
+                                          \[\frac{d}{dx}\left[f\left(x\right)+g\left(x\right)\right]=\frac{d}{dx}\left[f\left(x\right)
+                                          \right] + \frac{d}{dx}\left[g\left(x\right)\right]\]
+- The derivative of a difference is equal to the difference of the derivatives.
+                                          \[\frac{d}{dx}\left[f\left(x\right) -
+                                          g\left(x\right)\right]=\frac{d}{dx}\left[f\left(x\right) \right] -
+                                          \frac{d}{dx}\left[g\left(x\right)\right]\]
+
+<Callout type="note" title="Note">
+<VideoPlayer src="https://www.youtube.com/embed/SjecBgK-SNY" title="Video: 28WD" />
+</Callout>
+
+<Callout type="tip" title="Worked example 11: Rules of differentiation">
+**Question:**
+Use the rules of differentiation to find the derivative of each of the following:
+
+2. \(y = 3x^{5}\)
+4. \(p = \frac{1}{4}q^{2}\)
+6. \(f(x) = 60\)
+8. \(y = 12x^{3} + 7x\)
+10. \(m = \frac{3}{2}n^{4} - 1\)
+
+**Apply the appropriate rules to determine the derivative:**
+2. \(\frac{dy}{dx} = 3 \left(5x^{4}\right) = 15x^{4}\)
+4. \(\frac{dp}{dq} = \frac{1}{4}\left(2q\right) = \frac{1}{2}q\)
+6. \(f'(x) = 0\)
+8. \(\frac{dy}{dx} = 12\left(3x^{2}\right) + 7 = 36x^{2} + 7\)
+10. \(\frac{dm}{dn} = \frac{3}{2}\left(4n^{3}\right) - 0 = 6n^{3}\)
+</Callout>
+
+<Callout type="tip" title="Worked example 12: Rules of differentiation">
+**Question:**
+Differentiate the following with respect to \(t\):
+
+2. \(g(t) = 4\left( t + 1 \right)^{2} \left( t -3 \right)\)
+4. \(k(t) = \frac{(t + 2)^{3}}{\sqrt{t}}\)
+
+**Expand the expression and apply the rules of differentiation:**
+We have not learnt a rule for differentiating a product, therefore we must expand the
+                                        brackets and simplify before we can determine the derivative:
+
+                                \begin{align*}
+                                g(t) &= 4\left( t + 1 \right)^{2} \left( t - 3 \right) \\
+                                &= 4\left( t^{2} + 2t + 1 \right) \left( t - 3 \right) \\
+                                &= 4\left( t^{3} + 2t^{2} + t - 3t^{2} - 6t - 3 \right) \\
+                                &= 4\left( t^{3} - t^{2} - 5t - 3 \right) \\
+                                &= 4t^{3} - 4t^{2} - 20t - 12 \\
+                                & \\
+                                \therefore g'(t) &= 4 \left( 3t^{2} \right) - 4\left( 2t \right) - 20 - 0 \\
+                                &= 12t^{2} - 8t - 20
+                                \end{align*}
+
+**Expand the expression and apply the rules of differentiation:**
+We have not learnt a rule for differentiating a quotient, therefore we must first
+                                        simplify the expression and then we can differentiate:
+
+                                \begin{align*}
+                                k(t) &= \frac{(t + 2)^{3}}{\sqrt{t}} \\
+                                &= \frac{(t + 2)(t^{2} + 4t + 4)}{\sqrt{t}} \\
+                                &= \frac{ t^{3} + 6t^{2} + 12t + 8}{t^{\frac{1}{2}}} \\
+                                &= t^{-\frac{1}{2}} \left( t^{3} + 6t^{2} + 12t + 8 \right) \\
+                                &= t^{\frac{5}{2}} + 6t^{\frac{3}{2}} + 12t^{\frac{1}{2}} + 8t^{-\frac{1}{2}} \\
+                                & \\
+                                \therefore g'(t) &= \frac{5}{2}t^{\frac{3}{2}} + 6 \left( \frac{3}{2}t^{\frac{1}{2}}
+                                \right) + 12 \left( \frac{1}{2} t^{-\frac{1}{2}} \right) + 8 \left( - \frac{1}{2}
+                                t^{-\frac{3}{2}} \right) \\
+                                &= \frac{5}{2}t^{\frac{3}{2}} + 9t^{\frac{1}{2}} + 6t^{-\frac{1}{2}} -
+                                4t^{-\frac{3}{2}}
+                                \end{align*}
+
+
+**Important: always write the final answer with positive exponents.**
+
+                                \begin{align*}
+                                g'(t) &= \frac{5}{2}t^{\frac{3}{2}} + 9t^{\frac{1}{2}} + \frac{6}{t^{\frac{1}{2}}} -
+                                \frac{4}{t^{\frac{3}{2}}}
+                                \end{align*}
+</Callout>
+
+**When to use the rules for differentiation:**
+
+- If the question does not specify how we must determine the derivative, then we use the rules
+                                  for differentiation.
+
+**When to differentiate using first principles:**
+
+- If the question specifically states to use first principles.
+- If we are required to differentiate using the definition of a derivative, then we use first
+                                  principles.
+
+## Rules for differentiation
+
+### Textbook Exercise 6.4
+
+Differentiate the following:
+
+**Problem:**
+\(y=3x^{2}\)
+
+**Solution:**
+\(\frac{dy}{dx}=6x\)
+
+**Problem:**
+\(f(x)=25x\)
+
+**Solution:**
+\(f'(x)=\text{25}\)
+
+**Problem:**
+\(k(x)=-30\)
+
+**Solution:**
+\(k'(x)=\text{0}\)
+
+**Problem:**
+\(y=-4x^{5}+2\)
+
+**Solution:**
+\(\frac{dy}{dx}=-20x^{4}\)
+
+**Problem:**
+\(g(x)=16x^{-2}\)
+
+**Solution:**
+\(g'(x)=-32x^{-3}=-\frac{32}{x^{3}}\)
+
+**Problem:**
+\(y=10(7-3)\)
+
+**Solution:**
+\(y=40 \therefore y'=0\)
+
+**Problem:**
+\(q(x)=x^{4}-6x^{2}-1\)
+
+**Solution:**
+\(q'(x)=4x^{3}-12x\)
+
+**Problem:**
+\(y=x^{2}+x+4\)
+
+**Solution:**
+\(\frac{dy}{dx}=2x+1\)
+
+**Problem:**
+\(f(x)=\frac{1}{3}x^{3} - x^{2} + \frac{2}{5}\)
+
+**Solution:**
+\(f'(x)=x^{2}-2x\)
+
+**Problem:**
+\(y=3x^{\frac{3}{2}} - 4x + 20\)
+
+**Solution:**
+\(\frac{dy}{dx}=\frac{9}{2}x^{\frac{1}{2}}-4\)
+
+**Problem:**
+\(g(x)=x(x+2)+5x\)
+
+**Solution:**
+\(g(x)=x^{2}+7x \\
+                                                        g'(x)=2x+7\)
+
+**Problem:**
+\(p(x)=200[x^{3}-\frac{1}{2}x^{2}+\frac{1}{5}x-40]\)
+
+**Solution:**
+\(p'(x)=200[3x^{2}-x+\frac{1}{5}] \\
+                                                        p'(x)=600x^{2}-200x+40\)
+
+**Problem:**
+\(y=14(x-1)\left[\frac{1}{2} + x^{2}\right]\)
+
+**Solution:**
+\(y=14(x^{3} - x^{2} + \frac{1}{2}x - \frac{1}{2}) \\
+                                                        \therefore \frac{dy}{dx} = 14\left(3x^{2} - 2x +
+                                                        \frac{1}{2}\right) \\
+                                                        = 42x^{2}-28x+7\)
+
+**Problem:**
+Find \({f}'\left(x\right)\) if
+                                                        \(f\left(x\right)=\frac{{x}^{2}-5x+6}{x-2}\).
+
+**Solution:**
+\begin{align*}
+                                                        f(x) & = \frac{x^{2}-5x+6}{x-2}\\
+                                                        & = \frac{(x-3)(x-2)}{x-2}\\
+                                                        & = x-3\\
+                                                        f'(x) & = \text{1}
+                                                        \end{align*}
+
+**Problem:**
+Find \({f}'\left(y\right)\) if \(f\left(y\right)=\sqrt{y}\).
+
+**Solution:**
+\begin{align*}
+                                                        f(y) & = \sqrt{y}\\
+                                                        & = y^{\frac{1}{2}}\\
+                                                        f'(y) & = \frac{1}{2}y^{-\frac{1}{2}}\\
+                                                        & = \frac{1}{2\sqrt{y}}
+                                                        \end{align*}
+
+**Problem:**
+Find \({f}'\left(z\right)\) if
+                                                        \(f\left(z\right)=\left(z-1\right)\left(z+1\right)\).
+
+**Solution:**
+\begin{align*}
+                                                        f(z) & = (z-1)(z+1)\\
+                                                        & = z^{2}-1\\
+                                                        f'(z) & = 2z
+                                                        \end{align*}
+
+**Problem:**
+Determine \(\frac{dy}{dx}\) if \(y=\frac{{x}^{3}+2\sqrt{x}-3}{x}\).
+
+**Solution:**
+\begin{align*}
+                                                        y & = \frac{x^{3} + 2\sqrt{x}-3}{x}\\
+                                                        y & = x^{2}+2x^{-\frac{1}{2}}-3x^{-1}\\
+                                                        \frac{dy}{dx} & =
+                                                        2x+2\left(-\frac{1}{2}\right)x^{-\frac{3}{2}}-3(-1)x^{-2}\\
+                                                        & = 2x-\frac{1}{\sqrt{x^{3}}}+\frac{3}{x^{2}}
+                                                        \end{align*}
+
+**Problem:**
+Determine the derivative of \(y=\sqrt{{x}^{3}}+\frac{1}{3{x}^{3}}\).
+
+**Solution:**
+\begin{align*}
+                                                        y & = x^{\frac{3}{2}}+\frac{1}{3}x^{-3}\\
+                                                        \frac{dy}{dx} & = \frac{3}{2}x^{\frac{1}{2}}-x^{-4}\\
+                                                        & = \frac{3}{2}\sqrt{x} -\frac{1}{x^{4}}
+                                                        \end{align*}
+
+**Problem:**
+Find \(D_{x}\left[x^{\frac{3}{2}} -
+                                                        \dfrac{3}{x^{\frac{1}{2}}}\right]^{2}\).
+
+**Solution:**
+\begin{align*}
+                                                D_{x}\left[x^{\frac{3}{2}} - \dfrac{3}{x^{\frac{1}{2}}}\right]^{2} &
+                                                = D_{x}\left[x^{\frac{3}{2}} -
+                                                \dfrac{3}{x^{\frac{1}{2}}}\right]\left[x^{\frac{3}{2}} -
+                                                \dfrac{3}{x^{\frac{1}{2}}}\right]\\
+                                                & = D_{x}\left[x^{3}-2(3x)+\frac{9}{x}\right]\\
+                                                & = D_{x}\left[x^{3}-6x+9x^{-1}\right]\\
+                                                & = 3x^{2}-6-9x^{-2}\\
+                                                & = 3x^{2}-6-\frac{9}{x^{2}}
+                                                \end{align*}
+
+**Problem:**
+Find \(\frac{dy}{dx}\) if \(x=2y+3\).
+
+**Solution:**
+Make \(y\) the subject of the formula in order to differentiate \(y\)
+                                                        with respect to \(x\).
+
+                                                \begin{align*}
+                                                y & = \frac{1}{2}x - \frac{3}{2} \\
+                                                \therefore \frac{dy}{dx}& = \frac{1}{2}
+                                                \end{align*}
+
+**Problem:**
+Determine \(f'(\theta)\) if \(f(\theta) = 2(\theta^{\frac{3}{2}} -
+                                                        3\theta^{-\frac{1}{2}})^{2}\).
+
+**Solution:**
+\begin{align*}
+                                                f(\theta) &= 2(\theta^{\frac{3}{2}} - 3\theta^{-\frac{1}{2}})^{2} \\
+                                                &= 2(\theta^{\frac{3}{2}} -
+                                                3\theta^{-\frac{1}{2}})(\theta^{\frac{3}{2}} - 3\theta^{-\frac{1}{2}})
+                                                \\
+                                                &= 2(\theta^{3} - 6\theta + 9\theta^{-1}) \\
+                                                \therefore f'(\theta) &= 2(3\theta^{2} - 6 - 9\theta^{-2}) \\
+                                                &= 2(3\theta^{2} - 6 - \frac{9}{\theta^{2}}) \\
+                                                &= 6\theta^{2} - 12 - \frac{18}{\theta^{2}}
+                                                \end{align*}
+
+**Problem:**
+Find \(\frac{dp}{dt}\) if \(p(t) = \frac{(t + 1)^{3}}{\sqrt{t}}\).
+
+**Solution:**
+\begin{align*}
+                                                p(t) &= \frac{(t + 1)^{3}}{\sqrt{t}} \\
+                                                &= \frac{t^{3} + 3t^{2} + 3t + 1}{t^{\frac{1}{2}}} \\
+                                                &= t^{-\frac{1}{2}}(t^{3} + 3t^{2} + 3t + 1) \\
+                                                &= t^{\frac{5}{2}} + 3t^{\frac{3}{2}} + 3t^{\frac{1}{2}} +
+                                                t^{-\frac{1}{2}} \\
+                                                \therefore \frac{dp}{dt}&= \frac{5}{2}t^{\frac{3}{2}} +
+                                                \frac{9}{2}t^{\frac{1}{2}} + \frac{3}{2}t^{-\frac{1}{2}} -
+                                                \frac{1}{2}t^{-\frac{3}{2}} \\
+                                                &= \frac{5}{2}t^{\frac{3}{2}} + \frac{9}{2}t^{\frac{1}{2}} +
+                                                \frac{3}{2t^{\frac{1}{2}}} - \frac{1}{2t^{\frac{3}{2}}}
+                                                \end{align*}

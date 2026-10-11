@@ -1,0 +1,351 @@
+## 1.3 Series (EMCDV)
+
+It is often important and valuable to determine the sum of the terms of an arithmetic or geometric sequence. The
+      sum of any sequence of numbers is called a series.
+
+**Finite series**
+
+We use the symbol \({S}_{n}\) for the sum of the first \(n\) terms of a sequence \(\left\{{T}_{1}; {T}_{2};
+      {T}_{3}; \ldots;{T}_{n}\right\}\):
+
+    \[{S}_{n}={T}_{1}+{T}_{2}+{T}_{3}+\cdots + {T}_{n}\]
+
+
+
+If we sum only a finite number of terms, we get a finite series.
+
+For example, consider the following sequence of numbers
+
+    \[1; 4; 9; 16; 25; 36; 49; \ldots\]
+
+
+
+We can calculate the sum of the first four terms:
+
+    \[{S}_{4}=1+4+9+16=30\]
+
+
+
+This is an example of a finite series since we are only summing four terms.
+
+**Infinite series**
+
+If we sum infinitely many terms of a sequence, we get an infinite series:
+
+    \[{S}_{\infty }={T}_{1}+{T}_{2}+{T}_{3}+ \cdots\]
+
+
+### Sigma notation (EMCDW)
+
+Sigma notation is a very useful and compact notation for writing the sum of a given number of terms of a
+        sequence.
+
+A sum may be written out using the summation symbol \(\sum\) (Sigma), which is the capital letter
+        “S” in the Greek alphabet. It indicates that you must sum the expression to the right of the
+        summation symbol:
+
+For example,
+
+      \[\sum _{n=1}^{5}{2n} = 2 + 4 + 6 + 8 + 10 = 30\]
+
+
+
+In general,
+
+      \[\sum _{i=m}^{n}{T}_{i}={T}_{m}+{T}_{m+1}+\cdots +{T}_{n-1}+{T}_{n}\]
+
+
+
+where
+
+- \(i\) is the index of the sum;
+- \(m\) is the lower bound (or start index), shown below the summation symbol;
+- \(n\) is the upper bound (or end index), shown above the summation symbol;
+- \({T}_{i}\) is a term of a sequence;
+- the number of terms in the series \(= \text{end index} - \text{start index} + \text{1}\).
+
+The index \(i\) increases from \(m\) to \(n\) by steps of \(\text{1}\).
+
+Note that this is also sometimes written as:
+
+      \[\sum _{i=m}^{n}{a}_{i}={a}_{m}+{a}_{m+1}+\cdots +{a}_{n-1}+{a}_{n}\]
+
+
+
+When we write out all the terms in a sum, it is referred to as the expanded form.
+
+If we are summing from \(i=1\) (which implies summing from the first term in a sequence), then we can use
+        either \({S}_{n}\) or \(\sum\) notation:
+
+      \[{S}_{n}=\sum _{i=1}^{n}{a}_{i}={a}_{1}+{a}_{2}+\cdots +{a}_{n} \quad (n \text{ terms})\]
+
+
+<Callout type="tip" title="Worked example 4: Sigma notation">
+**Question:**
+Expand the sequence and find the value of the series:
+
+          \[\sum _{n=1}^{6}{2}^{n}\]
+
+**Expand the formula and write down the first six terms of the sequence:**
+\begin{align*}
+          \sum _{n=1}^{6}{2}^{n} &= 2^{1} + 2^{2} + 2^{3} + 2^{4} + 2^{5} + 2^{6} \quad (\text{6} \text{ terms}) \\
+          &= 2 + 4 + 8 + 16 + 32 + 64
+          \end{align*}
+
+
+This is a geometric sequence \(2; 4; 8; 16; 32; 64\) with a constant ratio of \(\text{2}\) between
+            consecutive terms.
+
+**Determine the sum of the first six terms of the sequence:**
+\begin{align*}
+          S _{6} &= 2 + 4 + 8 + 16 + 32 + 64 \\
+          &= 126
+          \end{align*}
+</Callout>
+
+<Callout type="tip" title="Worked example 5: Sigma notation">
+**Question:**
+Find the value of the series:
+
+          \[\sum _{n=3}^{7}{2an}\]
+
+**Expand the sequence and write down the five terms:**
+\begin{align*}
+          \sum _{n=3}^{7}{2an} &= 2a(3) + 2a(4) + 2a(5) + 2a(6) + 2a(7) \quad (5 \text{ terms}) \\
+          &= 6a + 8a + 10a +12a + 14a
+          \end{align*}
+
+**Determine the sum of the five terms of the sequence:**
+\begin{align*}
+          S _{5} &= 6a + 8a + 10a +12a + 14a \\
+          &= 50a
+          \end{align*}
+</Callout>
+
+<QuizCard id="m12-01-03a" title="Interactive Exercise 1.6" question="\[                     \begin{array}{c}                         \displaystyle\sum_{a=2}^{8}a h                     \end{array}                 \] How many terms are in the series?" options=[] answer="7" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Determine the number of terms To calculate the number of terms in a series, we have to determine the difference                         between the end index                         and lower bound                         and add \(1\) . The start index                         of a series is the number below the summation symbol, in this case \(2\) , and the                         upper bound                         of the series is the number above the summation symbol, in this case \(8\) . Therefore, the number of terms in the series is: \[                         \begin{aligned}                             8 - 2 + 1 = 7 \text{ terms}                         \end{aligned}                     \] Submit your answer as:" />
+
+<QuizCard id="m12-01-03a" title="Interactive Exercise 1.6" question="\[                     \begin{array}{c}                         \displaystyle\sum_{n=5}^{10}7^{n}                     \end{array}                 \] How many terms are in the series?" options=[] answer="6" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Determine the number of terms To calculate the number of terms in a series, we have to determine the difference                         between the end index                         and lower bound                         and add \(1\) . The start index                         of a series is the number below the summation symbol, in this case \(5\) , and the                         end index                         of the series is the number above the summation symbol, in this case \(10\) . Therefore, the number of terms in the series is: \[                         \begin{aligned}                             10 - 5 + 1 = 6 \text{ terms}                         \end{aligned}                     \] Submit your answer as:" />
+
+<QuizCard id="m12-01-03a" title="Interactive Exercise 1.6" question="\[                     \begin{array}{c}                         \displaystyle\sum_{a=2}^{9}7^{a}                     \end{array}                 \] How many terms are in the series?" options=[] answer="8" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Determine the number of terms To calculate the number of terms in a series, we have to determine the difference                         between the end index                         and lower bound                         and add \(1\) . The start index                         of a series is the number below the summation symbol, in this case \(2\) , and the                         end index                         of the series is the number above the summation symbol, in this case \(9\) . Therefore, the number of terms in the series is: \[                         \begin{aligned}                             9 - 2 + 1 = 8 \text{ terms}                         \end{aligned}                     \] Submit your answer as:" />
+
+<QuizCard id="m12-01-03a" title="Interactive Exercise 1.6" question="Given: \(\displaystyle\sum_{m = 3}^{6} a\cdot \left(-3\right)^{m} = 2700\) Calculate the value of \(a\) ." options=[] answer="5" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Expand the series We have an equation with sigma notation and we must find the value of the variable \(a\) . In order to accomplish this, our first step is to expand the series from the sigma notation.  We do this by substituting the value of the lower bound into the general term, \(a\cdot \left(-3\right)^{m}\) , and adding \(1\) to the value of the index variable, \(m\) , for each successive term. We do this until the value of \(m\) is equal to  upper bound, \(6\) . In this case, the expanded series is: \[                         \begin{aligned}                             & \displaystyle\sum_{m=3}^{6}a\cdot \left(-3\right)^{m} \\ &= a\left( -3\right) ^ {3} + a\left(-3\right) ^ {3 + 1} + a\left(-3\right) ^ {4 + 1} + a\left(-3\right) ^ {5 + 1} \\                              & = 540 a                         \end{aligned}                 \] Solve for \(a\) . Now that we have expanded our series, we can solve for \(a\) . In order for us to solve for \(a\) , we need to sum the terms of our expanded series and isolate \(a\) . \begin{aligned}540 a&= 2700 \\ a &= \frac{2700}{540} \\ a &= 5\end{aligned} Therefore, our answer is: \(a = 5\) . Submit your answer as:" />
+
+<Callout type="tip" title="Worked example 6: Sigma notation">
+**Question:**
+Write the following series in sigma notation:
+
+          \[31 + 24 + 17 + 10 + 3\]
+
+**Consider the series and determine if it is an arithmetic or geometric series:**
+First test for an arithmetic series: is there a common difference?
+
+We let:
+
+          \[\begin{array}{rll}
+          T_{1} &= 31; &T_{4} = 10; \\
+          T_{2} &= 24; &T_{5} = 3; \\
+          T_{3} &= 17; &
+          \end{array}\]
+
+
+
+We calculate:
+
+          \begin{align*}
+          d &= T_{2} - T_{1} \\
+          &= 24 - 31 \\
+          &= -7 \\
+          d &= T_{3} - T_{2} \\
+          &= 17 - 24 \\
+          &= -7
+          \end{align*}
+
+
+There is a common difference of \(-7\), therefore this is an arithmetic series.
+
+**Determine the general formula of the series:**
+\begin{align*}
+          T_{n} &= a + (n-1)d \\
+          &= 31 + (n-1)(-7) \\
+          &= 31 -7n + 7 \\
+          &= -7n + 38
+          \end{align*}
+
+
+**Be careful:** brackets must be used when substituting \(d = -7\) into the general term.
+            Otherwise the equation would be \(T_{n} = 31 + (n-1) - 7\), which would be incorrect.
+
+**Determine the sum of the series and write in sigma notation:**
+\begin{align*}
+          31 + 24 + 17 + 10 + 3 &= 85 \\
+          \therefore \sum _{n=1}^{5}{(-7n + 38)} &= 85
+          \end{align*}
+</Callout>
+
+#### Rules for sigma notation
+
+2. Given two sequences, \({a}_{i}\) and \({b}_{i}\):
+               \[\sum _{i=1}^{n}\left({a}_{i}+{b}_{i}\right) = \sum _{i=1}^{n}{a}_{i}+\sum _{i=1}^{n}{b}_{i}\]
+4. For any constant \(c\) that is not dependent on the index \(i\):
+               \begin{align*}
+               \sum _{i=1}^{n} (c \cdot {a}_{i}) & = c\cdot{a}_{1}+c\cdot{a}_{2}+c\cdot{a}_{3}+\cdots +c\cdot{a}_{n} \\
+               & = c \left({a}_{1}+{a}_{2}+{a}_{3}+\cdots +{a}_{n}\right) \\
+               & = c\sum _{i=1}^{n}{a}_{i}
+               \end{align*}
+6. Be accurate with the use of brackets:
+   Example 1:
+               \begin{align*}
+               \sum _{n=1}^{3}{(2n + 1)}& = 3 + 5 + 7 \\
+               & = 15
+               \end{align*}
+   Example 2:
+               \begin{align*}
+               \sum _{n=1}^{3}{(2n) + 1}& = (2 + 4 + 6) + 1 \\
+               & = 13
+               \end{align*}
+   Note: the series in the second example has the general term \(T_{n} = 2n\) and the \(\text{+1}\) is added
+                 to the sum of the three terms. It is very important in sigma notation to use brackets correctly.
+8. \[\sum_{i = m}^{n}{a_{i}}\]
+   The values of \(i\):
+   - start at \(m\) (\(m\) is not always \(\text{1}\));
+   - increase in steps of \(\text{1}\);
+   - and end at \(n\).
+
+<QuizCard id="m12-01-03b" title="Interactive Exercise 1.7" question="Given: \(\displaystyle\sum_{n = 2}^{5} -7n = c\) Find the value of \(c\) ." options=[] answer="-98" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Expand the series We have an equation with sigma notation and we must find the value of the variable \(c\) . In order to accomplish this, our first step is to expand the series from the sigma notation.  We do this by substituting the value of the start index into the general term, \(-7n\) , and adding \(1\) to the value of the index variable, \(n\) , for each successive term. We do this until the value of \(n\) is equal to  upper bound, \(5\) . In this case, the expanded series is: \[                         \begin{aligned}                             & \displaystyle\sum_{n=2}^{5}-7n \\ &= \left(-7\right) \left(2\right) + \left(-7\right) \left(2 + 1 \right) + \left(-7\right) \left(3 + 1 \right) + \left(-7\right)\left(4 + 1 \right) \\ &=\left(-14\right) + \left(-21\right) + \left(-28\right) + \left(-35\right) \\                             & = -98                         \end{aligned}                 \] Solve for \(c\) . Now that we have expanded our series, we can solve for \(c\) . In this case, \(c\) is equal to the sum of the series. Therefore, our answer is: \[\begin{array}{c}c = -98\end{array}\] Submit your answer as:" />
+
+<QuizCard id="m12-01-03b" title="Interactive Exercise 1.7" question="Given: \(\displaystyle\sum_{p = 2}^{5} \left(-2\right)^{p} = e\) Calculate the value of \(e\) ." options=[] answer="-20" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Expand the series We have an equation with sigma notation and we must find the value of the variable \(e\) . In order to accomplish this, our first step is to expand the series from the sigma notation.  We do this by substituting the value of the lower bound into the general term, \(\left(-2\right)^{p}\) , and adding \(1\) to the value of the index variable, \(p\) , for each successive term. We do this until the value of \(p\) is equal to  upper bound, \(5\) . In this case, the expanded series is: \[                         \begin{aligned}                             & \displaystyle\sum_{p=2}^{5}\left(-2\right)^{p} \\ &= \left(-2\right)^{2} + \left(-2\right)^{2+1} + \left(-2\right)^{3+1} + \left(-2\right)^{4+1} \\                               & = -20                         \end{aligned}                 \] Solve for \(e\) . Now that we have expanded our series, we can solve for \(e\) . In this case, \(e\) is equal to the sum of the series. Therefore, our answer is: \[\begin{array}{c}e = -20\end{array}\] Submit your answer as:" />
+
+<QuizCard id="m12-01-03b" title="Interactive Exercise 1.7" question="Given: \(\displaystyle\sum_{i = 1}^{5} \left(-2\right)^{i} = e\) Determine the value of \(e\) ." options=[] answer="-22" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Expand the series We have an equation with sigma notation and we must find the value of the variable \(e\) . In order to accomplish this, our first step is to expand the series from the sigma notation.  We do this by substituting the value of the lower bound into the general term, \(\left(-2\right)^{i}\) , and adding \(1\) to the value of the index variable, \(i\) , for each successive term. We do this until the value of \(i\) is equal to  end index, \(5\) . In this case, the expanded series is: \[                         \begin{aligned}                             & \displaystyle\sum_{i=1}^{5}\left(-2\right)^{i} \\ &= \left(-2\right)^{1} + \left(-2\right)^{1+1} + \left(-2\right)^{2+1} + \left(-2\right)^{3+1} + \left(-2\right)^{4+1} \\                               & = -22                         \end{aligned}                 \] Solve for \(e\) . Now that we have expanded our series, we can solve for \(e\) . In this case, \(e\) is equal to the sum of the series. Therefore, our answer is: \[\begin{array}{c}e = -22\end{array}\] Submit your answer as:" />
+
+<QuizCard id="m12-01-03b" title="Interactive Exercise 1.7" question="The first term of an arithmetic series is \(\text{10}\) while the last term is \(\text{85}\) . In total, there are \(\text{16}\) terms in the series. Determine the sum of these \(\text{16}\) terms, \( S_{16} \) ." options=[] answer="760" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Identify the values of \(n, a\) and \(l\) For this question we have the first and last terms of an arithmetic series, and we need to calculate the sum of the first \(\text{16}\) terms in the series. The formula for the sum of terms in an arithmetic series is \(S_{n} = \dfrac{n}{2} \left( a + l \right) \) : \( S_{n} \) is the sum we want \( n \) is the number of terms we are summing \( a \) is the first term of the series \( l \) is the last term of the series We need the values of \( n, a \) and \( l \) - then we can substitute them into the formula and evaluate the answer. We can take the value of \(n\) straight from the question: it is in the words \"the sum of these \(\text{16}\) terms\" as well as in the symbol \" \( S_{16} \) . \" Since we want to add up \(16\) terms of the series, \( n = 16\) . The first term is given in the question: \( a = 10\) . We can also get the last term in the series directly from the question: \( l = 85\) . We now have the values \( n = 16, a = 10\) and \( l = 85 \) . Substitute into the formula and evaluate the answer Now substitute the values into the formula and work out the answer. \[ 				  \begin{aligned} 				  S_{n} & = \frac{n}{2} \left( a + l \right) \\ 				  S_{16} &= \frac{16}{2} \left( \left(10\right) + \left(85\right) \right)\\ 				  & = 8\left( 95 \right) \\ 				  & = \text{760} 				  \end{aligned} 				\] The sum of the first \(\text{16}\) terms for the series is \( S_{16} = \text{760}\) . Submit your answer as:" />
+
+## Sigma notation
+
+### Textbook Exercise 1.7
+
+Determine the value of the following:
+
+**Problem:**
+\[\sum _{k=1}^{4}{2}\]
+
+**Solution:**
+\(2 + 2 + 2 + 2 = 8\)
+
+**Problem:**
+\[\sum _{i=-1}^{3}i\]
+
+**Solution:**
+\begin{align*}
+                  \sum _{i=-1}^{3}i & = -1 + 0 + 1 + 2 + 3 \\
+                  & = 5
+                  \end{align*}
+
+**Problem:**
+\[\sum _{n=2}^{5}(3n - 2)\]
+
+**Solution:**
+\begin{align*}
+                  \sum _{n=2}^{5}(3n - 2) & = [3(2) - 2] + [3(3) - 2] + [3(4) - 2] + [3(5) - 2] \\
+                  & = 4 + 7 + 10 + 13 \\
+                  &= 34
+                  \end{align*}
+
+Expand the series:
+
+**Problem:**
+\[\sum _{k=1}^{6}{0^{k}}\]
+
+**Solution:**
+\(0^{1} + 0^{2} + 0^{3} + 0^{4} + 0^{5} + 0^{6} = 0\)
+
+**Problem:**
+\[\sum_{n=-3}^{0}{8}\]
+
+**Solution:**
+\(8 + 8 + 8 + 8 = 32\)
+
+**Problem:**
+\[\sum _{k=1}^{5}(ak)\]
+
+**Solution:**
+\begin{align*}
+                  \sum _{k=1}^{5}(ak) & = a + 2a + 3a + 4a + 5a \\
+                  & = 15a
+                  \end{align*}
+
+Calculate the value of \(a\):
+
+**Problem:**
+\[\sum _{k=1}^{3} \left( a \cdot {2}^{k-1} \right) =28\]
+
+**Solution:**
+\begin{align*}
+                  \sum _{k=1}^{3} \left( a \cdot {2}^{k-1} \right) &=28\\
+                  \therefore a+ 2a + 4a & = 28 \\
+                  7a &= 28 \\
+                  \therefore a &= 4
+                  \end{align*}
+
+**Problem:**
+\[\sum _{j=1}^{4} \left( 2^{-j} \right) = a\]
+
+**Solution:**
+\begin{align*}
+                  \sum _{j=1}^{4} \left( 2^{-j} \right) &= a \\
+                  \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} & = a \\
+                  \therefore \frac{15}{16} &= a
+                  \end{align*}
+
+**Problem:**
+Write the following in sigma notation:
+
+                \[\frac{1}{9} + \frac{1}{3} + 1 + 3\]
+
+**Solution:**
+Geometric series with \(a = \frac{1}{9}\), constant ratio \(r = 3\) and general formula \(T_{n} =
+                  ar^{n-1}\).
+
+                \begin{align*}
+                T_{n} &= ar^{n-1} \\
+                & = \frac{1}{9}(3)^{n-1} \\
+                &= 3^{-2} \cdot 3^{n-1} \\
+                &= 3^{n-3} \\
+                \therefore & \sum _{n=1}^{4} \left( 3^{n-3} \right)
+                \end{align*}
+
+**Problem:**
+Write the sum of the first \(\text{25}\) terms of the series below in sigma notation:
+
+                \[11 + 4 - 3 - 10 \ldots\]
+
+**Solution:**
+Arithmetic series with \(a = 11\), common difference \(d = -7\) and general formula \(T_{n} = a +
+                  (n-1)d\).
+
+                \begin{align*}
+                T_{n} &= a + (n-1)d \\
+                & = 11 + (n-1)(-7)\\
+                &= 11 -7n + 7 \\
+                &= 18 - 7n \\
+                \therefore & \sum _{n = 1}^{25} \left( 18 - 7n \right)
+                \end{align*}
+
+**Problem:**
+Write the sum of the first \(\text{1 000}\) natural, odd numbers in sigma notation.
+
+**Solution:**
+\[1 + 3 + 5 + 7 + \ldots\]
+
+
+
+Arithmetic series with \(a = 1\), common difference \(d = 2\) and general formula \(T_{n} = a +
+                  (n-1)d\).
+
+                \begin{align*}
+                T_{n} &= a + (n-1)d \\
+                & = 1 + (n-1)(2)\\
+                &= 1 + 2n - 2 \\
+                &= 2n - 1 \\
+                \therefore & \sum _{n=1}^{1000} \left( 2n - 1 \right) \\
+                \text{ or } & \sum _{n=0}^{999} \left( 2n + 1 \right)
+                \end{align*}

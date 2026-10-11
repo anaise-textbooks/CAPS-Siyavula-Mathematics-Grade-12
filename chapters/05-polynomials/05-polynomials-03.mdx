@@ -1,0 +1,354 @@
+## 5.3 Remainder theorem (EMCGV)
+
+## Remainder theorem
+
+Given the following functions:
+
+- \(f(x) = x^{3} + 3x^{2} + 4x + 12\)
+- \(k(x) = x - 1\)
+- \(g(x) = 4x^{3} -2x^{2} + x -7\)
+- \(h(x) = x + 2\)
+
+2. Determine \(\dfrac{f(x)}{k(x)}\) and \(\dfrac{g(x)}{h(x)}\).
+4. Write your answers in the general form: \(a(x)=b(x).Q(x) + R(x)\).
+6. Determine \(f(1)\) and \(g(-2)\).
+8. What do you notice?
+10. Consider the degree of the quotient and the remainder - is there a rule?
+12. What conclusions can you draw?
+14. Write a mathematical equation to describe your conclusions.
+16. Complete the following sentence: a cubic function divided by a linear polynomial gives a quotient with a
+                  degree of \(\ldots \ldots\) and a remainder with a degree of \(\ldots \ldots\), which is called a
+                  constant.
+
+**The Remainder theorem**
+
+A polynomial \(p(x)\) divided by \(cx - d\) gives a remainder of \(p\left(\dfrac{d}{c}\right)\).
+
+In words: the value of the remainder \(R\) is obtained by substituting \(x = \frac{d}{c}\) into the polynomial
+         \(p(x)\).
+
+      \[R = p \left( \dfrac{d}{c} \right)\]
+
+
+
+**NOTE: PROOF NOT FOR EXAMS**
+
+Let the quotient be \(Q(x)\) and let the remainder be \(R\). Therefore we can write:
+
+      \begin{align*}
+      p(x) &= (cx - d) \cdot Q(x) + R \\
+      \therefore p \left( \dfrac{d}{c} \right) &= \left[c\left( \dfrac{d}{c} \right) - d\right] \cdot Q \left(
+      \dfrac{d}{c} \right) + R \\
+      &= (d - d)\cdot Q \left( \dfrac{d}{c} \right) + R \\
+      &= 0 \cdot Q \left( \dfrac{d}{c} \right) + R \\
+      &= R\\
+      \therefore p \left( \dfrac{d}{c} \right) &= R
+      \end{align*}
+
+<Callout type="tip" title="Worked example 7: Finding the remainder">
+**Question:**
+Use the remainder theorem to determine the remainder when \(p(x) = 3x^{3} + 5x^{2} - x + 1\) is divided
+               by the following linear polynomials:
+
+2. \(x + 2\)
+4. \(2x -1\)
+6. \(x + m\)
+
+**Determine the remainder for each linear divisor:**
+The remainder theorem states that any polynomial \(p(x)\) that is divided by \(cx - d\) gives a remainder
+               of \(p\left(\dfrac{d}{c}\right)\):
+
+2. \begin{align*}
+                     p(x) &= 3x^{3} + 5x^{2} - x + 1 \\
+                     p(-2) &= 3 \left( -2 \right)^{3} + 5\left( -2 \right)^{2} - \left( -2 \right) + 1 \\
+                     &= 3 \left( -8 \right) + 5\left( 4 \right) +2 + 1 \\
+                     &= -24 + 20 + 3 \\
+                     \therefore R &= -1
+                     \end{align*}
+4. \begin{align*}
+                     p(x) &= 3x^{3} + 5x^{2} - x + 1 \\
+                     p \left( \frac{1}{2} \right) &= 3\left( \frac{1}{2} \right)^{3} + 5\left( \frac{1}{2} \right)^{2}
+                     - \left( \frac{1}{2} \right)+ 1 \\
+                     &= 3\left( \frac{1}{8} \right) + 5\left( \frac{1}{4}\right) - \left( \frac{1}{2}\right) + 1 \\
+                     &= \frac{3}{8} + \frac{5}{4} + \frac{1}{2} \\
+                     &= \frac{3}{8} + \frac{10}{8} + \frac{4}{8} \\
+                     \therefore R &= \frac{17}{8}
+                     \end{align*}
+6. \begin{align*}
+                     p(x) &= 3x^{3} + 5x^{2} - x + 1 \\
+                     p(m) &= 3\left( -m \right)^{3} + 5\left( -m \right)^{2} - \left( -m \right) + 1 \\
+                     \therefore R &= -3m^{3} + 5m^{2} + m + 1
+                     \end{align*}
+</Callout>
+
+<Callout type="tip" title="Worked example 8: Using the remainder to solve for an unknown variable">
+**Question:**
+Given that \(f(x) = 2x^{3} + x^{2} + kx + 5\) divided by \(2x - 3\) gives a remainder of
+               \(9\frac{1}{2}\), use the remainder theorem to determine the value of \(k\).
+
+**Use the remainder theorem to determine the unknown variable \(k\):**
+From the remainder theorem we know that \(f\left(\frac{3}{2}\right) = 9\frac{1}{2}\) and we can therefore
+               solve for \(k\):
+
+            \begin{align*}
+            f(x) &= 2x^{3} + x^{2} + kx + 5 \\
+            f\left( \frac{3}{2} \right) &= 2 \left( \frac{3}{2} \right)^{3} + \left( \frac{3}{2} \right)^{2} +
+            k\left( \frac{3}{2} \right) + 5 \\
+            9\frac{1}{2} &= 2 \left( \frac{27}{8} \right) + \left( \frac{9}{4} \right) + k\left( \frac{3}{2} \right)
+            + 5 \\
+            9\frac{1}{2} &= \frac{27}{4} + \frac{9}{4} + \frac{3k}{2} + 5 \\
+            9\frac{1}{2} &= \frac{36}{4} + \frac{3k}{2} + 5\\
+            \therefore 9\frac{1}{2} - 9 - 5 &= \frac{3k}{2} \\
+            - 4\frac{1}{2} &= \frac{3k}{2} \\
+            - \frac{9}{2} \times \frac{2}{3} &= k \\
+            \therefore -3 &= k
+            \end{align*}
+
+**Write the final answer:**
+Therefore \(k = -3\) and \(f(x) = 2x^{3} + x^{2} - 3x + 5\).
+</Callout>
+
+## Remainder theorem
+
+### Textbook Exercise 5.4
+
+Use the remainder theorem to determine the remainder \(R\) when \(g(x)\) is divided by \(h(x)\):
+
+**Problem:**
+\begin{align*}
+                        g(x) &= x^{3} + 4x^{2} + 11x - 5 \\
+                        h(x) &= x - 1
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     g(x) &= x^{3} + 4x^{2} + 11x - 5 \\
+                     g(1) &= (1)^{3} + 4(1)^{2} + 11(1) - 5 \\
+                     &= 1 + 4 + 11 - 5 \\
+                     \therefore R &= 11
+                     \end{align*}
+
+**Problem:**
+\begin{align*}
+                        g(x) &= 2x^{3} - 5x^{2} + 8 \\
+                        h(x) &= 2x - 1
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     g(x) &= 2x^{3} - 5x^{2} + 8 \\
+                     g \left( \frac{1}{2} \right) &= 2\left( \frac{1}{2} \right)^{3} - 5\left( \frac{1}{2}
+                     \right)^{2} + 8 \\
+                     &= 2\left( \frac{1}{8} \right) - 5\left( \frac{1}{4} \right) + 8 \\
+                     &= \frac{1}{4} - \frac{5}{4} + 8 \\
+                     \therefore R &= 7
+                     \end{align*}
+
+**Problem:**
+\begin{align*}
+                        g(x) &= 4x^{3} + 5x^{2} + 6x - 1 \\
+                        h(x) &= x + 2
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     g(x) &= 4x^{3} + 5x^{2} + 6x - 1 \\
+                     g (-2) &= 4(-2)^{3} + 5(-2)^{2} + 6(-2) - 1 \\
+                     &= -32 +20 -12 - 1 \\
+                     \therefore R &= -25
+                     \end{align*}
+
+**Problem:**
+\begin{align*}
+                        g(x) &= -5x^{3} - x^{2} -10x + 9 \\
+                        h(x) &= 5x + 1
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     g(x) &= -5x^{3} - x^{2} -10x + 9 \\
+                     g \left( -\frac{1}{5} \right) &= -5\left( -\frac{1}{5} \right)^{3} - \left( -\frac{1}{5}
+                     \right)^{2} -10\left( -\frac{1}{5} \right) + 9 \\
+                     &= -5\left( -\frac{1}{125} \right) - \left( \frac{1}{25} \right) + 2 + 9 \\
+                     &= \frac{1}{25} - \frac{1}{25} + 11 \\
+                     \therefore R &= 11
+                     \end{align*}
+
+**Problem:**
+\begin{align*}
+                        g(x) &= x^{4} + 5x^{2} + 2x - 8 \\
+                        h(x) &= x + 1
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     g(x) &= x^{4} + 5x^{2} + 2x - 8 \\
+                     g (-1) &= (-1)^{4} + 5(-1)^{2} + 2(-1) - 8 \\
+                     &= 1 + 5 - 2 - 8 \\
+                     &= 6 -10 \\
+                     \therefore R &= -4
+                     \end{align*}
+
+**Problem:**
+\begin{align*}
+                        g(x) &= 3x^{5} - 8x^{4} + x^{2} + 2 \\
+                        h(x) &= 2 - x
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     h(x) &= 2 - x \\
+                     \text{If } x = 2: \quad h (2) &= 2 - 2 = 0 \\
+                     g(x) &= h(x) \cdot Q(x) + R \\
+                     g(2) &= h(2) \cdot Q(2) + R \\
+                     \therefore g(2) &= 0 \cdot Q(2) + R \\
+                     g(2) &= 0 + R \\
+                     \therefore R &= 3(2)^{5} - 8(2)^{4} + (2)^{2} + 2 \\
+                     &= 3(32) - 8(16) + 6 \\
+                     &= 96 - 128 + 6 \\
+                     \therefore R &= -26
+                     \end{align*}
+
+**Problem:**
+\begin{align*}
+                        g(x) &= 2x^{100} - x - 1 \\
+                        h(x) &= x + 1
+                        \end{align*}
+
+**Solution:**
+\begin{align*}
+                     g(x) &= 2x^{100} - x - 1\\
+                     g (-1) &= 2(-1)^{100} - (-1) - 1 \\
+                     &= 2 + 1 - 1 \\
+                     \therefore R &= 2
+                     \end{align*}
+
+**Problem:**
+Determine the value of \(t\) if \(x^{3} + tx^{2} + 8x + 21\) divided by \(x + 1\) gives a remainder
+                     of \(\text{16}\).
+
+**Solution:**
+\begin{align*}
+                  a(x) &= x^{3} + tx^{2} + 8x + 21 \\
+                  b(x) &= x + 1 \\
+                  R &= 16 \\
+                  a (-1) &= (-1)^{3} + t(-1)^{2} + 8(-1) + 21 \\
+                  \therefore 16 &= -1 +t -8 + 21 \\
+                  \therefore t &= 4
+                  \end{align*}
+
+**Problem:**
+Calculate the value of \(m\) if \(2x^{3} - 7x^{2} + mx - 26\) is divided by \(x - 2\) and gives a
+                     remainder of \(-\text{24}\).
+
+**Solution:**
+\begin{align*}
+                  a(x) &= 2x^{3} - 7x^{2} + mx - 26 \\
+                  b(x) &= x - 2 \\
+                  R &= -24 \\
+                  a (2) &= 2(2)^{3} - 7(2)^{2} + m(2) - 26 \\
+                  \therefore -24 &= 16 -28 +2m -26 \\
+                  14 &= 2m \\
+                  \therefore m &= 7
+                  \end{align*}
+
+**Problem:**
+If \(x^{5} - 2x^{3} - kx - 1\) is divided by \(x - 1\) and the remainder is \(-\frac{1}{2}\), find
+                     the value of \(k\) .
+
+**Solution:**
+\begin{align*}
+                  a(x) &= x^{5} - 2x^{3} - kx - 1 \\
+                  b(x) &= x - 1 \\
+                  R &= -\frac{1}{2}\\
+                  a (1) &= (1)^{5} - 2(1)^{3} - k(1) - 1 \\
+                  \therefore -\frac{1}{2} &= 1 - 2 - k - 1 \\
+                  \frac{3}{2} &= -k \\
+                  \therefore k &= -\frac{3}{2}
+                  \end{align*}
+
+**Problem:**
+Determine the value of \(p\) if \(18x^{3} + px^{2} - 8x + 9\) is divided by \(2x - 1\) and gives a
+                     remainder of \(\text{6}\).
+
+**Solution:**
+\begin{align*}
+                  a(x) &= 18x^{3} + px^{2} - 8x + 9 \\
+                  b(x) &= 2x - 1 \\
+                  R &= 6 \\
+                  a \left( \frac{1}{2} \right) &= 18\left( \frac{1}{2} \right)^{3} + p\left( \frac{1}{2} \right)^{2}
+                  - 8\left( \frac{1}{2} \right) + 9 \\
+                  \therefore 6 &= 18 \left( \frac{1}{8} \right) + p \left( \frac{1}{4} \right) -4 + 9 \\
+                  6 &= \frac{18}{8} + \frac{p}{4} + 5 \\
+                  1 &= \frac{18}{8} + \frac{p}{4} \\
+                  4 &= 9 + p \\
+                  \therefore p &= -5
+                  \end{align*}
+
+**Problem:**
+If \(x^{3} + x^{2} - x + b\) is divided by \(x - 2\) and the remainder is \(2\frac{1}{2}\),
+                     calculate the value of \(b\).
+
+**Solution:**
+\begin{align*}
+                  \text{Let } f(x) &= x^{3} + x^{2} - x + b \\
+                  R &= \frac{5}{2} \\
+                  f (2) &= (2)^{3} + (2)^{2} - (2) + b \\
+                  \therefore \frac{5}{2} &= 8 + 4 - 2 + b \\
+                  \frac{5}{2} -10 &= b \\
+                  \therefore b &= - \frac{15}{2}
+                  \end{align*}
+
+**Problem:**
+Calculate the value of \(h\) if \(3x^{5} + hx^{4} + 10x^{2} - 21x + 12\) is divided by \(x - 2\)
+                     and gives a remainder of \(\text{10}\).
+
+**Solution:**
+\begin{align*}
+                  a(x) &= 3x^{5} + hx^{4} + 10x^{2} - 21x + 12 \\
+                  b(x) &= x -2 \\
+                  R &= 10 \\
+                  a (2) &= 3(2)^{5} + h(2)^{4} + 10(2)^{2} - 21(2) + 12 \\
+                  \therefore 10 &= 3(32) + 16h + 40 -42 +12 \\
+                  10 &= 96 + 16h + 10 \\
+                  -96 &= 16h \\
+                  \therefore h &= -6
+                  \end{align*}
+
+**Problem:**
+If \(x^{3} + 8x^{2} + mx - 5\) is divided by \(x + 1\) and the remainder is \(n\), express \(m\) in
+                     terms of \(n\).
+
+**Solution:**
+\begin{align*}
+                  a(x) &= x^{3} + 8x^{2} + mx - 5 \\
+                  b(x) &= x + 1 \\
+                  R &= n \\
+                  a (-1) &= (-1)^{3} + 8(-1)^{2} + m(-1) - 5 \\
+                  \therefore n &= -1 + 8 -m - 5 \\
+                  n &= 2 - m \\
+                  \therefore m &= 2 - n
+                  \end{align*}
+
+**Problem:**
+When the polynomial \(2x^{3} + px^{2} + qx + 1\) is divided by \(x + 1\) or \(x - 4\), the
+                     remainder is \(\text{5}\). Determine the values of \(p\) and \(q\).
+
+**Solution:**
+\begin{align*}
+                  a(x) &= 2x^{3} + px^{2} + qx + 1 \\
+                  a(-1) &= 2(-1)^{3} + p(-1)^{2} + q(-1) + 1 \\
+                  \therefore 5 &= -2 + p - q + 1 \\
+                  6 &= p - q \\
+                  \therefore q &= p - 6 \ldots \ldots (1)\\
+                  a(4) &= 2(4)^{3} + p(4)^{2} + q(4) + 1 \\
+                  \therefore 5 &= 128 + 16p + 4q + 1 \\
+                  -124 &= 16p + 4q \\
+                  \therefore -31 &= 4p + q \ldots \ldots (2)\\
+                  \text{Substitute eqn } (1) & \text{ into eqn } (2) \\
+                  \therefore -31 &= 4p + (p - 6) \\
+                  -25 &= 5p \\
+                  \therefore -5 &= p \\
+                  \text{And } q &= -5 -6 \\
+                  & = -11
+                  \end{align*}

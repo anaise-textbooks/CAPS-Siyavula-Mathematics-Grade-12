@@ -1,0 +1,245 @@
+## 5.4 Factor theorem (EMCGW)
+
+If an integer \(a\) is divided by an integer \(b\), and the answer is \(q\) with the remainder \(r = 0\),
+            then we know that \(b\) is a factor of \(a\).
+
+        \begin{align*}
+        a &= b \times q + r \\
+        \text{and } r &= 0 \\
+        \text{then we know that } a &= b \times q \\
+        \text{and also that } \frac{a}{b} &= q
+        \end{align*}
+
+
+This is also true of polynomials; if a polynomial \(a(x)\) is divided by a polynomial \(b(x)\), and the
+            answer is \(Q(x)\) with the remainder \(R(x) = 0\), then we know that \(b(x)\) is a factor of \(a(x)\).
+
+        \begin{align*}
+        a(x) &= b(x) \cdot Q(x) + R(x) \\
+        \text{and } R(x) &= 0 \\
+        \text{then we know that } a(x) &= b(x) \cdot Q(x) \\
+        \text{and also that } \frac{a(x)}{b(x)} &= Q(x)
+        \end{align*}
+
+
+The factor theorem describes the relationship between the root of a polynomial and a factor of the
+            polynomial.
+
+**The Factor theorem**
+
+If the polynomial \(p(x)\) is divided by \(cx - d\) and the remainder, given by \(p \left( \frac{d}{c}
+                \right),\) is equal to zero, then \(cx - d\) is a factor of \(p(x)\).
+
+**Converse:** if \((cx - d)\) is a factor of \(p(x)\), then \(p \left( \frac{d}{c} \right) =
+                0\).
+
+<Callout type="tip" title="Worked example 9: Factor theorem">
+**Question:**
+Using the factor theorem, show that \(y+4\) is a factor of
+                    \(g\left(y\right)=5{y}^{4}+16{y}^{3}-15{y}^{2}+8y+16\).
+
+**Determine how to approach the problem:**
+For \(y+4\) to be a factor, \(g\left(-4\right)\) must be equal to \(\text{0}\).
+
+**Calculate \(g\left(-4\right)\):**
+\begin{align*} g\left(y\right) & = 5{y}^{4}+16{y}^{3}-15{y}^{2}+8y+16 \\ \therefore g\left(-4\right)
+                & = 5{\left(-4\right)}^{4}+16{\left(-4\right)}^{3}-15{\left(-4\right)}^{2}+8\left(-4\right)+16 \\
+                & = 5\left(256\right)+16\left(-64\right)-15\left(16\right)+8\left(-4\right)+16 \\ & =
+                \text{1 280}-\text{1 024}-240-32+16 \\ & = 0 \end{align*}
+
+**Conclusion:**
+Since \(g\left(-4\right)=\text{0}\), \(y+4\) is a factor of \(g\left(y\right)\).
+</Callout>
+
+In general, to factorise a cubic polynomial we need to do the following:
+
+- Find one factor by trial and error: consider the coefficients of the given cubic polynomial \(p(x)\) and
+                  guess a possible root (\(\frac{c}{d}\)).
+- Use the factor theorem to confirm that \(\frac{c}{d}\) is a root; show that
+                  \(p\left(\frac{c}{d}\right)\) = 0.
+- Divide \(p(x)\) by the factor (\(cx - d\)) to obtain a quadratic polynomial (remember to be careful with
+                  the signs).
+- Apply the standard methods of factorisation to determine the two factors of the quadratic polynomial.
+
+<Callout type="tip" title="Worked example 10: Factor theorem">
+**Question:**
+Use the factor theorem to determine if \(y-1\) is a factor of
+                    \(f\left(y\right)=2{y}^{4}+3{y}^{2}-5y+7\).
+
+**Determine how to approach the problem:**
+For \(y-1\) to be a factor, \(f\left(1\right)\) must be equal to \(\text{0}\).
+
+**Calculate \(f\left(1\right)\):**
+\begin{align*} f\left(y\right) & = 2{y}^{4}+3{y}^{2}-5y+7 \\ \therefore f\left(1\right) & =
+                2{\left(1\right)}^{4}+3{\left(1\right)}^{2}-5\left(1\right)+7 \\ & = 2+3-5+7 \\ & = 7
+                \end{align*}
+
+**Conclusion:**
+Since \(f\left(1\right)\ne 0\), \(y-1\) is not a factor of
+                    \(f\left(y\right)=2{y}^{4}+3{y}^{2}-5y+7\).
+</Callout>
+
+<QuizCard id="m12-05-04a" title="Interactive Exercise 5.6" question="Use the factor theorem to determine whether the following statement is true or false: \((x + 1)\) is a factor of \(x^3 + 4x^2 - 7x - 10\)" options=["True", "False"] answer="True" hint="" explanation="The factor theorem states that if \(f(a) = 0\) , then \((x - a)\) is a factor of \(f\) . Conversely: If \((x - a)\) is a factor, then \(f(a)\) must be equal to \(0\) . We can find out if \((x + 1)\) is a factor by testing if \(f(-1) = 0\) : We start by calculating \(f(-1)\) : \[             \begin{aligned}               f(x) & = x^3 + 4x^2 - 7x - 10\\               f(-1) & = (-1)^3 + 4(-1)^2 - 7(-1) - 10\\               f(-1) & = 0\\             \end{aligned}           \] Therefore, it is True that \((x + 1)\) is a factor. Submit your answer as: True" />
+
+<Callout type="tip" title="Worked example 11: Factorising cubic polynomials">
+**Question:**
+Factorise completely: \(f\left(x\right)={x}^{3}+{x}^{2}-9x-9\)
+
+**Find a factor by trial and error:**
+Try
+
+                \(f\left(1\right)={\left(1\right)}^{3}+{\left(1\right)}^{2}-9\left(1\right)-9=1+1-9-9=-16\)
+
+
+Therefore \(\left(x-1\right)\) is not a factor.
+
+We consider the coefficients of the given polynomial and try:
+
+\(f\left(-1\right)={\left(-1\right)}^{3}+{\left(-1\right)}^{2}-9\left(-1\right)-9=-1+1+9-9=0\)
+
+Therefore \(\left(x+1\right)\) is a factor, because \(f\left(-1\right)=0\).
+
+**Factorise by inspection:**
+Now divide \(f\left(x\right)\) by \(\left(x+1\right)\) using inspection:
+
+Write \({x}^{3}+{x}^{2}-9x-9=\left(x+1\right)\left( \ldots \right)\)
+
+The first term in the second bracket must be \({x}^{2}\) to give \({x}^{3}\) and make the polynomial
+                    a cubic.
+
+The last term in the second bracket must be \(-\text{9}\) because \((+1)(-9)=-9\).
+
+So we have \({x}^{3}+{x}^{2}-9x-9=\left(x+1\right)\left({x}^{2}+?x-9\right)\)
+
+Now, we must find the coefficient of the middle term:
+
+\(\left(+1\right)\left({x}^{2}\right)\) gives the \({x}^{2}\) in the original polynomial. So, the
+                    coefficient of the \(x\)-term must be \(\text{0}\).
+
+\(\therefore f\left(x\right)=\left(x+1\right)\left({x}^{2}-9\right)\).
+
+**Write the final answer:**
+We can factorise the last bracket as a difference of two squares:
+
+                \begin{align*}
+                f(x) &= \left(x+1\right)\left({x}^{2}-9\right) \\
+                &= (x + 1)(x - 3)(x + 3)
+                \end{align*}
+</Callout>
+
+<Callout type="tip" title="Worked example 12: Factorising cubic polynomials">
+**Question:**
+Use the factor theorem to factorise \(f(x) = {x}^{3}-2{x}^{2}-5x+6\).
+
+**Find a factor by trial and error:**
+Try
+
+                \(f\left(1\right)={\left(1\right)}^{3}-2{\left(1\right)}^{2}-5\left(1\right)+6=1-2-5+6=0\)
+
+
+Therefore \(\left(x-1\right)\) is a factor.
+
+**Factorise by inspection:**
+\({x}^{3}-2{x}^{2}-5x+6=\left(x-1\right)\left( \ldots \right)\)
+
+The first term in the second bracket must be \({x}^{2}\) to give \({x}^{3}\) if we work backwards.
+
+The last term in the second bracket must be \(-\text{6}\) because \((-1)(-6)=+6\).
+
+So we have \({x}^{3}-2{x}^{2}-5x+6=\left(x-1\right)\left({x}^{2}+?x-6\right)\)
+
+Now, we must find the coefficient of the middle term:
+
+\(\left(-1\right)\left({x}^{2}\right)\) gives \(-{x}^{2}\). So, the coefficient of the \(x\)-term in
+                    the second bracket must be \(-\text{1}\) to give another \(-{x}^{2}\) so that overall we have
+                    \(-{x}^{2} -{x}^{2} = -2{x}^{2}\).
+
+So \(f\left(x\right)=\left(x-1\right)\left({x}^{2}-x-6\right)\).
+
+Make sure that the expression has been factorised correctly by checking that the coefficient of the
+                    \(x\)-term also works out: \((x)(-6) + (-1)(-x) = -5x\), which is correct.
+
+**Write the final answer:**
+We can factorise the last bracket as:
+
+                \begin{align*}
+                f(x) &= \left(x-1\right)\left({x}^{2}-x-6\right) \\
+                &= (x - 1)(x - 3)(x + 2)
+                \end{align*}
+</Callout>
+
+## Factorising cubic polynomials
+
+### Textbook Exercise 5.5
+
+**Problem:**
+Find the remainder when \(4{x}^{3}-4{x}^{2}+x-5\) is divided by \(x + 1\).
+
+**Solution:**
+\begin{align*}
+                        \text{Let } a(x)&= 4{x}^{3}-4{x}^{2}+x-5 \\
+                        a(-1) &= 4(-1)^{3}-4(-1)^{2}+(-1)-5 \\
+                        &= -4 -4 -1-5 \\
+                        &= -\text{14}
+                        \end{align*}
+
+**Problem:**
+Use the factor theorem to factorise \({x}^{3}-3{x}^{2}+4\) completely.
+
+**Solution:**
+\begin{align*}
+                        \text{Let } a(x)&= {x}^{3}-3{x}^{2}+4 \\
+                        a(-1) &= (-1)^{3}-3(-1)^{2}+4 \\
+                        &= -1 -3 +4 \\
+                        &= 0 \\
+                        \therefore (x+1) & \text{ is a factor} \\
+                        a(x) &= (x + 1)({x}^{2} -4x +4 ) \\
+                        &= (x + 1)(x - 2)(x - 2) \\
+                        &= (x + 1)(x - 2)^{2}
+                        \end{align*}
+
+\(f\left(x\right)=2{x}^{3}+{x}^{2}-5x+2\)
+
+**Problem:**
+Find \(f\left(1\right)\).
+
+**Solution:**
+\begin{align*}
+                            f(x)&= 2{x}^{3}+{x}^{2}-5x+2 \\
+                            f(1)&= 2(1)^{3}+(1)^{2}-5(1)+2 \\
+                            &= 2 + 1 -5 + 2 \\
+                            &= \text{0}
+                            \end{align*}
+
+**Problem:**
+Factorise \(f\left(x\right)\) completely.
+
+**Solution:**
+\begin{align*}
+                            f(1)&= 0 \\
+                            \therefore (x - 1) & \text{ is a factor of } f(x) \\
+                            f(x) &= (x - 1)(2x^{2} + 3x - 2) \\
+                            &= (x-1)(2x - 1)(x + 2)
+                            \end{align*}
+
+**Problem:**
+Use the factor theorem to determine all the factors of the following expression:
+
+                        \({x}^{3}+{x}^{2}-17x+15\)
+
+**Solution:**
+\begin{align*}
+                        \text{Let } a(x) &= {x}^{3}+{x}^{2}-17x+15 \\
+                        a(1) &= (1)^{3}+(1)^{2}-17(1)+15 \\
+                        &= 1 +1 -17 +15 \\
+                        &= 0 \\
+                        \therefore a(x) &= (x-1)(x^{2} + 2x -15) \\
+                        &= (x-1)(x+5)(x -3)
+                        \end{align*}
+
+**Problem:**
+Complete: If \(f\left(x\right)\) is a polynomial and p is a number such
+                            that \(f\left(p\right)=0\), then \(\left(x-p\right)\) is...
+
+**Solution:**
+a factor of \(f(x)\)

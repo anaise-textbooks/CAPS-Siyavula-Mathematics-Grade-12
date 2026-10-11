@@ -1,0 +1,683 @@
+## 1.4 Finite arithmetic series (EMCDX)
+
+An arithmetic sequence is a sequence of numbers, such that the difference between any term and the previous term
+      is a constant number called the common difference (\(d\)):
+
+    \[{T}_{n}={a} + \left(n-1\right)d\]
+
+
+
+where
+
+- \({T}_{n}\) is the \(n\)\(^{\text{th}}\) term of the sequence;
+- \({a}\) is the first term;
+- \(d\) is the common difference.
+
+When we sum a finite number of terms in an arithmetic sequence, we get a finite arithmetic series.
+
+**The sum of the first one hundred integers **
+
+A simple arithmetic sequence is when \({a} = 1\) and \(d=1\), which is the sequence of positive integers:
+
+    \begin{align*}
+    {T}_{n}& = {a} + \left(n-1\right)d \\
+    & = 1 + \left(n-1\right)(1) \\
+    & = n \\
+    \therefore \left\{{T}_{n}\right\} & = 1; 2; 3; 4; 5; \ldots
+    \end{align*}
+
+
+If we wish to sum this sequence from \(n=1\) to any positive integer, for example \(\text{100}\), we would write
+
+    \[\sum _{n=1}^{100}n=1+2+3+\cdots + 100\]
+
+
+
+This gives the answer to the sum of the first \(\text{100}\) positive integers.
+
+The mathematician, Karl Friedrich Gauss, discovered the following proof when he was only 8 years old. His teacher
+      had decided to give his class a problem which would distract them for the entire day by asking them to add all the
+      numbers from \(\text{1}\) to \(\text{100}\). Young Karl quickly realised how to do this and shocked the teacher
+      with the correct answer, \(\text{5 050}\). This is the method that he used:
+
+- Write the numbers in ascending order.
+- Write the numbers in descending order.
+- Add the corresponding pairs of terms together.
+- Simplify the equation by making \(S_{n}\) the subject of the equation.
+
+\begin{align*}
+    S_{100} &= \text{1} \enspace + \enspace \text{2} \enspace + \enspace \text{3} + \cdots + \text{98} + \text{99} +
+    \text{100} \\
+    + \quad \underline{S_{100 }} &= \underline{ \text{100} + \text{99} +\text{98} + \cdots + \text{3} \enspace +
+    \enspace \text{2} \enspace + \enspace \text{1}} \\
+    \therefore 2S_{100} &= \text{101} + \text{101} +\text{101} + \cdots + \text{101} +\text{101} +\text{101} \\
+    \therefore 2S_{\text{100}} &= \text{101} \times \text{100} \\
+    &= \text{10 100} \\
+    \therefore S_{\text{100}} &= \frac{\text{10 100}}{2} \\
+    &= \text{5 050}
+    \end{align*}
+
+### General formula for a finite arithmetic series (EMCDY)
+
+If we sum an arithmetic sequence, it takes a long time to work it out term-by-term. We therefore derive the
+        general formula for evaluating a finite arithmetic series. We start with the general formula for an arithmetic
+        sequence of \(n\) terms and sum it from the first term (\(a\)) to the last term in the sequence (\(l\)):
+
+      \begin{align*}
+      \sum _{n=1}^{l}{T}_{n} &= S_{n} \\
+      S_{n} & = a + (a + d) + (a + 2d) + \cdots + (l - 2d) + (l -d) + l \\
+      + \quad \underline{S_{n}} & = \underline{l + (l - d) + (l -2d) + \cdots + (a + 2d) + (a + d) + a } \\
+      \therefore 2S_{n} & = (a + l ) + (a + l ) + (a + l ) + \cdots + (a + l ) + (a + l ) + (a + l ) \\
+      \therefore 2S_{n} & = n \times (a + l ) \\
+      \therefore S_{n} & = \frac{n}{2}(a + l )
+      \end{align*}
+
+
+This general formula is useful if the last term in the series is known.
+
+We substitute \(l = a + (n-1)d\) into the above formula and simplify:
+
+      \begin{align*}
+      S_{n} & = \frac{n}{2}(a + [a + (n-1)d ]) \\
+      \therefore S_{n} &= \frac{n}{2}[2a + (n-1)d ]
+      \end{align*}
+
+The general formula for determining the sum of an arithmetic series is given by:
+
+        \[{S}_{n}= \frac{n}{2} \left[ 2{a} + \left(n-1\right) d \right]\]
+
+
+
+or
+
+        \[{S}_{n}= \frac{n}{2} (a + l)\]
+
+
+For example, we can calculate the sum \({S}_{20}\) for the arithmetic sequence \({T}_{n}=3+7 \left(n-1\right)\)
+        by summing all the individual terms:
+
+      \begin{align*}
+      {S}_{20} & = \sum _{n=1}^{20} \left[3+7 \left(n-1\right)\right] \\
+      & = 3+10+17+24+31+38+45+52 \\
+      & +59+66+73+80+87+94+101 \\
+      & +108+115+122+129+136 \\
+      & = 1390
+      \end{align*}
+
+
+or, more sensibly, we could use the general formula for determining an arithmetic series by substituting
+        \({a}=3\), \(d=7\) and \(n=20\):
+
+      \begin{align*}
+      {S}_{n} & = \frac{n}{2}(2a + (n-1)d ) \\
+      {S}_{20} & = \frac{20}{2} \left[2(3) + 7 \left(20-1\right)\right] \\
+      & = 1390
+      \end{align*}
+
+
+This example demonstrates how useful the general formula for determining an arithmetic series is, especially
+        when the series has a large number of terms.
+
+<Callout type="note" title="Note">
+<VideoPlayer src="https://www.youtube.com/embed/Dj1JZIdIwwo" title="Video: 286N" />
+</Callout>
+
+<Callout type="tip" title="Worked example 7: General formula for the sum of an arithmetic sequence">
+**Question:**
+Find the sum of the first \(\text{30}\) terms of an arithmetic series with \(T_{n} = 7n - 5\) by using the
+            formula.
+
+**Use the general formula to generate terms of the sequence and write down the known variables:**
+\begin{align*}
+          T_{n} &= 7n - 5 \\
+          \therefore T_{1} &= 7(1) - 5 \\
+          &= 2 \\
+          T_{2} &= 7(2) - 5 \\
+          &= 9 \\
+          T_{3} &= 7 (3) - 5 \\
+          &= 16
+          \end{align*}
+
+
+This gives the sequence: \(2; 9; 16 \ldots\)
+
+          \[a = 2; \quad d = 7; \quad n = 30\]
+
+**Write down the general formula and substitute the known values:**
+\begin{align*}
+          S_{n} &= \frac{n}{2}[2a + (n-1)d ] \\
+          S_{30} &= \frac{30}{2}[2(2) + (30-1)(7) ] \\
+          &= 15(4 + 203) \\
+          &= 15 (207) \\
+          &= 3105
+          \end{align*}
+
+**Write the final answer:**
+\(S_{30} = 3105\)
+</Callout>
+
+<QuizCard id="m12-01-04a" title="Interactive Exercise 1.8" question="The first term of an arithmetic series is \(-\text{9}\) while the last term is \(\text{6}\) . In total, there are \(\text{16}\) terms in the series. Find the sum of these \(\text{16}\) terms, \( S_{16} \) ." options=[] answer="-24" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Identify the values of \(n, a\) and \(l\) For this question we have the first and last terms of an arithmetic series, and we need to calculate the sum of the first \(\text{16}\) terms in the series. The formula for the sum of terms in an arithmetic series is \(S_{n} = \dfrac{n}{2} \left( a + l \right) \) : \( S_{n} \) is the sum we want \( n \) is the number of terms we are summing \( a \) is the first term of the series \( l \) is the last term of the series We need the values of \( n, a \) and \( l \) - then we can substitute them into the formula and evaluate the answer. We can take the value of \(n\) straight from the question: it is in the words \"the sum of these \(\text{16}\) terms\" as well as in the symbol \" \( S_{16} \) . \" Since we want to add up \(16\) terms of the series, \( n = 16\) . The first term is given in the question: \( a = -9\) . We can also get the last term in the series directly from the question: \( l = 6\) . We now have the values \( n = 16, a = -9\) and \( l = 6 \) . Substitute into the formula and evaluate the answer Now substitute the values into the formula and work out the answer. \[ 				  \begin{aligned} 				  S_{n} & = \frac{n}{2} \left( a + l \right) \\ 				  S_{16} &= \frac{16}{2} \left( \left(-9\right) + \left(6\right) \right)\\ 				  & = 8\left( -3 \right) \\ 				  & = -\text{24} 				  \end{aligned} 				\] The sum of the first \(\text{16}\) terms for the series is \( S_{16} = -\text{24}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-04a" title="Interactive Exercise 1.8" question="The first term of an arithmetic series is \(-\text{10}\) while the common difference is \(\text{4}\) . Determine the sum of the first \(\text{10}\) terms, \( S_{10} \) ." options=[] answer="80" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Identify the values of \(n, a\) and \(d\) The question gives us the first and common difference of an arithmetic series, and we need to calculate the sum of the first \(\text{10}\) terms in the series. The formula for the sum of terms in an arithmetic series is \(S_{n} = \dfrac{n}{2} \left( 2a + (n-1)d \right) \) : \( S_{n} \) is the sum we want \( n \) is the number of terms we are summing \( a \) is the first term of the series \( d \) is the common difference in the series We need the values of \( n, a \) and \( d \) - then we can substitute them into the formula and evaluate the answer. The value of \(n\) is sitting in the question: we can find it in the words \"the sum of the first \(\text{10}\) terms\" as well as in the symbol \" \( S_{\text{10}} \) . \" For this question, we want to add up \(\text{10}\) terms of the series, so \( n = \text{10}\) . The first term is given in the question: \( a = -10\) . The common difference is also clearly stated in the question: \( d = 4\) . We now have the values \( n = 10, a = -10\) and \( d = 4 \) . Substitute into the formula and evaluate the answer Now substitute the values into the formula and work out the answer. \[ 				  \begin{aligned} 				  S_{n} & = \frac{n}{2} \left( 2a + (n-1)d \right) \\ 				  S_{10} &= \frac{10}{2} \left( 2\left(-10\right) + \left(10-1\right)\left(4\right) \right)\\ 				  & = 5\left( (-20) + \left(9\right)\left(4\right) \right) \\ 				  & = 5\left( (-20) + 36 \right) \\ 				  & = 5 \left(16 \right)\\ 				  & = \text{80} 				  \end{aligned} 				\] The sum of the first \(\text{10}\) terms for the series is \( S_{10} = \text{80}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-04a" title="Interactive Exercise 1.8" question="The first term of an arithmetic series is \(\text{6}\) and the common difference is \(\text{5}\) . Find the sum of the first \(\text{14}\) terms, \( S_{14} \) ." options=[] answer="539" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Identify the values of \(n, a\) and \(d\) The question gives us the first and common difference of an arithmetic series, and we need to calculate the sum of the first \(\text{14}\) terms in the series. The formula for the sum of terms in an arithmetic series is \(S_{n} = \dfrac{n}{2} \left( 2a + (n-1)d \right) \) : \( S_{n} \) is the sum we want \( n \) is the number of terms we are summing \( a \) is the first term of the series \( d \) is the common difference in the series We need the values of \( n, a \) and \( d \) - then we can substitute them into the formula and evaluate the answer. The value of \(n\) is sitting in the question: we can find it in the words \"the sum of the first \(\text{14}\) terms\" as well as in the symbol \" \( S_{\text{14}} \) . \" For this question, we want to add up \(\text{14}\) terms of the series, so \( n = \text{14}\) . The first term is given in the question: \( a = 6\) . The common difference is also clearly stated in the question: \( d = 5\) . We now have the values \( n = 14, a = 6\) and \( d = 5 \) . Substitute into the formula and evaluate the answer Now substitute the values into the formula and work out the answer. \[ 				  \begin{aligned} 				  S_{n} & = \frac{n}{2} \left( 2a + (n-1)d \right) \\ 				  S_{14} &= \frac{14}{2} \left( 2\left(6\right) + \left(14-1\right)\left(5\right) \right)\\ 				  & = 7\left( 12 + \left(13\right)\left(5\right) \right) \\ 				  & = 7\left( 12 + 65 \right) \\ 				  & = 7 \left(77 \right)\\ 				  & = \text{539} 				  \end{aligned} 				\] The sum of the first \(\text{14}\) terms for the series is \( S_{14} = \text{539}\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-04a" title="Interactive Exercise 1.8" question="The following expression shows an arithmetic series. \[\begin{array}{c}-2 -6 -10 - \ldots -70 -74\end{array}\] How many terms are there in the series?" options=["yes", "no", "impossible to know"] answer="19" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Set up the equation using the last term The question gives us an arithmetic series and we must determine the number of terms in the series. We can do this using the formula \( T_{n} = a + (n - 1)d \) . The number of terms in the series is represented by the \(n\) -value of the last term in the series. In this case, the last term is \(-74\) . We can then substitute into the formula as follows: \[\begin{array}{c}-74 = a + (n_{\small\text{last}} - 1)d\end{array}\] If we also substitute in the values of the first term, \(a\) , and the common difference, \(d\) , we can solve the equation for the value of \(n\) for the last term. This will give us the total number of terms in the series. Find the values of \(a\) and \(d\) and substitute into the equation From the series in the question, we can get both the first term and the common difference. The first term is sitting there for us to take: \(a = -2\) . The common difference requires a bit of work: it is the difference between any two consecutive terms in the series: \(d = T_{2} - T_{1}\) , so we get \(d = -6 - (-2) = -4\) . Substitute these values into the equation from above: \[\begin{array}{c}-74 = -2 + (n_{\small\text{last}} - 1)\left(-4\right)\end{array}\] Solve the equation for \(n\) Now we can solve the equation for \(n_{\small\text{last}}\) . Start by distributing the \(-\text{4}\) into the brackets. \[ 				\begin{aligned} 				-74 &= -2 + (n_{\small\text{last}} - 1)\left(-4\right) \\ 				-74 &= -2  - 4 n_{\small\text{last}} + 4\\ 				-74 & = 2  - 4 n_{\small\text{last}} \\             4 n_{\small\text{last}} & = 76  \qquad\left(^{\text{rearrange to make}}_{n_{\text{last}} \text{ positive}}\right) \\             n_{\small\text{last}} & = 19 				\end{aligned} 			  \] The \(n\) -value of the final term is \(\text{19}\) . The calculation here shows that there are \(\text{19}\) terms in the series. Submit your answer as:" />
+
+<Callout type="tip" title="Worked example 8: Sum of an arithmetic sequence if first and last terms are known">
+**Question:**
+Find the sum of the series \(-5 -3 -1 + \cdots \cdots + 123\)
+
+**Identify the type of series and write down the known variables:**
+\begin{align*}
+          d &= T_{2} - T_{1} \\
+          &= -3 - (-5) \\
+          &= 2 \\
+          d &= T_{3} - T_{2} \\
+          &= -1 - (-3) \\
+          &= 2
+          \end{align*}\[a = -5; \quad d = 2; \quad l = 123\]
+
+**Determine the value of \(n\):**
+\begin{align*}
+          T_{n} &= a + (n-1)d \\
+          \therefore 123 &= -5 + (n-1)(2) \\
+          &= -5 + 2n - 2 \\
+          \therefore 130&= 2n \\
+          \therefore n &= 65
+          \end{align*}
+
+**Use the general formula to find the sum of the series:**
+\begin{align*}
+          S_{n} &= \frac{n}{2}(a + l ) \\
+          S_{65} &= \frac{65}{2}(-5 + 123) \\
+          &= \frac{65}{2}(118) \\
+          &= 3835
+          \end{align*}
+
+**Write the final answer:**
+\(S_{65} = 3835\)
+</Callout>
+
+<Callout type="tip" title="Worked example 9: Finding \(n\) given the sum of an arithmetic sequence">
+**Question:**
+Given an arithmetic sequence with \(T_{2} = 7\) and \(d = 3\), determine how many terms must be added
+            together to give a sum of \(\text{2 146}\).
+
+**Write down the known variables:**
+\begin{align*}
+          d &= T_{2} - T_{1} \\
+          \therefore 3 &= 7 - a \\
+          \therefore a &= 4
+          \end{align*}\[a = 4 ; \quad d = 3; \quad S_{n} = 2146\]
+
+**Use the general formula to determine the value of \(n\):**
+\begin{align*}
+          S_{n} &= \frac{n}{2}(2a + (n-1)d ) \\
+          2146 &= \frac{n}{2}(2(4) + (n-1)(3) ) \\
+          4292 &= n(8 + 3n - 3) \\
+          \therefore 0 &= 3n^2 + 5n -4292 \\
+          &= (3n + 116)(n - 37 ) \\
+          \therefore n = -\frac{116}{3} &\text{ or } n = 37
+          \end{align*}
+
+
+but \(n\) must be a positive integer, therefore \(n = 37\).
+
+We could have solved for \(n\) using the quadratic formula but factorising by inspection is usually the
+            quickest method.
+
+**Write the final answer:**
+\(S_{37} = 2146\)
+</Callout>
+
+<QuizCard id="m12-01-04b" title="Interactive Exercise 1.9" question="The following expression is an arithmetic series. \[\begin{array}{c}-195 -188 -181 - \ldots +1 +8\end{array}\] Determine the number of terms in the series." options=["yes", "no", "impossible to know"] answer="30" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Set up the equation using the last term The question gives us an arithmetic series and we must determine the number of terms in the series. We can do this using the formula \( T_{n} = a + (n - 1)d \) . The number of terms in the series is represented by the \(n\) -value of the last term in the series. In this case, the last term is \(8\) . We can then substitute into the formula as follows: \[\begin{array}{c}8 = a + (n_{\small\text{last}} - 1)d\end{array}\] If we also substitute in the values of the first term, \(a\) , and the common difference, \(d\) , we can solve the equation for the value of \(n\) for the last term. This will give us the total number of terms in the series. Find the values of \(a\) and \(d\) and substitute into the equation From the series in the question, we can get both the first term and the common difference. The first term is sitting there for us to take: \(a = -195\) . The common difference requires a bit of work: it is the difference between any two consecutive terms in the series: \(d = T_{2} - T_{1}\) , so we get \(d = -188 - (-195) = 7\) . Substitute these values into the equation from above: \[\begin{array}{c}8 = -195 + (n_{\small\text{last}} - 1)\left(7\right)\end{array}\] Solve the equation for \(n\) Now we can solve the equation for \(n_{\small\text{last}}\) . Start by distributing the \(\text{7}\) into the brackets. \[ 				\begin{aligned} 				8 &= -195 + (n_{\small\text{last}} - 1)\left(7\right) \\ 				8 &= -195 + 7 n_{\small\text{last}} - 7\\ 				8 & = -202 + 7 n_{\small\text{last}}\\             210 & = 7 n_{\small\text{last}} \\             30 & = n_{\small\text{last}} 				\end{aligned} 			  \] The \(n\) -value of the final term is \(\text{30}\) . The calculation here shows that there are \(\text{30}\) terms in the series. Submit your answer as:" />
+
+<QuizCard id="m12-01-04b" title="Interactive Exercise 1.9" question="The following expression shows an arithmetic series. \[\begin{array}{c}23 +22 +21 + \ldots -8 -9\end{array}\] How many terms are there in the series?" options=["yes", "no", "impossible to know"] answer="33" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Set up the equation using the last term The question gives us an arithmetic series and we must determine the number of terms in the series. We can do this using the formula \( T_{n} = a + (n - 1)d \) . The number of terms in the series is represented by the \(n\) -value of the last term in the series. In this case, the last term is \(-9\) . We can then substitute into the formula as follows: \[\begin{array}{c}-9 = a + (n_{\small\text{last}} - 1)d\end{array}\] If we also substitute in the values of the first term, \(a\) , and the common difference, \(d\) , we can solve the equation for the value of \(n\) for the last term. This will give us the total number of terms in the series. Find the values of \(a\) and \(d\) and substitute into the equation From the series in the question, we can get both the first term and the common difference. The first term is sitting there for us to take: \(a = 23\) . The common difference requires a bit of work: it is the difference between any two consecutive terms in the series: \(d = T_{2} - T_{1}\) , so we get \(d = 22 - 23 = -1\) . Substitute these values into the equation from above: \[\begin{array}{c}-9 = 23 + (n_{\small\text{last}} - 1)\left(-1\right)\end{array}\] Solve the equation for \(n\) Now we can solve the equation for \(n_{\small\text{last}}\) . Start by distributing the \(-\text{1}\) into the brackets. \[ 				\begin{aligned} 				-9 &= 23 + (n_{\small\text{last}} - 1)\left(-1\right) \\ 				-9 &= 23  - n_{\small\text{last}} + 1\\ 				-9 & = 24  - n_{\small\text{last}} \\             n_{\small\text{last}} & = 33  \qquad\left(^{\text{rearrange to make}}_{n_{\text{last}} \text{ positive}}\right) 				\end{aligned} 			  \] The \(n\) -value of the final term is \(\text{33}\) . The calculation here shows that there are \(\text{33}\) terms in the series. Submit your answer as:" />
+
+<QuizCard id="m12-01-04b" title="Interactive Exercise 1.9" question="Determine the value of \(m\) : \[\begin{array}{c}\sum_{k=1}^{m} \left(k - 20\right) = \text{216}\end{array}\] INSTRUCTION: If there is more than one answer, type both answers separated by the \";\" symbol." options=[] answer="48" hint="You are expected to write a list here. You can write a list by separating the values with semi-colons ( ; ). For example, a list of numbers might look like this: 1,5 ; 2,3 ; 25 The spaces are optional." explanation="Expand the sum to determine the values of \(a\) and \(d\) We have the equation \[\begin{array}{c}\sum_{k=1}^{m} \left(k - 20\right) = \text{216}\end{array}\] and must figure out the value of \(m\) . With the summation symbol \( \Sigma \) , the variable \(m\) tells us which term is the last term in the sum. This means it is related to the number of terms. We will use the equation \( S_{n} = \dfrac{n}{2} \left(2a + (n - 1)d \right) \) to work out the answer. First, we need the values of \( a \) and \( d \) . To find them, we can expand the sum on the left side of the equation. \[                     \begin{aligned}                     \sum_{k = 1}^m \left(k - 20\right) & = \text{216}\\                     \left(1(1) + (-20)\right) + \left(1(2) + (-20)\right) + \left(1(3) + (-20)\right) + \ldots + T_{m} & = \text{216}\\                     (-19) + (-18) + (-17) + \ldots + T_{m} & = \text{216}                     \end{aligned}                 \] Now we can easily see that the first term is \( a = -19 \) . For the common difference, we subtract two consecutive terms as always, \( d = T_{2} - T_{1} = (-18) - (-19) = 1\) . The number on the right side of the equation, \(\text{216}\) , is the sum of all of the terms. In other words, it is equal to the sum from the first term up to the \( m^{\text{th}} \) term: \( S_{m} = \text{216}\) . Substitute into \( S_{n} = \dfrac{n}{2} \left(2a + (n - 1)d \right) \) and get a quadratic equation in standard form Now we will substitute values into the equation \( S_{n} = \frac{n}{2} \left(2a + (n - 1)d \right) \) so that we can solve for the number of terms in the sum (represented by \( n \) ). However, we will replace \( n \) with \(m\) since the sum has \(m\) terms. \[                     \begin{aligned}                     S_{m} & = \frac{m}{2} \left(2a + (m - 1)d \right)\\                     \text{216} & = \frac{m}{2} \left(2(-19) + (m - 1)(1)\right)                     \end{aligned}                 \] The only variable remaining in the equation is \(m\) , and we can solve the equation to find its value. Expand out the right side and simplify the equation into standard form. Start by multiplying both sides of the equation by \(\text{2}\) in order to cancel the denominator of the fraction. \[                     \begin{aligned}                     \text{216} & = \frac{m}{2} \left(2(-19) + (m - 1)(1)   \right) \\                     2(\text{216}) & = m \left(2(-19) + (m - 1)(1)   \right) \\                     \text{432} & = m \left(-\text{38}  +m - 1\right)\\                     \text{432} & = m \left(m - 39\right) \\                     0 & = m^2 -\text{39}m -\text{432}                     \end{aligned}                 \] Fantastic! We have a quadratic equation in standard form. Solve the equation and decide which answer is acceptable Now we must solve the equation. You can use the quadratic formula if you prefer, and that is usually a good choice when you have a very large constant term. Here we will show the solution by factorisation. \[                     \begin{aligned}                     0 & = m^2 -\text{39}m -\text{432} \\                     0 & = \left(m - 48\right) \left(m + 9\right)                     \end{aligned}                 \] \[                     \begin{array}{ccc}                     \text{So} & &\\                     m - 48 = 0& \qquad \text{or} \qquad& m + 9  = 0 \\                     m  = 48 & \qquad \text{or} \qquad & m  = -9                     \end{array}                 \] There are two solutions to the equation, \(m = 48\) or \(m = -9\) . Only one of the solutions above is an acceptable answer: since \(m\) represents the number of terms in the series, it must be a natural number. It cannot be a decimal number, and it certainly cannot be negative or zero! Therefore, the value \(m = -9\) is impossible, and we can throw it out. That leaves only one answer. The correct answer is \(m = 48\) . Submit your answer as:" />
+
+<Callout type="tip" title="Worked example 10: Finding \(n\) given the sum of an arithmetic sequence">
+**Question:**
+The sum of the second and third terms of an arithmetic sequence is equal to zero and the sum of the first
+            \(\text{36}\) terms of the series is equal to \(\text{1 152}\). Find the first three terms in the
+            series.
+
+**Write down the given information:**
+\begin{align*}
+          T_{2} + T_{3} &= 0 \\
+          \text{So} \quad (a + d) + (a + 2d) &= 0 \\
+          \therefore 2a + 3d &= 0 \ldots \ldots (1)
+          \end{align*}\begin{align*}
+          S_{n} &= \frac{n}{2}(2a + (n-1)d ) \\
+          S_{36} &= \frac{36}{2}(2a + (36-1)d ) \\
+          1152 &= 18(2a + 35d ) \\
+          \therefore 64 &= 2a + 35d \ldots \ldots (2)
+          \end{align*}
+
+**Solve the two equations simultaneously:**
+\begin{align*}
+          2a + 3d &= 0 \ldots \ldots (1) \\
+          2a + 35d &= 64 \ldots \ldots (2) \\
+          \text{Eqn } (2) - (1): \quad 32d &= 64 \\
+          \therefore d &= 2 \\
+          \text{And } 2a + 3(2) &= 0 \\
+          2a &= -6 \\
+          \therefore a &= -3
+          \end{align*}
+
+**Write the final answer:**
+The first three terms of the series are:
+
+          \begin{align*}
+          T_{1} &= a = -3 \\
+          T_{2} &= a + d = -3 + 2 = -1 \\
+          T_{3} &= a + 2d = -3 + 2(2) = 1
+          \end{align*}\[-3 -1 + 1\]
+</Callout>
+
+<QuizCard id="m12-01-04c" title="Interactive Exercise 1.10" question="Calculate the value of \(k\) : \[\begin{array}{c}\sum_{j=1}^{k} \left(- j + 24\right) = \text{240}\end{array}\] INSTRUCTION: If there is more than one answer, type both answers separated by the \";\" symbol." options=[] answer="15;  32" hint="You are expected to write a list here. You can write a list by separating the values with semi-colons ( ; ). For example, a list of numbers might look like this: 1,5 ; 2,3 ; 25 The spaces are optional." explanation="Expand the sum to determine the values of \(a\) and \(d\) We have the equation \[\begin{array}{c}\sum_{j=1}^{k} \left(- j + 24\right) = \text{240}\end{array}\] and must figure out the value of \(k\) . With the summation symbol \( \Sigma \) , the variable \(k\) tells us which term is the last term in the sum. This means it is related to the number of terms. We will use the equation \( S_{n} = \dfrac{n}{2} \left(2a + (n - 1)d \right) \) to work out the answer. First, we need the values of \( a \) and \( d \) . To find them, we can expand the sum on the left side of the equation. \[                     \begin{aligned}                     \sum_{j = 1}^k \left(- j + 24\right) & = \text{240}\\                     \left(-1(1) + 24\right) + \left(-1(2) + 24\right) + \left(-1(3) + 24\right) + \ldots + T_{k} & = \text{240}\\                     23 + 22 + 21 + \ldots + T_{k} & = \text{240}                     \end{aligned}                 \] Now we can easily see that the first term is \( a = 23 \) . For the common difference, we subtract two successive terms as always, \( d = T_{2} - T_{1} = 22 - 23 = -1\) . The number on the right side of the equation, \(\text{240}\) , is the sum of all of the terms. In other words, it is equal to the sum from the first term up to the \( k^{\text{th}} \) term: \( S_{k} = \text{240}\) . Substitute into \( S_{n} = \dfrac{n}{2} \left(2a + (n - 1)d \right) \) and get a quadratic equation in standard form Now we will substitute values into the equation \( S_{n} = \frac{n}{2} \left(2a + (n - 1)d \right) \) so that we can solve for the number of terms in the sum (represented by \( n \) ). However, we will replace \( n \) with \(k\) since the sum has \(k\) terms. \[                     \begin{aligned}                     S_{k} & = \frac{k}{2} \left(2a + (k - 1)d \right)\\                     \text{240} & = \frac{k}{2} \left(2(23) + (k - 1)(-1)\right)                     \end{aligned}                 \] The only variable remaining in the equation is \(k\) , and we can solve the equation to find its value. Expand out the right side and simplify the equation into standard form. Start by multiplying both sides of the equation by \(\text{2}\) in order to cancel the denominator of the fraction. \[                     \begin{aligned}                     \text{240} & = \frac{k}{2} \left(2(23) + (k - 1)(-1)   \right) \\                     2(\text{240}) & = k \left(2(23) + (k - 1)(-1)   \right) \\                     \text{480} & = k \left(\text{46}  - k - (-1)\right)\\                     \text{480} & = k \left(- k + 47\right) \\                     0 & = -k^2 +\text{47}k -\text{480} \quad \longleftarrow \quad ^{\text{divide out the common}}_{\text{factor of } -1}  \\0 & = k^2 -\text{47}k +\text{480}                     \end{aligned}                 \] Fantastic! We have a quadratic equation in standard form. Solve the equation and decide which answer is acceptable Now we must solve the equation. You can use the quadratic formula if you prefer, and that is usually a good choice when you have a very large constant term. Here we will show the solution by factorisation. \[                     \begin{aligned}                     0 & = k^2 -\text{47}k +\text{480} \\                     0 & = \left(k - 32\right) \left(k - 15\right)                     \end{aligned}                 \] \[                     \begin{array}{ccc}                     \text{So} & &\\                     k - 32 = 0& \qquad \text{or} \qquad& k - 15  = 0 \\                     k  = 32 & \qquad \text{or} \qquad & k  = 15                     \end{array}                 \] There are two solutions to the equation, \(k = 32\) or \(k = 15\) . Both of the above answers are acceptable! Since \(k\) represents the number of terms in the series, it must be a natural number, and both of the answers to this equation are natural numbers. If you write out the terms in the series you will be able to see why both of these answers correspond to the same sum, \(\text{240}\) . The correct answer is \(k = 15 \text{ or } k = 32\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-04c" title="Interactive Exercise 1.10" question="Calculate the value of \(m\) : \[\begin{array}{c}\sum_{n=1}^{m} 2 n = \text{1 122}\end{array}\] INSTRUCTION: If there is more than one answer, type both answers separated by the \";\" symbol." options=[] answer="33" hint="You are expected to write a list here. You can write a list by separating the values with semi-colons ( ; ). For example, a list of numbers might look like this: 1,5 ; 2,3 ; 25 The spaces are optional." explanation="Expand the sum to determine the values of \(a\) and \(d\) We have the equation \[\begin{array}{c}\sum_{n=1}^{m} 2 n = \text{1 122}\end{array}\] and must figure out the value of \(m\) . With the summation symbol \( \Sigma \) , the variable \(m\) tells us which term is the last term in the sum. This means it is related to the number of terms. We will use the equation \( S_{n} = \dfrac{n}{2} \left(2a + (n - 1)d \right) \) to work out the answer. First, we need the values of \( a \) and \( d \) . To find them, we can expand the sum on the left side of the equation. \[                     \begin{aligned}                     \sum_{n = 1}^m 2 n & = \text{1 122}\\                     \left(2(1) + 0\right) + \left(2(2) + 0\right) + \left(2(3) + 0\right) + \ldots + T_{m} & = \text{1 122}\\                     2 + 4 + 6 + \ldots + T_{m} & = \text{1 122}                     \end{aligned}                 \] Now we can easily see that the first term is \( a = 2 \) . For the common difference, we subtract two consecutive terms as always, \( d = T_{2} - T_{1} = 4 - 2 = 2\) . The number on the right side of the equation, \(\text{1 122}\) , is the sum of all of the terms. In other words, it is equal to the sum from the first term up to the \( m^{\text{th}} \) term: \( S_{m} = \text{1 122}\) . Substitute into \( S_{n} = \dfrac{n}{2} \left(2a + (n - 1)d \right) \) and get a quadratic equation in standard form Now we will substitute values into the equation \( S_{n} = \frac{n}{2} \left(2a + (n - 1)d \right) \) so that we can solve for the number of terms in the sum (represented by \( n \) ). However, we will replace \( n \) with \(m\) since the sum has \(m\) terms. \[                     \begin{aligned}                     S_{m} & = \frac{m}{2} \left(2a + (m - 1)d \right)\\                     \text{1 122} & = \frac{m}{2} \left(2(2) + (m - 1)(2)\right)                     \end{aligned}                 \] The only variable remaining in the equation is \(m\) , and we can solve the equation to find its value. Expand out the right side and simplify the equation into standard form. Start by multiplying both sides of the equation by \(\text{2}\) in order to cancel the denominator of the fraction. \[                     \begin{aligned}                     \text{1 122} & = \frac{m}{2} \left(2(2) + (m - 1)(2)   \right) \\                     2(\text{1 122}) & = m \left(2(2) + (m - 1)(2)   \right) \\                     \text{2 244} & = m \left(\text{4}  +2 m - 2\right)\\                     \text{2 244} & = m \left(2 m + 2\right) \\                     0 & = \text{2}m^2 +\text{2}m -\text{2 244} \quad \longleftarrow \quad ^{\text{divide out the common}}_{\text{factor of } 2}  \\0 & = m^2 +m -\text{1 122}                     \end{aligned}                 \] Fantastic! We have a quadratic equation in standard form. Solve the equation and decide which answer is acceptable Now we must solve the equation. You can use the quadratic formula if you prefer, and that is usually a good choice when you have a very large constant term. Here we will show the solution by factorisation. \[                     \begin{aligned}                     0 & = m^2 +m -\text{1 122} \\                     0 & = \left(m - 33\right) \left(m + 34\right)                     \end{aligned}                 \] \[                     \begin{array}{ccc}                     \text{So} & &\\                     m - 33 = 0& \qquad \text{or} \qquad& m + 34  = 0 \\                     m  = 33 & \qquad \text{or} \qquad & m  = -34                     \end{array}                 \] There are two solutions to the equation, \(m = 33\) or \(m = -34\) . Only one of the solutions above is an acceptable answer: since \(m\) represents the number of terms in the series, it must be a natural number. It cannot be a decimal number, and it certainly cannot be negative or zero! Therefore, the value \(m = -34\) is impossible, and we can throw it out. That leaves only one answer. The correct answer is \(m = 33\) . Submit your answer as:" />
+
+<QuizCard id="m12-01-04c" title="Interactive Exercise 1.10" question="Write down the sixth term \((T_{6})\) of the sequence." options=[] answer="20" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Determine the value of the sixth term We can see from the first three terms that the common difference value for this sequence is \(\text{6}\) . So the sixth term can be calculated as: \[                         \begin{aligned}                             T_{n} & = a + (n - 1) d \\                             T_{6} & = (-10) + ((6) - 1) (6) \\                             & = 20                          \end{aligned}                     \] Submit your answer as:" />
+
+**Calculating the value of a term given the sum of \(n\) terms: **
+
+If the first term in a series is \(T_{1}\), then \(S_{1} = T_{1}\).
+
+We also know the sum of the first two terms \(S_{2} = T_{1} + T_{2}\), which we rearrange to make \(T_{2}\) the
+        subject of the equation:
+
+      \begin{align*}
+      T_{2} &= S_{2} - T_{1} \\
+      \text{Substitute } S_{1} &= T_{1} \\
+      \therefore T_{2} &= S_{2} - S_{1}
+      \end{align*}
+
+
+Similarly, we could determine the third and fourth term in a series:
+
+      \begin{align*}
+      T_{3} &= S_{3} - S_{2} \\
+      \text{And } T_{4} &= S_{4} - S_{3}
+      \end{align*}
+
+\(T_{n} = S_{n} - S_{n-1}, \text{ for } n \in \{2;3;4; \ldots \}\) and \(T_{1} = S_{1}\)
+
+## Sum of an arithmetic series
+
+### Textbook Exercise 1.8
+
+**Problem:**
+Determine the value of \(k\): \[\sum _{n=1}^{k} \left( -2n \right) = - 20\]
+
+**Solution:**
+\begin{align*}
+              \left( -2(1) \right) + \left( -2(2) \right) + \left( -2(3) \right) + \ldots + \left( -2(k) \right) &=
+              -20 \\
+              -2 - 4 - 6 + \ldots -2k & = -20
+              \end{align*}
+
+
+
+This is an arithmetic series with \(a = -2\) and \(d = -2\):
+
+              \begin{align*}
+              S_{n} &= \frac{n}{2}[2a + (n-1)d] \\
+              -20 &= \frac{n}{2}[2(-2) + (n-1)(-2)] \\
+              -40 &= n [-4 + -2n + 2] \\
+              -40 &= n [ -2n - 2] \\
+              -40 &= -2n^{2} - 2n \\
+              2n^{2} + 2n - 40 &= 0 \\
+              n^{2} + n - 20 &= 0 \\
+              (n + 5)(n - 4) &= 0 \\
+              \therefore n = -5 &\text{ or } n = 4 \\
+              \therefore S_{4} &= -20 \\
+              \therefore k &= 4
+              \end{align*}
+
+The sum to \(n\) terms of an arithmetic series is \({S}_{n}=\frac{n}{2} \left(7n+15\right)\).
+
+**Problem:**
+How many terms of the series must be added to give a sum of \(\text{425}\)?
+
+**Solution:**
+\begin{align*}
+                {S}_{n} &= \frac{n}{2} \left(7n+15\right) \\
+                \therefore 425 &= \frac{n}{2} \left(7n+15\right) \\
+                850 &= n \left(7n+15\right) \\
+                &= 7n^{2} + 15n \\
+                0 &= 7n^{2} + 15n - 850 \\
+                &= (7n + 85)(n - 10) \\
+                \therefore n = -\frac{85}{7} &\text{ or } n = 10
+                \end{align*}
+
+
+
+but \(n\) must be a positive integer, therefore \(n=10\).
+
+**Problem:**
+Determine the sixth term of the series.
+
+**Solution:**
+\begin{align*}
+                {S}_{n} &= \frac{n}{2} \left(7n+15\right) \\
+                {S}_{1} &= {T}_{1} = a \\
+                {S}_{1} &= \frac{n}{2} \left(7n+15\right) \\
+                &= \frac{1}{2} \left(7(1)+15\right) \\
+                \therefore a &= 11 \\
+                {S}_{2} &= \frac{2}{2} \left(7(2)+15\right) \\
+                &= 29 \\
+                \therefore T_{1} + T_{2} &= 29 \\
+                \therefore T_{2} &=29 - 11 \\
+                \text{And } d &= T_{2} - T_{1} \\
+                &= 18 - 11 \\
+                &= 7 \\
+                \therefore T_{n} &= a + (n-1)d \\
+                &= 11 + (n-1)(7) \\
+                &= 11 + 7n - 7 \\
+                &= 7n + 4 \\
+                \therefore T_{6} &= 7(6) + 4 \\
+                &= 46
+                \end{align*}
+
+**Problem:**
+The common difference of an arithmetic series is \(\text{3}\). Calculate the values of \(n\) for
+                  which the \(n\)\(^{\text{th}}\) term of the series is \(\text{93}\), and the sum of the first \(n\)
+                  terms is \(\text{975}\).
+
+**Solution:**
+\begin{align*}
+                d &= 3 \\
+                {T}_{n} &= a + (n - 1)d \\
+                93 &= a + 3(n-1) \\
+                &= a + 3n - 3 \\
+                96 &= a + 3n \\
+                \therefore a &= 96 - 3n \\
+                {S}_{n} &= \frac{n}{2}[2a + (n-1)d] \\
+                \therefore 975 &= \frac{n}{2}[2(96 - 3n) + 3(n-1)] \\
+                1950 &= n[192 - 6n + 3n - 3] \\
+                1950 &= 189n - 3n^{2} \\
+                0 &= - 3n^{2} + 189n - 1950 \\
+                0 &= n^{2} - 63n + 650 \\\
+                0 &= (n - 13)(n - 50) \\
+                \therefore n = 13 &\text{ or } n = 50
+                \end{align*}
+
+**Problem:**
+Explain why there are two possible answers.
+
+**Solution:**
+There are two series that satisfy the given parameters:
+
+                \begin{align*}
+                d &= 3 \\
+                a &= 96 - 3n \\
+                \text{If } n &= 13 \\
+                a &= 96 - 3(13) \\
+                &= 57 \\
+                \therefore 57 + 60 + 63 + & \ldots + T_{13} = 975 \\
+                \text{If } n &= 50 \\
+                a &= 96 - 3(50) \\
+                &= -54 \\
+                \therefore (-54) + (-51) + (-48) + & \ldots + T_{50} = 975
+                \end{align*}
+
+**Problem:**
+The third term of an arithmetic sequence is \(-\text{7}\) and the seventh term is \(\text{9}\).
+                Determine the sum of the first \(\text{51}\) terms of the sequence.
+
+**Solution:**
+\begin{align*}
+              {T}_{3} &= -7 = a + 2d \ldots \ldots (1) \\
+              {T}_{7} &= 9 = a + 6d \ldots \ldots (2) \\
+              \therefore \text{Subtract eqns: } (1) - (2) \quad -7 - (9) &= a + 2d -(a + 6d) \\
+              -16 &= - 4d \\
+              \therefore 4 &= d \\
+              \text{Substitute back into eqn. } (1) \quad a &= -7 -2 (4) \\
+              \therefore a &= -15 \\
+              S_{n} &= \frac{n}{2}[2a + (n-1)d] \\
+              S_{51} &= \frac{51}{2}[2(-15) + (51-1)(4)] \\
+              &= \frac{51}{2}[-30 + 200] \\
+              &= (51)(85) \\
+              \therefore S_{51}&= 4335
+              \end{align*}
+
+**Problem:**
+Calculate the sum of the arithmetic series \(4+7+10+\cdots +901\).
+
+**Solution:**
+\begin{align*}
+              a &= 4 \\
+              l &= 901 \\
+              d &= T_{2} - T_{1} \\
+              &= 7 - 4 \\
+              &= 3 \\
+              \text{And } T_{n} &= a +(n-1)d \\
+              &= 4 +(n-1)(3) \\
+              \therefore 901 &= 4 + 3n - 3 \\
+              900 &= 3n \\
+              \therefore 300 &= n \\
+              S_{n} &= \frac{n}{2}[a + l] \\
+              S_{300} &= \frac{300}{2}[4 + 901 ] \\
+              &= (150)(905) \\
+              \therefore S_{300} &= 135750
+              \end{align*}
+
+**Problem:**
+Evaluate without using a calculator: \(\dfrac{4 + 8 + 12 + \cdots + 100}{3 + 10 + 17 + \cdots + 101}\)
+
+**Solution:**
+Consider the numerator: \(4 + 8 + 12 + \ldots + 100\)
+
+              \begin{align*}
+              a &= 4 \\
+              l &= 100 \\
+              d &= T_{2} - T_{1} \\
+              &= 8 - 4 \\
+              &= 4 \\
+              \text{And } T_{n} &= a +(n-1)d \\
+              100 &= 4 +(n-1)(4) \\
+              100 &= 4n \\
+              \therefore 25 &= n \\
+              S_{n} &= \frac{n}{2}[a + l] \\
+              S_{25} &= \frac{25}{2}[4 + 100 ] \\
+              S_{25} &= (25)(52)
+              \end{align*}
+
+
+
+Consider the denominator: \(3 + 10 + 17 + \ldots + 101\)
+
+              \begin{align*}
+              a &= 3 \\
+              l &= 101 \\
+              d &= T_{2} - T_{1} \\
+              &= 10 - 3 \\
+              &= 7 \\
+              \text{And } T_{n} &= a +(n-1)d \\
+              101 &= 3 +(n-1)(7) \\
+              101 &= 3 + 7n - 7 \\
+              105 &= 7n \\
+              \therefore 15 &= n \\
+              S_{n} &= \frac{n}{2}[a + l] \\
+              S_{15} &= \frac{15}{2}[3 + 101 ] \\
+              S_{15} &= (15)(52)
+              \end{align*}
+
+
+
+Now consider the quotient of the two series:
+
+              \begin{align*}
+              \frac{ S_{25} }{ S_{15} } &= \frac{25 \times 52}{15 \times 52} \\
+              &= \frac{25}{15} \\
+              &= \frac{5}{3}
+              \end{align*}
+
+The second term of an arithmetic sequence is \(-\text{4}\) and the sum of the first six terms of the
+                series is \(\text{21}\).
+
+**Problem:**
+Find the first term and the common difference.
+
+**Solution:**
+\begin{align*}
+                T_{n} &= a + (n-1)d \\
+                T_{2} &= a + d \\
+                -4 &= a + d \ldots \ldots (1) \\
+                S_{n} &= \frac{n}{2}[2a + (n-1)d] \\
+                S_{6} &= \frac{6}{2}[2a + (6-1)d] \\
+                21 &= 3[2a + 5d] \\
+                \therefore 7 &= 2a + 5d \ldots \ldots (2) \\
+                \text{Eqn. } (1) \times 2: \quad -8 &= 2a + 2d \\
+                \text{Eqn. } (2) - 2(1): \quad 7 - (-8) &= (2a + 5d) - (2a + 2d) \\
+                15 &= 3d \\
+                \therefore 5 &= d \\
+                \text{And } a &= -4 - 5 \\
+                &= -9
+                \end{align*}
+
+**Problem:**
+Hence determine \(T_{100}\).
+
+[IEB, Nov 2004]
+
+**Solution:**
+\begin{align*}
+                T_{n} &= a + (n-1)d \\
+                T_{100} &= -9 + (100-1)(5) \\
+                &= -9 + 495 \\
+                &=486
+                \end{align*}
+
+Determine the value of the following:
+
+**Problem:**
+\[\sum _{w=0}^{8}{(7w+8)}\]
+
+**Solution:**
+Arithmetic series: \(8 + 15 + 22 + \ldots + 64\)
+
+                \begin{align*}
+                S_{n} &= \frac{n}{2}[2a + (n-1)d]\\
+                a &= 8 \\
+                d &= 15 - 8 = 7 \\
+                \therefore S_{9} &= \frac{9}{2}[2(8) + (9-1)(7)]\\
+                &= \frac{9}{2}[16 + 56]\\
+                &= \frac{9}{2}[72]\\
+                &= (9)(36) \\
+                &= 324
+                \end{align*}
+
+**Problem:**
+\[\sum _{j=1}^{8}{7j+8}\]
+
+**Solution:**
+Arithmetic series: \(7 + 14 + 21 + \ldots + 56\)
+
+                \begin{align*}
+                S_{n} &= \frac{n}{2}[2a + (n-1)d]\\
+                a &= 7 \\
+                d &= 14 - 7 = 7 \\
+                \therefore S_{8} &= \frac{8}{2}[2(7) + (8-1)(7)]\\
+                &= 4[14 + 49]\\
+                &= 4 (63) \\
+                &= 252 \\
+                \therefore S_{8} + 8 &= 260
+                \end{align*}
+
+                \begin{align*}
+                \text{Or } S_{n} &= \frac{n}{2}[a + l]\\
+                a &= 7 \\
+                l &= 56 \\
+                \therefore S_{8} &= \frac{8}{2}[7 + 56]\\
+                &= 4 (63) \\
+                &= 252 \\
+                \therefore S_{8} + 8 &= 260
+                \end{align*}
+
+**Problem:**
+Determine the value of \(n\).
+
+              \[\sum _{c=1}^{n}{(2 - 3c)} = -330\]
+
+**Solution:**
+Series: \(-1 - 4 - 7 \ldots + (2 - 3n)\)
+
+              \begin{align*}
+              a &= -1 \\
+              d &= T_{2} - T_{1} = -4 - (-1) = -3 \\
+              d &= T_{3} - T_{2} = -7 - (-4) = -3 \\
+              \therefore &\text{ this is an arithmetic series} \\
+              \therefore S_{n} &= \frac{n}{2}[2a + (n-1)d]\\
+              -330 &= \frac{n}{2}[2(-1) + (n-1)(-3)]\\
+              - 660 &= n[-2 - 3n + 3 ] \\
+              - 660 &= n - 3n^{2} \\
+              \therefore 0 &= -3n^{2} + n + 660 \\
+              0 &= 3n^{2} - n - 660 \\
+              0 &= (3n + 44)(n - 15) \\
+              \therefore n = -\frac{44}{3} &\text{ or } n = 15
+              \end{align*}
+
+
+
+but \(n\) must be a positive integer, therefore \(n = 15\).
+
+Alternative method:
+
+              \begin{align*}
+              a &= -1 \\
+              l &= 2 - 3n\\
+              \therefore S_{n} &= \frac{n}{2}[a + 1] \\
+              -330 &= \frac{n}{2}[-1 + 2 -3n] \\
+              - 660 &= n(1 -3n) \\
+              - 660 &= n - 3n^{2} \\
+              \therefore 0 &= -3n^{2} + n + 660 \\
+              0 &= 3n^{2} - n - 660 \\
+              0 &= (3n + 44)(n - 15) \\
+              \therefore n = -\frac{44}{3} &\text{ or } n = 15
+              \end{align*}
+
+
+
+but \(n\) must be a positive integer, therefore \(n = 15\).
+
+**Problem:**
+The sum of \(n\) terms of an arithmetic series is \(5{n}^{2}-11n\) for all values of \(n\). Determine
+                the common difference.
+
+**Solution:**
+\begin{align*}
+              {S}_{n} &= 5n^{2} - 11n \\
+              \therefore S_{1} &= 5(1)^{2} - 11(1) \\
+              &= -6 \\
+              \text{And } S_{2} &= 5(2)^{2} - 11(2) \\
+              &= 20 - 22 \\
+              &= -2 \\
+              &= T_{1} + T_{2} \\
+              \therefore T _{2} &= S_{2} - S_{1} \\
+              &= -2 - (-6) \\
+              &= 4 \\
+              \therefore d &= T_{2} - T_{1} \\
+              &= 4 - (-6) \\
+              &= 10
+              \end{align*}
+
+**Problem:**
+The sum of an arithmetic series is \(\text{100}\) times its first term, while the last term is
+                \(\text{9}\) times the first term. Calculate the number of terms in the series if the first term is not
+                equal to zero.
+
+**Solution:**
+\begin{align*}
+              {S}_{n} &= 100a \\
+              l &= 9a \\
+              {S}_{n} &= \frac{n}{2}[a + l] \\
+              100a &= \frac{n}{2}[a + 9a] \\
+              100a &= \frac{n}{2}[10a] \\
+              100a &= 5a(n) \\
+              \frac{100a}{5a} &= n \\
+              \therefore 20 &= n
+              \end{align*}

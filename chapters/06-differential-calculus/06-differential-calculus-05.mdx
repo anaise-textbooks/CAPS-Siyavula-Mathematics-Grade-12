@@ -1,0 +1,184 @@
+## 6.5 Second derivative (EMCH9)
+
+<QuizCard id="m12-06-05a" title="Interactive Exercise 6.10" question="Evaluate \(n^{\prime}(z)\) using the rules for differentiation: \[                 \begin{aligned}                 n(z) =  - \frac{7}{2}z^{ 6} + 7\sqrt[3]{z^{4}} + \frac{5}{4}z^{ \frac{2}{3}}                 \end{aligned}             \] INSTRUCTIONS: Remember to put brackets around exponent terms. Example: if you want \(3y^{\frac{1}{3}}\) , type your answer like this: 3y^(1/3) Write your answer with positive exponents (and not as surds)." options=[] answer="  - 21 z^5 + 28/3 z^(1/3) + 5/(6z^(1/3)) " hint="Your answer should be a mathematical expression. You can use the following symbols to write mathematical expressions: add: + subtract: − multiply: ∗ divide: / exponent: ^ The following special symbols are also recognised: pi (π): pi infinity (∞): oo It is also possible to write certain functions: √: sqrt( ) log: log( ) sin: sin( ) cosec: cosec( ) cos: cos( ) sec: sec( ) tan: tan( ) cot: cot( ) To write a logarithm with a specific base, use the underscore _ symbol.                For example, log of x base 3 can be written as: log_3 x" explanation="Rewrite the function using fractional exponents Begin by rewriting the function using fractional exponents to remove any surds in the function: \[                     \begin{aligned}                     & - \frac{7}{2}z^{ 6} + 7\sqrt[3]{z^{4}} + \frac{5}{4}z^{ \frac{2}{3}} \\                     = &  - \frac{7}{2}z^{ 6} + 7 z^{\frac{4}{3}} + \frac{5}{4}z^{ \frac{2}{3}}                     \end{aligned}                 \] Use the rule for differentiation Now we can find the derivative using the rules for differentiation. NOTE: In the step below, each term on the RHS of the equation is shown on a separate line (to be visible on all screens). On paper, you should write all the terms in one line. \[                     \begin{aligned}                     & \dfrac{d}{dz}  \left(   - \frac{7}{2}z^{ 6} + 7 z^{\frac{4}{3}} + \frac{5}{4}z^{ \frac{2}{3}}  \right) \\                      = &  - \left(6\right) \left( \frac{7}{2} \right) z^{\left(6-1\right)} \\&  + \left(\frac{4}{3}\right) \left( 7 \right) z^{\left(\frac{4}{3}-1\right)} \\& + \left(\frac{2}{3}\right) \left( \frac{5}{4} \right) z^{\left(\frac{2}{3}-1\right)}                     \end{aligned}                 \] We write the final answer with positive exponents: \[                     \begin{aligned}                     n^{\prime}(z) =  - 21z^{5} + \frac{28}{3}z^{\frac{1}{3}} + \frac{5}{6z^{\frac{1}{3}}}                     \end{aligned}                 \] Submit your answer as:" />
+
+The second derivative of a function is the derivative of the first derivative and it indicates the change in
+      gradient of the original function. The sign of the second derivative tells us if the gradient of the original
+      function is increasing, decreasing or remaining constant.
+
+To determine the second derivative of the function \(f(x)\), we differentiate \(f'(x)\) using the rules for
+      differentiation.
+
+    \[f''(x) = \frac{d}{dx}[f'(x)]\]
+
+
+
+We also use the following notation for determining the second derivative of \(y\):
+
+    \[y'' = \frac{d}{dx}\left[\frac{dy}{dx}\right] = \frac{d^{2}y}{dx^{2}}\]
+
+
+<Callout type="tip" title="Worked example 16: Finding the second derivative">
+**Question:**
+Calculate the second derivative for each of the following:
+
+2. \(k(x) = 2x^{3} - 4x^{2} + 9\)
+4. \(y = \frac{3}{x}\)
+
+2. \begin{align*}
+             k'(x) &= 2(3x^{2}) - 4(2x) + 0 \\
+             &= 6x^{2} - 8x \\
+             & \\
+             k''(x) &= 6(2x) - 8 \\
+             &= 12x - 8
+             \end{align*}
+4. \begin{align*}
+             y &= 3x^{-1} \\
+             & \\
+             \frac{dy}{dx} &= 3(-1x^{-2}) \\
+             &= -3x^{-2} \\
+             &= -\frac{3}{x^{2}} \\
+             & \\
+             \frac{d^{2}y}{dx^{2}} &= -3(-2x^{-3}) \\
+             &= \frac{6}{x^{3}}
+             \end{align*}
+</Callout>
+
+## Second derivative
+
+### Textbook Exercise 6.6
+
+Calculate the second derivative for each of the following:
+
+**Problem:**
+\(g(x)=5x^{2}\)
+
+**Solution:**
+\begin{align*}
+              g'(x)&=10x \\
+              g''(x)&=10
+              \end{align*}
+
+**Problem:**
+\(y=8x^{3}-7x\)
+
+**Solution:**
+\begin{align*}
+              \frac{dy}{dx}&=24x^{2}-7 \\
+              \frac{d^{2}y}{dx^{2}}&=48x
+              \end{align*}
+
+**Problem:**
+\(f(x)=x(x-6)+10\)
+
+**Solution:**
+\begin{align*}
+              f(x)&=x^{2}-6x+10 \\
+              f'(x)&=2x-6 \\
+              f''(x)&=2
+              \end{align*}
+
+**Problem:**
+\(y=x^{5}-x^{3}+x-1\)
+
+**Solution:**
+\begin{align*}
+              \frac{dy}{dx}&=5x^{4}-3x^{2}+1 \\
+              \frac{d^{2}y}{dx^{2}}&=20x^{3}-6x
+              \end{align*}
+
+**Problem:**
+\(k(x)=(x^{2}+1)(x-1)\)
+
+**Solution:**
+\begin{align*}
+              k(x)&=x^{3}-x^{2}+x-1 \\
+              k'(x)&=3x^{2}-2x+1 \\
+              k''(x)&=6x-2
+              \end{align*}
+
+**Problem:**
+\(p(x)=-\frac{10}{x^{2}}\)
+
+**Solution:**
+\begin{align*}
+              p(x)&= -10x^{-2} \\
+              p'(x)&=20x^{-3} = \frac{20}{x^{3}}\\
+              p''(x)&=-60x^{-4}=\frac{-60}{x^{4}}
+              \end{align*}
+
+**Problem:**
+\(q(x)=\sqrt{x}+5x^{2}\)
+
+**Solution:**
+\begin{align*}
+              q(x)&=x^{\frac{1}{2}}+5x^{2} \\
+              q'(x)&=\frac{1}{2}x^{-\frac{1}{2}}+10x \\
+              q''(x)&=-\frac{1}{4}x^{-\frac{3}{2}}+10 \\
+              &=-\frac{1}{4\sqrt{x^{3}}}+10
+              \end{align*}
+
+**Problem:**
+Find the first and second derivatives of \(f(x)=5x(2x+3)\).
+
+**Solution:**
+\begin{align*}
+            f(x)&=10x^{2}+15x \\
+            f'(x)&=20x+15\\
+            f''(x)&=20
+            \end{align*}
+
+**Problem:**
+Find \(\dfrac{d^{2}}{dx^{2}}\left[6\sqrt[3]{x^{2}}\right]\).
+
+**Solution:**
+\begin{align*}
+            y&=6\sqrt[3]{x^{2}} \\
+            &=6x^{\frac{2}{3}} \\
+            \frac{dy}{dx}&= 6\left(\frac{2}{3}\right)x^{\frac{2}{3}-1} \\
+            &=4x^{-\frac{1}{3}} \\
+            \frac{d^{2}y}{dx^{2}}&=4\left(-\frac{1}{3}\right)x^{-\frac{1}{3}-1} \\
+            &= -\frac{4}{3}x^{-\frac{4}{3}} \\
+            &=-\frac{4}{3\sqrt[3]{x^{4}}}
+            \end{align*}
+
+Given the function \(g: \enspace y=(1-2x)^{3}\).
+
+**Problem:**
+Determine \(g'\) and \(g''\).
+
+**Solution:**
+\begin{align*}
+              g(x)&=(1-2x)^{3} \\
+              &=(1-2x)(1-2x)^{2} \\
+              &=(1-2x)(1-4x+4x^{2}) \\
+              &=1 - 6x + 12x^{2} - 8x^{3} \\
+              g'(x)&=-6+24x-24x^{2} \\
+              g''(x)&=24-48x
+              \end{align*}
+
+**Problem:**
+What type of function is:
+
+2. \(g'\)
+4. \(g''\)
+
+**Solution:**
+2. \(g'(x) =-6+24x-24x^{2} \enspace \text{ (quadratic function)} \\\)
+4. \(g''(x) =24-48x \enspace \text{ (linear function)}\)
+
+**Problem:**
+Find the value of \(g''\left(\frac{1}{2}\right)\).
+
+**Solution:**
+\begin{align*}
+              g''\left(\frac{1}{2}\right)&= 24 - 48\left(\frac{1}{2}\right) \\
+              &= 24 - 24 \\
+              &=0
+              \end{align*}
+
+**Problem:**
+What do you observe about the degree (highest power) of each of the derived functions?
+
+**Solution:**
+Each derivative function is one degree lower than the previous one.

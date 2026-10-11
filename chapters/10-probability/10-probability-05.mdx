@@ -1,0 +1,211 @@
+## 10.5 Factorial notation (EMCK3)
+
+<QuizCard id="m12-10-05a" title="Interactive Exercise 10.15" question="Expand and determine the value of the following by hand: \(2!\)" options=["2 \u2715 1", "2 \u2715 2", "2 + 2", "2 + 1", "it is a very excited 2"] answer="0, 2" hint="" explanation="Calculate the factorial by hand \(2!\) means the factorial of \(\text{2}\) , which can be calculated as follows: \[                         \begin{aligned}                             (n)! & = (n) \times (n-1) \times (n-2) \times ... \times (3) \times (2) \times (1) \\(2)! & = 2 \times 1                         \end{aligned}                     \] Therefore the factorial \(\text{2}! = \text{2}\) Submit your answer as: 2 ✕ 1 and" />
+
+<Callout type="tip" title="Worked example 12: The arrangement of outcomes without repetition">
+**Question:**
+Eight athletes take part in a \(\text{400}\) \(\text{m}\) race. In how many different ways can all
+          \(\text{8}\) places in the race be arranged?
+
+Any of the \(\text{8}\) athletes can come first in the race. Now there are only \(\text{7}\) athletes left to
+        be second, because an athlete cannot be both second and first in the race. After second place, there are only
+        \(\text{6}\) athletes left for the third place, \(\text{5}\) athletes for the fourth place, \(\text{4}\)
+        athletes for the fifth place, \(\text{3}\) athletes for the sixth place, \(\text{2}\) athletes for the seventh
+        place and \(\text{1}\) athlete for the eighth place. Therefore the number of ways that the athletes can be
+        ordered is as follows:
+        \[8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = \text{40 320}\]
+</Callout>
+
+As in the example above, it is a common occurrence in counting problems that the outcome of the first event
+      reduces the number of possible outcomes for the second event by exactly \(\text{1}\), and the outcome of the
+      second event reduces the possible outcomes for the third event by \(\text{1}\) more, etc.
+
+As this sort of problem occurs so frequently, we have a special notation to represent the answer. For an integer,
+      \(n\), the notation \(n!\) (read \(n\) factorial) represents:
+
+    \(n\times \left(n-1\right)\times \left(n-2\right)\times \cdots \times 3\times 2\times 1\)
+
+
+This allows us to formulate the following:
+
+The total number of possible arrangements of \(n\) different objects is \[n \times (n-1) \times (n-2) \times
+        \ldots \times 3 \times 2 \times 1 = n!\]
+
+with the following definition: 0! = 1.
+
+<Callout type="tip" title="Worked example 13: Factorial notation">
+**Question:**
+2. Determine \(12!\)
+4. Show that \(\dfrac{8!}{4!} = 8 \times 7 \times 6 \times 5\)
+6. Show that \(\dfrac{n!}{(n-1)!} = n\)
+
+2. We know from the definition of a factorial that \(12! = 12 \times 11 \times 10 \times \ldots \times 3
+               \times 2 \times 1\). However, it can be quite tedious to work this out by calculating each multiplication
+               step on paper or typing each step into your calculator. Fortunately, there is a button on your calculator
+               which makes this much easier. To use your calculator to work out the factorial of a number:
+   - Input the number.
+   - Press SHIFT on your CASIO or 2ndF on your SHARP calculator.
+   - Then press \(x!\) on your CASIO or \(n!\) on your SHARP calculator.
+   - Finally, press equals to calculate the answer.
+   If we follow these steps for \(12!\), we get the answer \(\text{479 001 600}\).
+4. Expand the factorial notation:
+             \[\dfrac{8!}{4!} = \dfrac{8 \times 7 \times 6 \times 5 \times \color{red}{4} \times \color{blue}{3} \times
+             \color{magenta}{2}
+             \times \color{teal}{1}}{\color{red}{4} \times \color{blue}{3} \times \color{magenta}{2} \times
+             \color{teal}{1}} = 8 \times 7 \times 6
+             \times 5 = \text{ RHS}\]
+6. Expand the factorial notation:\[\dfrac{n!}{(n-1)!} = \dfrac{n \times \color{red}{(n-1)} \times
+             \color{blue}{(n-2)}
+             \times \color{magenta}{(n-3)} \times \ldots \times \color{teal}{3} \times \color{orange}{2} \times
+             \color{green}{1}}{\color{red}{(n-1)}
+             \times \color{blue}{(n-2)} \times \color{magenta}{(n-3)} \times \ldots \times \color{teal}{3} \times
+             \color{orange}{2} \times
+             \color{green}{1}} = n\]
+   If \(n = 1\), we get \(\frac{1!}{0!}\). This is a special case. Both \(1!\) and \(0! =1\), therefore
+               \(\frac{1!}{0!} = 1\) so our identity still holds.
+</Callout>
+
+## Factorial notation
+
+### Textbook Exercise 10.5
+
+Work out the following without using a calculator:
+
+**Problem:**
+\(3!\)
+
+**Solution:**
+\[3 \times 2 \times 1 = \text{6}\]
+
+**Problem:**
+\(6!\)
+
+**Solution:**
+\[6 \times 5 \times 4 \times 3 \times 2 \times 1 = \text{720}\]
+
+**Problem:**
+\(2!3!\)
+
+**Solution:**
+\[2 \times 1 \times 3 \times 2 \times 1 = \text{12}\]
+
+**Problem:**
+\(8!\)
+
+**Solution:**
+\[8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = \text{40 320}\]
+
+**Problem:**
+\(\dfrac{6!}{3!}\)
+
+**Solution:**
+\[\dfrac{6 \times 5 \times 4 \times 3 \times 2 \times 1}{3 \times 2 \times 1} = \text{120}\]
+
+**Problem:**
+\(6! + 4! - 3!\)
+
+**Solution:**
+\[(6 \times 5 \times 4 \times 3 \times 2 \times 1) + (4 \times 3 \times 2 \times 1) - (3 \times 2 \times
+              1)= 720 + 24 -6 = \text{738}\]
+
+**Problem:**
+\(\dfrac{6! - 2!}{2!}\)
+
+**Solution:**
+\[\dfrac{(6 \times 5 \times 4 \times 3 \times 2 \times 1) - (2 \times 1)}{2 \times 1}= \dfrac{720 - 2}{2}
+              = \text{359}\]
+
+**Problem:**
+\(\dfrac{2! + 3!}{5!}\)
+
+**Solution:**
+\[\dfrac{(2 \times 1) + (3 \times 2 \times 1)}{5 \times 4 \times 3 \times 2 \times 1}= \dfrac{2 + 6}{120}
+              = \dfrac{1}{15}\]
+
+**Problem:**
+\(\dfrac{2! + 3! - 5!}{3! - 2!}\)
+
+**Solution:**
+\[\dfrac{2 + 6 - 120}{6 - 2}= \dfrac{-\text{112}}{4} = -\text{28}\]
+
+**Problem:**
+\((3!)^{3}\)
+
+**Solution:**
+\(6 \times 6 \times 6 = \text{216}\)
+
+**Problem:**
+\(\dfrac{3! \times 4!}{2!}\)
+
+**Solution:**
+\[\dfrac{(3 \times 2 \times 1) \times (4 \times 3 \times 2 \times 1)}{2 \times 1} = \text{72}\]
+
+Calculate the following using a calculator:
+
+**Problem:**
+\(\dfrac{12!}{2!}\)
+
+**Solution:**
+\[\dfrac{(12 \times 11 \times 10 \times 9 \times 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2
+              \times 1)}{2 \times 1} = \text{239 500 800}\]
+
+**Problem:**
+\(\dfrac{10!}{20!}\)
+
+**Solution:**
+\(\text{1,49} \times \text{10}^{-\text{12}}\)
+
+**Problem:**
+\(\dfrac{10! + 12!}{5! + 6!}\)
+
+**Solution:**
+\(\text{574 560}\)
+
+**Problem:**
+\(5!(2! + 3!)\)
+
+**Solution:**
+\(\text{960}\)
+
+**Problem:**
+\((4!)^{2}(3!)^{2}\)
+
+**Solution:**
+\(\text{20 736}\)
+
+Show that the following is true:
+
+**Problem:**
+\(\dfrac{n!}{(n-2)!} = n^{2} - n\)
+
+**Solution:**
+\begin{align*}
+              \dfrac{n!}{(n-2)!} & = \dfrac{n \times (n-1) \times \color{red}{(n-2)} \times \color{blue}{(n-3)}
+              \times \ldots
+              \times \color{magenta}{3} \times \color{teal}{2} \times \color{orange}{1}}{\color{red}{(n-2)} \times
+              \color{blue}{(n-3)} \times \ldots
+              \times \color{magenta}{3} \times \color{teal}{2} \times \color{orange}{1}} \\ \\
+              &= n(n-1) = n^{2} - n
+              \end{align*}
+
+**Problem:**
+\(\dfrac{(n-1)!}{n!} = \dfrac{1}{n}\)
+
+**Solution:**
+\[\dfrac{(n-1)!}{n!} = \dfrac{\color{red}{(n-1)} \times \color{blue}{(n-2)} \times \color{magenta}{(n-3)}
+              \times \ldots
+              \times \color{teal}{3} \times \color{orange}{2} \times \color{green}{1}}{n \times \color{red}{(n-1)}
+              \times \color{blue}{(n-2)}
+              \times \color{magenta}{(n-3)} \times \ldots \times \color{teal}{3} \times \color{orange}{2} \times
+              \color{green}{1}} =
+              \dfrac{1}{n}\]
+
+**Problem:**
+\(\dfrac{(n-2)!}{(n-1)!} = \dfrac{1}{n-1} \text{ for } n>1\)
+
+**Solution:**
+\[\dfrac{(n-2)!}{(n-1)!} = \dfrac{\color{red}{(n-2)} \times \color{blue}{(n-3)} \times \ldots \times
+              \color{magenta}{3}
+              \times \color{teal}{2} \times \color{orange}{1}}{(n-1) \times \color{red}{(n-2)} \times
+              \color{blue}{(n-3)} \times \ldots
+              \times \color{magenta}{3} \times \color{teal}{2} \times \color{orange}{1}} = \dfrac{1}{n-1}\]

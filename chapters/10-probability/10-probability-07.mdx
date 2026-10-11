@@ -1,0 +1,452 @@
+## 10.7 Application to probability problems (EMCK5)
+
+<QuizCard id="m12-10-07a" title="Interactive Exercise 10.21" question="What is the total number of possible PINs?" options=[] answer="2401" hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="If the digits can be repeated: you have \(\text{7}\) digits to choose from and you have to choose four times, therefore, using the fundamental counting principle: \[                         \begin{aligned}                             \text{total number of possible PINs } &= 7\times7\times7\times7 \\ &= 7^{4} \\                             &= \text{2 401}                         \end{aligned}                     \] Therefore, the total number of possible PINs is \(\text{2 401}\) . Submit your answer as:" />
+
+When needing to determine the probability that an event occurs, and the total number of arrangements
+                        of the sample space, \(S\), and the total number arrangements for the event, \(E\), are very
+                        large, the techniques used earlier in this chapter may no longer be practical. In this case, the
+                        probability may be determined using the fundamental counting principle. The probability of the
+                        event, \(E\), is the total number of arrangements of the event divided by the total number of
+                        arrangements of the sample space or \(\dfrac{n(E)}{n(S)}\).
+
+<Callout type="tip" title="Worked example 18: Personal Identification Numbers (PINs)">
+**Question:**
+Every client of a certain bank has a personal identification number (PIN) which
+                                        consists of four randomly chosen digits from 0 to 9.
+
+2. How many PINs can be made if digits can be repeated?
+4. How many PINs can be made if digits cannot be repeated?
+6. If a PIN is made by selecting four digits at random, and digits can be
+                                                   repeated, what is the probability that the PIN contains at least one
+                                                   eight?
+8. If a PIN is made by selecting four digits at random, and digits cannot be
+                                                   repeated, what is the probability that the PIN contains at least one
+                                                   eight?
+
+2. If digits can be repeated: you have \(\text{10}\) digits to choose from and you have
+                                           to choose four times, therefore the number of possible PINs \(= 10^{4} =
+                                           \text{10 000}\).
+4. If digits cannot be repeated: you have 10 digits for your first choice, nine for
+                                           your second, eight for your third and seven for your fourth. Therefore,
+                                           \[\text{the number of possible PINs } = 10 \times 9 \times 8 \times 7 =
+                                           \text{5 040}\]
+                                           .
+6. Let \(B\) be the event that at least one eight is chosen. Therefore the
+                                                   complement of \(B\) is the event that no eights are chosen.
+   If no eights are chosen, there are only nine digits to choose from.
+                                                   Therefore, \(n(\text{not } B)= 9^{4} = \text{6 561}\).
+   The total number of arrangements in the set, as calculated in Question 1, is
+                                                   \(\text{10 000}\). Therefore:
+                                                   \begin{align*}
+                                                   P(B) &= 1 - P(\text{not } B) \\
+                                                   &= 1 - \dfrac{n(\text{not } B)}{n(S)} \\
+                                                   &= 1 - \frac{\text{6 561}}{\text{10 000}} \\
+                                                   &= \text{0,3439}
+                                                   \end{align*}
+8. Let \(B\) be the event that at least one eight is chosen. Therefore the
+                                                   complement of \(B\), is the event that no eights are chosen.
+   If no eights are chosen, there are only 9 then 8 then 7 then 6 digits to
+                                                   choose from as we cannot repeat a digit once it is chosen. Therefore,
+                                                   \[n(\text{not } B)= 9 \times 8 \times 7 \times 6 = \text{3 024}\]
+                                                   .
+   The total number of arrangements in the set, as calculated in Question 1, is
+                                                   \(\text{10 000}\). Therefore:
+                                                   \begin{align*}
+                                                   P(B) &= 1 - P(\text{not } B) \\
+                                                   & 1 - \dfrac{n(\text{not } B)}{n(S)} \\
+                                                   &= 1 - \frac{\text{3 024}}{\text{10 000}} \\
+                                                   & = \text{0,6976}
+                                                   \end{align*}
+</Callout>
+
+<Callout type="tip" title="Worked example 19: Number plates">
+**Question:**
+The number plate on a car consists of any \(\text{3}\) letters of the alphabet
+                                        (excluding the vowels and 'Q'), followed by any \(\text{3}\) digits
+                                        (\(\text{0}\) to \(\text{9}\)). For a car chosen at random, what is the
+                                        probability that the number plate starts with a 'Y' and ends with an odd digit?
+
+**Identify what events are counted:**
+The number plate starts with a 'Y', so there is only \(\text{1}\) option for the
+                                        first letter, and ends with an odd digit, so there are \(\text{5}\) options for
+                                        the last digit (\(1; 3; 5; 7; 9\)).
+
+**Find the number of events:**
+Use the counting principle. For the second and third letters, there are \(\text{20}\)
+                                        possibilities (\(\text{26}\) letters in the alphabet, minus \(\text{5}\) vowels
+                                        and 'Q'). There are \(\text{10}\) possibilities for the first and second digits.
+
+                                \[\text{Number of events } = 1\times 20\times 20\times 10\times 10\times
+                                5=\text{200 000}\]
+
+**Find the total number of possible number plates:**
+Use the counting principle. This time, the first letter and last digit can be
+                                        anything.
+
+                                \[\text{Total number of choices } = 20\times 20\times 20\times 10\times 10\times
+                                10=\text{8 000 000}\]
+
+**Calculate the probability:**
+The probability is the number of outcomes in the event, divided by the total number
+                                        of outcomes in the sample space.
+
+                                \[\text{Probability } =
+                                \frac{\text{200 000}}{\text{8 000 000}}=\frac{1}{40}=\text{0,025}\]
+</Callout>
+
+<Callout type="tip" title="Worked example 20: Probability of word arrangements">
+**Question:**
+Refer to worked example 16 for context. If you take the word, 'BASSOON' and you
+                                        randomly rearrange the letters, what is the probability that the word starts and
+                                        ends with the same letter if repeated letters are treated as identical?
+
+If the word starts and ends with the same letter, there are a total number of 120 possible
+                                arrangements (from worked example 16). Let this event \(= A\).
+
+The total number of possible arrangements if repeated letters are treated as identical \(=
+                                \text{1 260}\) (from worked example 16).
+
+Therefore, the probability of an arrangement beginning and ending with the same letter \[=
+                                \dfrac{n(A)}{n(S)} = \dfrac{120}{\text{1 260}} = \text{0,1}\]
+</Callout>
+
+## Solving probability problems using the fundamental counting principle
+
+### Textbook Exercise 10.8
+
+A music group plans a concert tour in South Africa. They will perform
+                                                        in Cape Town, Port Elizabeth, Pretoria, Johannesburg,
+                                                        Bloemfontein, Durban and East London.
+
+**Problem:**
+In how many different orders can they plan their
+                                                        tour if there are no restrictions?
+
+**Solution:**
+\[7! = \text{5 040} \text{ different orders are possible}\]
+
+**Problem:**
+In how many different orders can they plan their
+                                                        tour if their tour begins in Cape Town and ends in Durban?
+
+**Solution:**
+This reduces the available objects (cities) by two, hence
+
+                                                        \[5! = \text{120} \text{ different orders are possible}\]
+
+**Problem:**
+If the tour cities are chosen at random, what is
+                                                        the probability that their performances in Cape Town, Port
+                                                        Elizabeth, Durban and East London happen consecutively? Give
+                                                        your answer correct to 3 decimal places.
+
+**Solution:**
+If these cities are grouped together, they can be treated as
+                                                                a single object in the arrangement, hence there are
+                                                                \(4!\) different ways to order the objects. Within the
+                                                                grouped cities, there are \(4!\) different ways to order
+                                                                them. Therefore, there are
+                                                                \(4! \times 4! = \text{576} \text{ different orders}\)
+
+Therefore, the probability of any of the orders having Cape
+                                                                Town, Port Elizabeth, Durban and East London happen
+                                                                consecutively is:
+
+                                                        \begin{align*}
+                                                        P(\text{the }4 \text{ cities grouped}) &= \dfrac{n(\text{the
+                                                        } 4 \text{ cities grouped})}{n(\text{total possible orders})} \\
+                                                        & = \dfrac{\text{576}}{\text{5 040}} = \text{0,114}
+                                                        \end{align*}
+
+A certain restaurant has the following course options available for a
+                                                        three-course set menu:
+
+| STARTERS | MAINS | DESSERTS |
+| --- | --- | --- |
+| Calamari salad | Fried chicken | Ice cream and chocolate sauce |
+| Oysters | Crumbed lamb chops | Strawberries and cream |
+| Fish in garlic sauce | Mutton Bobotie | Malva pudding with custard |
+|  | Chicken schnitzel | Pears in brandy sauce |
+|  | Vegetable lasagne |  |
+|  | Chicken nuggets |  |
+
+**Problem:**
+How many different set menus are possible?
+
+**Solution:**
+\[3 \times 6 \times 4 = \text{72} \text{ different set menus}\]
+
+**Problem:**
+What is the probability that a set menu includes a
+                                                        chicken course?
+
+**Solution:**
+\begin{align*}
+                                                        n(\text{set menu with chicken})&= 3 \times 3 \times 4 = 36
+                                                        \\
+                                                        n(\text{total set menus})&= 72 \\
+                                                        \text{Therefore } P(\text{set menu with chicken}) &=
+                                                        \frac{36}{72} = \text{0,5}
+                                                        \end{align*}
+
+Eight different pairs of jeans and 5 different shirts hang on a rail.
+
+**Problem:**
+In how many different ways can the clothes be
+                                                        arranged on the rail?
+
+**Solution:**
+\[13! = \text{6 227 020 800} \text{ different
+                                                        ways}\]
+
+**Problem:**
+In how many ways can the clothing be arranged if
+                                                        all the jeans hang together and all the shirts hang together?
+
+**Solution:**
+The shirts and jeans form two groups, which can be arranged
+                                                        \(2!\) ways. The five shirts can be arranged \(5!\) ways and the
+                                                        eight pairs of jeans can be arranged \(8!\) ways.
+                                                        \[2! \times 8! \times 5! = \text{9 676 800}\]
+
+**Problem:**
+What is the probability, correct to three decimal
+                                                        places, of the clothing being arranged on the rail with a shirt
+                                                        at one end and a pair of jeans at the other?
+
+**Solution:**
+- The five different choices of shirt and eight
+                                                                                  different choices of pairs of jeans can
+                                                                                  form \(5 \times 8\) different
+                                                                                  arrangements at the ends of the rail.
+- There are \(2!\) different ways to arrange a
+                                                                                  shirt at one end and a pair of jeans on
+                                                                                  the other: S - - - - - - - - - - - J and
+                                                                                  J - - - - - - - - - - - S
+- If a shirt is at one end and a pair of jeans
+                                                                                  at the other, there remains \(11!\)
+                                                                                  different arrangements of the remaining
+                                                                                  clothing items.
+
+Therefore, there are:
+
+\(2 \times 8 \times 5 \times 11! =
+                                                                \text{3 193 344 000} \text{ different
+                                                                ways to arrange the clothing}\)
+
+The probability of a clothing arrangement with a shirt at one
+                                                                end and a pair of jeans at the other \(=
+                                                                \frac{\text{3 193 344 000}}{\text{6 227 020 800}}
+                                                                = \text{0,513}\)
+
+A photographer places eight chairs in a row in his studio in order to
+                                                        take a photograph of the debating team. The team consists of
+                                                        three boys and five girls.
+
+**Problem:**
+In how many ways can the debating team be seated?
+
+**Solution:**
+\[8! = \text{40 320}\]
+
+**Problem:**
+What is the probability that a particular boy and a
+                                                        particular girl sit next to each other?
+
+**Solution:**
+Regard the particular boy and girl as one group. The group can
+                                                        be seated \(2!\) ways. The number of ways that this group and
+                                                        the remaining 6 people can sit \(= 7!\).
+                                                        Therefore the total number of ways this particular boy and girl
+                                                        can sit together in the photograph \(= 2! × 7! =
+                                                        \text{10 080}\).
+                                                        The probability of a particular boy and girl sitting together
+                                                        \(= \frac{\text{10 080}}{\text{40 320}} =
+                                                        \text{0,25}\)
+
+**Problem:**
+If the letters of the word 'COMMITTEE' are randomly arranged, what is
+                                                        the probability that the letter arrangements start and end with
+                                                        the same letter?
+
+**Solution:**
+- There are 2 M’s, 2 T’s and 2 E’s and a
+                                                                  total of 9 letters.
+- Total number of letter arrangements \(= \dfrac{9!}{2! \times
+                                                                  2! \times 2!} = \text{45 360}\)
+- Possibilities of the first and last letter being the same:
+  - M(COITTEE)M
+                                                                                    Total of 7 letters of which
+                                                                                    there are 2E’s and 2T’s
+                                                                                    Number of letter arrangements \(=
+                                                                                    \dfrac{7!}{2! \times 2!} =
+                                                                                    \text{1 260}\)
+  - T(MCOIEEM)T Total of 7 letters of
+                                                                                    which
+                                                                                    there are 2E’s and 2M’s
+                                                                                    Number of letter arrangements \(=
+                                                                                    \dfrac{7!}{2! \times 2!} =
+                                                                                    \text{1 260}\)
+  - E(TTMCOIM)E  Total of 7 letters of
+                                                                                    which
+                                                                                    there are 2T’s and 2M’s
+                                                                                    Number of letter arrangements \(=
+                                                                                    \dfrac{7!}{2! \times 2!} =
+                                                                                    \text{1 260}\)
+- Total number of letter arrangements if the letter
+                                                                  arrangement starts and ends with the same letter \(= 3
+                                                                  \times \text{1 260} = \text{3 780}\).
+
+                                                \[P(\text{first and last letter the same}) =
+                                                \dfrac{\text{3 780}}{\text{45 360}} = \dfrac{1}{12}\]
+
+**Problem:**
+Four different Mathematics books, three different Economics books and
+                                                        two different Geography books are arranged on a shelf. What is
+                                                        the probability that all the books of the same subject are
+                                                        arranged next to each other?
+
+**Solution:**
+Total number of different ways the books can be arranged \(= 9! =
+                                                        \text{362 880}\).There are 3 subjects of books which can be
+                                                        arranged \(3!\) ways.
+
+Therefore, the total number of arrangements if the subjects are
+                                                        arranged together \(= 3! \times 4! \times 3! \times 2! =
+                                                        \text{1 728}\)
+
+                                                \[P(\text{books of the same subject next to each other}) = \dfrac{
+                                                \text{1 728}}{\text{362 880}} = \dfrac{1}{210}\]
+
+A number plate is made up of three letters of the alphabet (excluding
+                                                        F and S) followed by three digits from 0 to 9. The numbers and
+                                                        letters can be repeated. Calculate the probability that a
+                                                        randomly chosen number plate:
+
+**Problem:**
+starts with the letter D and ends with the digit 3.
+
+**Solution:**
+Total number of arrangements \(= 24^{3} \times 10^{3}\)
+
+Total number of arrangements beginning with D and ending with
+                                                                \(3 = 24^{2} \times 10^{2}\)
+
+                                                        \[P(\text{first D and last 3}) = \dfrac{24^{2} \times
+                                                        10^{2}}{24^{3} \times 10^{3}} = \dfrac{1}{240}\]
+
+**Problem:**
+has precisely one D.
+
+**Solution:**
+The 'D' could be at the first, second or third positions. The
+                                                        other two letters cannot include a 'D', leaving 23 other
+                                                        letters. Therefore there are
+                                                        \[23^{2} \times 10^{3} \times 3 \text{ different arrangements
+                                                        containing only one D}\]
+
+                                                        \[\text{Therefore } P(\text{only one D}) = \dfrac{23^{2} \times
+                                                        10^{3} \times 3}{24^{3} \times 10^{3}} =
+                                                        \dfrac{\text{529}}{\text{4 608}}\]
+
+**Problem:**
+contains at least one 5.
+
+**Solution:**
+\begin{align*}
+                                                        P(\text{contains at least one }5)&= 1 - P(\text{no } 5
+                                                        \text{s}) \\
+                                                        &= 1 - \dfrac{24^{3} \times 9^{3}}{24^{3} \times 10^{3}} \\
+                                                        &= 1 - \text{0,729} = \text{0,271}
+                                                        \end{align*}
+
+In the 13-digit identification (ID) numbers of South African
+                                                        citizens:
+
+- The first six numbers are the birth date of the person in
+                                                                  YYMMDD format.
+- The next four digits indicate gender, with
+                                                                  \(\text{5 000}\) and above being male and
+                                                                  \(\text{0 001}\) to \(\text{4 999}\) being
+                                                                  female.
+- The next number is the country ID; 0 is South Africa and 1
+                                                                  is not.
+- The second last number used to be a racial identifier but it
+                                                                  is now 8 for everybody.
+- The last number is a control digit, which verifies the rest
+                                                                  of the number.
+
+                                                Assume that the control digit is a randomly generated digit from 0 to 9
+                                                and ignore the fact that leap years have an extra day.
+
+
+**Problem:**
+Calculate the total number of possible ID numbers.
+
+**Solution:**
+For all available arrangements, if an ID number is structured
+                                                        ABCDEFGHIJKLM:
+
+
+- A and B are any digits between 00 and 99 (year)
+- C and D are any digits from 01 to 12 (month)
+- E and F are any digits from 01 to 28, 30 or 31
+                                                                          dependent on month (day)
+- G, H, I and J are any digits from 0001 to 9999
+                                                                          (gender)
+- K is either a 0 or 1
+- L is an 8
+- M is any digit between 0 and 9
+
+                                                        Therefore, the total number of possible ID numbers for 30-day
+                                                        months is:
+                                                        \[100 \times 4 \times 30 \times 9999 \times 2 \times 1 \times 10
+                                                        = \text{2 399 760 000}\]
+
+                                                        Therefore, the total number of possible ID numbers for 31-day
+                                                        months is:
+                                                        \[100 \times 7 \times 31 \times 9999 \times 2 \times 1 \times 10
+                                                        = \text{4 339 566 000}\]
+
+                                                        Therefore, the total number of possible ID numbers for February
+                                                        is:
+                                                        \[100 \times 1 \times 28 \times 9999 \times 2 \times 1 \times 10
+                                                        = \text{559 944 000}\]
+
+                                                        Therefore, the total number of possible ID numbers is:
+                                                        \[\text{2 399 760 000} +
+                                                        \text{4 339 566 000} +
+                                                        \text{559 944 000} =
+                                                        \text{9 239 076 000}\]
+
+**Problem:**
+Calculate the probability that a randomly generated
+                                                        ID number is of a South African male born during the 1980s.
+                                                        Write your answer correct to two decimal places.
+
+**Solution:**
+There is a lot of information in the problem and we can
+                                                                simplify it by identifying the relevant information. We
+                                                                want to calculate the probability that an ID number is
+                                                                for a South African male born during the 1980s. This
+                                                                means that we have to look at the digits for country,
+                                                                gender and year of birth.
+
+If an ID number is structured ABCDEFGHIJKLM:
+
+- For a South African, K is 0.
+- For a male, GHIJ are from \(\text{5 000}\) to
+                                                                          \(\text{9 999}\).
+- For someone born during the 1980s, AB are between 80
+                                                                          and 89.
+
+This gives \(1 \times \text{5 000} \times 10 =
+                                                                \text{50 000}\) combinations for ABGHIJK
+
+Without any restrictions, the total combinations for ABGHIJK
+                                                                is \(2 \times \text{9 999} \times 100 =
+                                                                \text{1 999 800}\).
+
+                                                        \[\text{Therefore } P(\text{SA male 80s}) =
+                                                        \dfrac{\text{50 000}}{\text{1 999 800}} =
+                                                        \text{0,025}\]

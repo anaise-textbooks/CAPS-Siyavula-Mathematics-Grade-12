@@ -1,0 +1,38 @@
+## 5.6 Summary (EMCGY)
+
+| Terminology: |  |
+| --- | --- |
+| Expression | A term or group of terms consisting of numbers, variables and the basic operators (\(+, -,
+                              \times, \div\)). |
+| Univariate expression | An expression containing only one variable. |
+| Root/Zero | A root, also referred to as the “zero”, of an equation is the value of \(x\)
+                              such that \(f(x)=0\) is satisfied. |
+| Polynomial | An expression that involves one or more variables having different powers and
+                                    coefficients. \(a_{n}x^{n} + \ldots + a_2x^{2} + a_{1}x + a_{0}, \text{ where } n \in \mathbb{N}_0\) |
+| Monomial | A polynomial with one term. For example, \(7a^{2}b \text{ or } 15xyz^{2}\). |
+| Binomial | A polynomial that has two terms. For example, \(2x + 5z \text{ or } 26 - g^{2}k\). |
+| Trinomial | A polynomial that has three terms. For example, \(a - b + c \text{ or } 4x^2 + 17xy - y^3\). |
+| Degree/Order | The degree, also called the order, of a univariate polynomial is the value of the
+                                    highest exponent in the polynomial. For example, \(7p - 12p^2 + 3p^5 + 8\) has a degree of \(\text{5}\). |
+
+- Quadratic formula: \(x = \frac{-b±\sqrt{{b}^{2}-4ac}}{2a}\)
+- Remainder theorem: a polynomial \(p(x)\) divided by \(cx - d\) gives a remainder of
+                                \(p\left(\dfrac{d}{c}\right)\).
+- Factor theorem: if the polynomial \(p(x)\) is divided by \(cx - d\) and the remainder, \(p
+                                \left( \frac{d}{c} \right)\), is equal to zero, then \(cx - d\) is a factor of \(p(x)\).
+- Converse of the factor theorem: if \(cx - d\) is a factor of \(p(x)\), then \(p \left(
+                                \frac{d}{c} \right) = 0\).
+- Synthetic division:
+  ![90dce9977541474c65c21a1e6c2ca835.png](../../assets/images/90dce9977541474c65c21a1e6c2ca835.png)
+  We determine the coefficients of the quotient by calculating:
+                          \begin{align*}
+                          q_{2} &= a_{3} + \left( q_{3} \times \frac{d}{c} \right) \\
+                          &= a_{3} \quad \text{ (since } q_{3} = 0) \\
+                          q_{1} &= a_{2} + \left( q_{2} \times \frac{d}{c} \right) \\
+                          q_{0} &= a_{1} + \left( q_{1} \times \frac{d}{c} \right) \\
+                          R &= a_{0} + \left( q_{0} \times \frac{d}{c} \right)
+                          \end{align*}
+
+<QuizCard id="m12-05-06a" title="Interactive Exercise 5.10" question="\(- 25 x^{3} + 65 x^{2} + 23 x + 8 = h(x) \cdot (- 5 x + 1) + R \) for all values of \(x\) . What is the value of \(R\) ?" options=[] answer=" 15 " hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Apply the remainder theorem A polynomial \(p(x)\) divided by \(cx−d\) gives a remainder of \(p\left(\frac{d}{c}\right)\) . In other words, the value of the remainder \(R\) is obtained by substituting \(x = \frac{d}{c}\) into the polynomial \(p(x)\) . \[\begin{array}{c}R = p\left(\frac{d}{c}\right)\end{array}\] So in this case we can substitute the variables as follows: a polynomial \(- 25 x^{3} + 65 x^{2} + 23 x + 8\) divided by \(- 5 x + 1\) gives a remainder of \(p\left(\frac{1}{5}\right)\) . \[\begin{array}{c}\therefore R = p\left(\frac{1}{5}\right)\end{array}\] Now evaluate the expression to find the remainder Let \( p(x)\) be equal to the polynomial \( - 25 x^{3} + 65 x^{2} + 23 x + 8 \) . As explained above, the remainder must be \( p\left(\frac{1}{5}\right) \) : \[                     \begin{aligned}                     R & = p\left(\frac{1}{5}\right) \\                     & = -25 \left(\frac{1}{5}\right)^{3} +65\left(\frac{1}{5}\right)^{2} +23\left(\frac{1}{5}\right) + 8 \\                     & = - \frac{1}{5} +\frac{13}{5} +\frac{23}{5} + 8 \\                     & = 15                     \end{aligned}                 \] For the equation \(- 25 x^{3} + 65 x^{2} + 23 x + 8 = h(x) \cdot \left(- 5 x + 1\right) + R \) the remainder is \(15\) . Submit your answer as:" />
+
+<QuizCard id="m12-05-06a" title="Interactive Exercise 5.10" question="\(- 4 z^{3} + 26 z - 14 = k(z) \cdot (z - 2) + R \) for all values of \(z\) . Find the remainder, \(R\) ." options=[] answer=" 6 " hint="You should enter a number here. If you want to, you can use a space to separate thousands.                Example: 12 800,25 For scientific notation you need to use the multiply symbol                ( ∗ ) and the exponent symbol ( ^ ). For example 6,673 × 10 −11 should be written as: 6,673 ∗ 10^−11" explanation="Apply the remainder theorem A polynomial \(p(x)\) divided by \(cx−d\) gives a remainder of \(p\left(\frac{d}{c}\right)\) . In other words, the value of the remainder \(R\) is obtained by substituting \(x = \frac{d}{c}\) into the polynomial \(p(x)\) . \[\begin{array}{c}R = p\left(\frac{d}{c}\right)\end{array}\] So in this case we can substitute the variables as follows: a polynomial \(- 4 z^{3} + 26 z - 14\) divided by \(z - 2\) gives a remainder of \(p\left(2\right)\) . \[\begin{array}{c}\therefore R = p\left(2\right)\end{array}\] Now evaluate the expression to find the remainder Let \( p(z)\) be equal to the polynomial \( - 4 z^{3} + 26 z - 14 \) . As explained above, the remainder must be \( p\left(2\right) \) : \[                     \begin{aligned}                     R & = p\left(2\right) \\                     & = -4 \left(2\right)^{3} +26\left(2\right)  -14 \\                     & = -32 +52  -14 \\                     & = 6                     \end{aligned}                 \] For the equation \(- 4 z^{3} + 26 z - 14 = k(z) \cdot \left(z - 2\right) + R \) the remainder is \(6\) . Submit your answer as:" />

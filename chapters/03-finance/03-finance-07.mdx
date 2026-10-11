@@ -1,0 +1,458 @@
+## End of chapter exercises
+
+### Textbook Exercise 3.6
+
+**Problem:**
+Mpumelelo deposits \(\text{R}\,\text{500}\) into a savings account, which earns interest at
+            \(\text{6,81}\%\) p.a. compounded quarterly. How long will it take for the savings account to have a balance
+            of \(\text{R}\,\text{749,77}\)?
+
+**Solution:**
+\begin{align*}
+          A & = P(1+i)^n \\
+          \text{Where: } & \\
+          A & = \text{749,77} \\
+          P & = \text{500} \\
+          i & = \text{0,0681}
+          \end{align*}
+
+
+
+In this question the interest is payable quarterly, so \(i \rightarrow \frac{\text{0,0681}}{\text{4}}\) and
+            \(n \rightarrow (n \times \text{4})\). In this case, \(n\) represents the number of years; the product \((n
+            \times \text{4})\) represents the number of times the bank pays interest into the account.
+
+          \begin{align*}
+          \text{749,77} & = \text{500} \left( 1 + \frac{\text{0,0681}}{\text{4}} \right) ^ {(n \times \text{4})}
+          \end{align*}
+
+          \begin{align*}
+          \text{749,77} & = \text{500}(\text{1,01702} \ldots)^{\text{4}n} \\
+          \frac{\text{749,77}}{\text{500}} & = (\text{1,01702} \ldots)^{\text{4}n} \\
+          \text{1,49954} \ldots & = (\text{1,01702} \ldots)^{\text{4}n}
+          \end{align*}
+
+
+
+At this point we must change the equation to logarithmic form:
+
+          \begin{align*}
+          \text{4}n & = \log_{\text{1,017025}} (\text{1,49954} \ldots) \\
+          \text{4}n & = \frac{\log{\text{1,49954} \ldots}}{\log{\text{1,017025}} } \qquad (\text{change of base}) \\
+          \text{4}n & = \text{24}
+          \end{align*}
+
+
+To find the number of years, we solve for \(n\):
+
+          \begin{align*}
+          \text{4}n & = \text{24} \\
+          n & = \frac{\text{24}}{\text{4}} \\
+          n & = \text{6}
+          \end{align*}
+
+
+Therefore, it will take \(\text{6}\) years.
+
+**Problem:**
+How much interest will Gavin pay on a loan of \(\text{R}\,\text{360 000}\) for \(\text{5}\) years at
+            \(\text{10,3}\%\) per annum compounded monthly?
+
+**Solution:**
+\[P = \frac{x \left[1 - (1 + i)^{-n} \right]}{i}\]
+
+          \begin{align*}
+          \text{360 000} & = \frac{x \left[ 1 - \left(1 + \frac{\text{0,103}}{12}\right) ^{-(\text{5} \times
+          12)} \right]} {\left(\frac{\text{0,103}}{12} \right)} \\
+          \therefore x & = \frac{ \text{360 000} \times \left(\frac{\text{0,103}}{12} \right)}{ \left[ 1 -
+          \left(1 + \frac{\text{0,103}}{12}\right) ^{-\text{60}} \right]} \\
+          &= \text{7 702,184} \ldots
+          \end{align*}
+
+
+
+Monthly payments are \(\text{R}\,\text{7 702,18}\).
+
+Total loan:
+
+          \[\text{R}\,\text{7 702,18} \times\text{12} \times \text{5} = \text{R}\,\text{462 130,80}\]
+
+
+
+Interest:
+
+          \[\text{R}\,\text{462 130,80} - \text{R}\,\text{360 000} = \text{R}\,\text{102 130,80}\]
+
+Wingfield school will need to replace a number of old classroom desks in \(\text{6}\) years' time. The
+            principal has calculated that the new desks will cost \(\text{R}\,\text{44 500}\). The school establishes a
+            sinking fund to pay for the new desks and immediately deposits an amount of \(\text{R}\,\text{6 300}\) into
+            the fund, which accrues interest at a rate of \(\text{6,85}\%\) p.a. compounded monthly.
+
+**Problem:**
+How much money should the school save every month so that the sinking fund will have enough money to
+              cover the cost of the desks?
+
+**Solution:**
+\(\text{R}\,\text{6 300}\) is deposited into the sinking fund immediately and will earn interest until
+              the end of the \(\text{6}\) years:
+
+            \begin{align*}
+            A & = P(1 + i)^{n} \\
+            & = \text{6 300} \left( 1 + \frac{\text{0,0685}}{12} \right)^{(\text{6} \times 12)} \\
+            & = \text{6 300} (\text{1,0057} \ldots )^{\text{72}} \\
+            & = \text{6 300} (\text{1,50656} \ldots) \\
+            & = \text{9 491,35}
+            \end{align*}
+
+
+
+After \(\text{6}\) years the deposit will be worth \(\text{R}\,\text{9 491,35}\).
+
+Balance required in the sinking fund: \[\text{R}\,\text{44 500} - \text{R}\,\text{9 491,35} =
+              \text{R}\,\text{35 008,65}\]
+
+We calculate the monthly payments that will give a future value of \(\text{R}\,\text{35 008,65}\):
+
+            \begin{align*}
+            F & = \frac{x \left[ \left(1 + i \right)^{n} - 1 \right]}{i} \\
+            \text{35 008,65} & = \frac{x \left[ \left(1 + \frac{\text{0,0685}}{12}\right) ^{(\text{6} \times
+            12)} - 1 \right]} {\left(\frac{\text{0,0685}}{12} \right)} \\
+            \therefore x & = \frac{ \text{35 008,65} \times \frac{\text{0,0685}}{12} } { \left[ \left(1 +
+            \frac{\text{0,0685}}{12}\right) ^{(\text{6} \times 12)} - 1 \right]} \\
+            &= \text{394,50326} \ldots
+            \end{align*}
+
+
+
+Therefore, Wingfield school must deposit \(\text{R}\,\text{394,50}\) into the sinking fund each month so
+              that there will enough money in the account to buy the new desks.
+
+**Problem:**
+How much interest does the fund earn over the period of \(\text{6}\) years?
+
+**Solution:**
+\begin{align*}
+            \text{Total amount saved: } & = \text{6 300} + (\text{394,5} \times 12 \times 6 ) \\
+            & = \text{6 300} + \text{28 404} \\
+            & = \text{34 704}
+            \end{align*}
+
+
+
+The total amount of money the school deposits into the account is \(\text{R}\,\text{34 704,00}\).
+
+Therefore, the amount of interest paid by the bank: \[\text{R}\,\text{44 500} - \text{R}\,\text{34
+              704,00} = \text{R}\,\text{9 796,00}\]
+
+**Problem:**
+Determine how many years (to the nearest integer) it will take for the value of a motor vehicle to decrease
+            to \(\text{25}\%\) of its original value if the rate of depreciation, based on the reducing-balance
+            method, is \(\text{21}\%\) per annum.
+
+**Solution:**
+Let the value of the vehicle be \(x\).
+
+          \begin{align*}
+          A & = P(1 - i)^{n} \\
+          x \times \frac{25}{100} & = x\left(1 - \frac{21}{100}\right)^{n} \\
+          \text{0,25} & = \left(1 - \frac{21}{100}\right)^{n} \\
+          \text{0,25} & = ( \text{0,79})^{n} \\
+          \therefore n &= \log_{\text{0,79} }{\text{0,25} } \qquad (\text{use definition}) \\
+          &= \frac{\log{\text{0,25}}}{\log{\text{0,79} }} \qquad (\text{change of base}) \\
+          &= \text{5,881} \ldots
+          \end{align*}
+
+
+
+Therefore, it will take about \(\text{6}\) years.
+
+Angela has just started a new job, and wants to save money for her retirement. She decides to deposit
+            \(\text{R}\,\text{1 300}\) into a savings account once each month. Her money goes into an account at
+            Pinelands Mutual Bank, and the account receives \(\text{6,01}\%\) interest p.a. compounded once each month.
+
+**Problem:**
+How much money will Angela have in her account after \(\text{30}\) years?
+
+**Solution:**
+\begin{align*}
+            F & = \frac{x\left[(1+i)^n - 1\right]}{i} \\
+            x & =\text{R}\,\text{1 300} \\
+            i &= \text{0,0601} \\
+            n & = \text{30}
+            \end{align*}
+
+            \begin{align*}
+            F & = \frac{(\text{1 300}) \left[ \left(1 + \frac{\text{0,0601}}{\text{12}}\right) ^{(\text{30}
+            \times \text{12})} - 1 \right]} {\left(\frac{\text{0,0601}}{\text{12}} \right)} \\
+            & = \text{R}\,\text{1 308 370,14}
+            \end{align*}
+
+
+
+After \(\text{30}\) years, Angela will have \(\text{R}\,\text{1 308 370,14}\) in her account.
+
+**Problem:**
+How much money did Angela deposit into her account after \(\text{30}\) years?
+
+**Solution:**
+The total amount of money Angela saves each year is \(\text{1 300} \times \text{12} =
+              \text{R}\,\text{15 600}\). From that we can determine the total amount she saves by multiplying by the
+              number of years: \(\text{15 600} \times \text{30} = \text{R}\,\text{468 000}\).
+
+After \(\text{30}\) years, Angela deposited a total of \(\text{R}\,\text{468 000}\) into her account.
+
+**Problem:**
+Nicky has been working at Meyer and Associates for \(\text{5}\) years and gets an increase in her salary.
+              She opens a savings account at Langebaan Bank and begins making deposits of \(\text{R}\,\text{350}\) every
+              month. The account earns \(\text{5,53}\%\) interest p.a., compounded monthly. Her plan is to continue
+              saving on a monthly schedule until she retires. However, after \(\text{8}\) years she stops making the
+              monthly payments and leaves the account to continue growing.
+
+How much money will Nicky have in her account \(\text{29}\) years after she first opened it?
+
+**Solution:**
+\begin{align*}
+            F & = \frac{x\left[(1+i)^n - 1\right]}{i} \\
+            x & = \text{R}\,\text{350} \\
+            i & = \text{0,0553} \\
+            n & = \text{8}
+            \end{align*}
+
+            \begin{align*}
+            F & = \frac{(\text{350}) \left[ \left(1 + \frac{\text{0,0553}}{12}\right) ^{(\text{8} \times 12)} - 1
+            \right]} {\left(\frac{\text{0,0553}}{12} \right)} \\
+            & = \text{R}\,\text{42 141,06}
+            \end{align*}
+
+
+
+This calculation shows that the account will have a balance of \(\text{R}\,\text{42 141,06}\) after
+              \(\text{8}\) years, which is when Nicky stops making monthly deposits.
+
+From this point on, the account grows from \(\text{R}\,\text{42 141,06}\) with compound interest only (no
+              more monthly payments). This will continue for \(\text{29} - \text{8} = \text{21}\) years.
+
+            \begin{align*}
+            A & = P(1 + i)^{n} \\
+            & = \text{42 141,06} \left( 1 + \frac{\text{0,0553}}{12} \right)^{\text{21} \times 12} \\
+            & = \text{134 243,45}
+            \end{align*}
+
+
+
+The total amount of money in the account \(\text{29}\) years after Nicky opens the account is
+              \(\text{R}\,\text{134 243,45}\).
+
+**Problem:**
+Calculate the difference between the total deposits made into the account and the amount of interest paid
+              by the bank.
+
+**Solution:**
+The total deposits: \[\text{R}\,\text{350} \times 12 \times 8 = \text{R}\,\text{33 600}\]
+
+At the end of the period, the interest earned is: \[\quad \text{R}\,\text{134 243,45} -
+              \text{33 600} = \text{R}\,\text{100 643,45}\]
+
+Difference: \[\quad \text{R}\,\text{100 643,45} - \text{R}\,\text{33 600} = \text{R}\,\text{67 043,45}\]
+
+**Problem:**
+Every three months Louis puts \(\text{R}\,\text{500}\) into an annuity. His account earns an interest
+              rate of \(\text{7,51}\%\) p.a. compounded quarterly. How long will it take Louis's account to reach a
+              balance of \(\text{R}\,\text{13 465,87}\)?
+
+**Solution:**
+\begin{align*}
+            F & = \frac{x\left[(1+i)^n - 1\right]}{i} \\
+            F & = \text{R}\,\text{13 465,87} \\
+            x & = \text{R}\,\text{500} \\
+            i & = \text{0,0751}
+            \end{align*}
+
+            \begin{align*}
+            \text{13 465,87} & = \frac{\text{500} \left[ \left(1 + \frac{\text{0,0751}}{\text{4}}\right) ^{(n
+            \times \text{4})} - 1 \right]} {\left(\frac{\text{0,0751}}{\text{4}} \right)} \\
+            \text{13 465,87} & = \frac{\text{500} \left[ \left( \text{1,01877} \ldots \right) ^{\text{4}n} - 1
+            \right]} {\text{0,01877} \ldots}
+            \end{align*}
+
+            \begin{align*}
+            (\text{0,01877} \ldots)(\text{13 465,87}) & = (\text{500}) \left[ \left( \text{1,01877} \ldots
+            \right) ^{\text{4}n} - 1 \right] \\
+            \frac{\text{252,82172} \ldots}{\text{500}} & = \left[ \left( \text{1,01877} \ldots \right) ^{\text{4}n}
+            - 1 \right]
+            \end{align*}
+
+
+
+Now that the square bracket is alone, work inside of it: add one to both sides, and then change the
+              equation to log-form to get the exponent.
+
+            \begin{align*}
+            \text{0,50564} \ldots + 1 & = \left( \text{1,01877} \ldots \right) ^{\text{4}n} \\
+            \text{1,50564} \ldots & = \left( \text{1,01877} \ldots \right) ^{\text{4}n} \\
+            \text{Change into logarithmic form: } \quad \text{4}n & = \log_{\text{1,01877} \ldots} (\text{1,50564}
+            \ldots) \\
+            \text{4}n & = \text{22} \\
+            n & = \frac{\text{22}}{\text{4}} \\
+            n & = \text{5,5}
+            \end{align*}
+
+
+
+It will take about \(\text{5,5}\) years.
+
+**Problem:**
+How much interest will Louis receive from his investment?
+
+**Solution:**
+The total amount of deposits:
+
+\[\quad \text{500} \times \text{4} \times \text{5,5} = \text{R}\,\text{11 000,00}\]
+
+The total amount of interest: \[\text{R}\,\text{13 465,87} - \text{R}\,\text{11 000,00} =
+              \text{R}\,\text{2 465,87}\]
+
+A dairy farmer named Kayla needs to buy new equipment for her dairy farm which costs \(\text{R}\,\text{200
+            450}\). She bought her old equipment \(\text{12}\) years ago for \(\text{R}\,\text{167 000}\). The value of
+            the old equipment depreciates at a rate of \(\text{12,2}\%\) per year on a reducing balance. Kayla will need
+            to arrange a bond for the remaining cost of the new equipment.
+
+An agency which supports farmers offers bonds at a special interest rate of \(\text{10,01}\%\) p.a.
+            compounded monthly for any loan up to \(\text{R}\,\text{175 000}\) and \(\text{9,61}\%\) p.a. compounded
+            monthly for a loan above that amount. Kayla arranges a bond such that she will not need to make any payments
+            on the loan in the first six months (called a 'grace period') and she must pay the loan back over
+            \(\text{20}\) years.
+
+**Problem:**
+Determine the monthly payment.
+
+**Solution:**
+Old equipment:
+
+            \begin{align*}
+            A & = P(1 - i)^{n} \\
+            & = \text{167 000}(1 - \text{0,122} )^{\text{12}} \\
+            &= \text{35 046,98494} \ldots
+            \end{align*}
+
+
+
+The value of the old equipment is \(\text{R}\,\text{35 046,98}\).
+
+Bond amount:
+
+            \[\text{R}\,\text{200 450} - \text{R}\,\text{35 046,98} = \text{R}\,\text{165 403,02}\]
+
+            \begin{align*}
+            A & = P(1 + i)^{n} \\
+            & = \text{165 403,02} \left( 1 + \frac{\text{0,1001}}{12} \right)^{\text{6}} \\
+            &= \text{173 856,01291} \ldots
+            \end{align*}
+
+
+
+After the first six months of the loan period, during which she makes no payments, the amount she owes
+              increases to \(\text{R}\,\text{173 856,01}\).
+
+Now we can use the present value formula to solve for the value of \(x\). Remember that the repayment
+              period is \(\text{19,5}\) years.
+
+            \begin{align*}
+            \text{173 856,01} & = \frac{x \left[ 1 - \left(1 + \frac{\text{0,1001}}{12}\right) ^{-(\text{19,5}
+            \times 12)} \right]} {\left(\frac{\text{0,1001}}{12} \right)} \\
+            \therefore x & = \frac{ \text{173 856,01} \times \left(\frac{\text{0,1001}}{12} \right)}{x \left[ 1
+            - \left(1 + \frac{\text{0,1001}}{12}\right) ^{-(\text{19,5} \times 12)} \right]} \\
+            &= \text{1 692,53772} \ldots
+            \end{align*}
+
+
+
+Kayla must pay \(\text{R}\,\text{1 692,54}\) each month.
+
+**Problem:**
+What is the total amount of interest Kayla will pay for the bond?
+
+**Solution:**
+Total cost of the loan:
+
+\(\quad \text{R}\,\text{1 692,54} \times 12 \times \text{19,5} = \text{R}\,\text{396 054,36}\)
+
+Interest:
+
+\(\quad \text{R}\,\text{396 054,36} - \text{R}\,\text{165 403,02} = \text{R}\,\text{230 651,34}\)
+
+The total amount of interest Kayla paid is \(\text{R}\,\text{230 651,34}\).
+
+**Problem:**
+By what factor is the interest she pays greater than the value of the loan? Give the answer correct to
+              one decimal place.
+
+**Solution:**
+\[k = \frac{\text{interest paid}}{\text{amount of the loan}} =
+            \frac{\text{230 651,34}}{\text{165 403,02}} = \text{1,39448}\]
+
+
+
+The interest is greater than the loan amount by a factor of \(\text{1,4}\).
+
+**Problem:**
+Thabo invests \(\text{R}\,\text{8 500}\) in a special banking product which will pay \(\text{1}\%\) per
+            annum for 1 month, then \(\text{2}\%\) per annum for the next \(\text{2}\) months, then \(\text{3}\%\) per
+            annum for the next 3 months, \(\text{4}\%\) per annum for the next \(\text{4}\) months, and \(\text{0}\%\)
+            for the rest of the year. If the bank charges him \(\text{R}\,\text{75}\) to open the account, how much can
+            he expect to get back at the end of the year?
+
+**Solution:**
+Subtract account fee from the investment amount: \(\text{R}\,\text{8 500}\) - \(\text{R}\,\text{75}\) =
+            \(\text{R}\,\text{8 425}\)
+
+          \begin{align*}
+          A &= P(1 + i)^{n} \\
+          & \\
+          \text{At } \enspace T_{0}: \enspace A &= \text{8 425} \\
+          \text{At } \enspace T_{1}: \enspace A &= \text{8 425}\left( 1 + \frac{\text{0,01}}{12} \right)^{1} \\
+          \text{At } \enspace T_{3}: \enspace A &= \text{8 425}\left( 1 + \frac{\text{0,01}}{12} \right)^{1}
+          \left( 1 + \frac{\text{0,02}}{12} \right)^{2} \\
+          \text{At } \enspace T_{6}: \enspace A &= \text{8 425}\left( 1 + \frac{\text{0,01}}{12} \right)^{1}
+          \left( 1 + \frac{\text{0,02}}{12} \right)^{2} \left( 1 + \frac{\text{0,03}}{12} \right)^{3} \\
+          \text{At } \enspace T_{10}: \enspace A &= \text{8 425}\left( 1 + \frac{\text{0,01}}{12} \right)^{1}
+          \left( 1 + \frac{\text{0,02}}{12} \right)^{2} \left( 1 + \frac{\text{0,03}}{12} \right)^{3} \left( 1 +
+          \frac{\text{0,04}}{12} \right)^{4} \\
+          \therefore \text{Final amount }&= \text{R}\,\text{8 637,98}
+          \end{align*}
+
+**Problem:**
+Thabani and Lungelo are both using Harper Bank for their savings. Lungelo makes a deposit of \(x\) at an
+            interest rate of \(i\) for six years. Three years after Lungelo made his first deposit, Thabani makes a
+            deposit of \(3x\) at an interest rate of \(\text{8}\%\) per annum. If after \(\text{6}\) years their
+            investments are equal, calculate the value of \(i\) (correct to three decimal places). If the sum of their
+            investment is \(\text{R}\,\text{20 000}\), determine how much Thabani earned in \(\text{6}\) years.
+
+**Solution:**
+\begin{align*}
+          A & = P(1 + i)^{n} \\
+          & \\
+          x(1 + i)^{6} & = 3x\left(1 + \frac{8}{100}\right)^{3} \\
+          x(1 + i)^{6} - 3x(\text{1,08})^{3} & = 0 \\
+          x \left( (1 + i)^{6} - 3(\text{1,08})^{3} \right) & = 0 \\
+          \therefore x = 0 &\text{ or } (1 + i)^{6} - 3(\text{1,08})^{3} = 0 \\
+          \text{If } x = 0, & \enspace i \text{ can be any value,} \\
+          \therefore & \text{ not a valid solution} \\
+          \text{If } (1 + i)^{6} - 3(\text{1,08})^{3} &= 0 \\
+          (1 + i)^{6} &= 3(\text{1,08})^{3} \\
+          1 + i &= \sqrt[6]{3(\text{1,08})^{3}} \\
+          \therefore i &= \sqrt[6]{3(\text{1,08})^{3}} - 1 \\
+          &= \text{0,248} \ldots \\
+          \therefore i &= \text{24,8}\%
+          \end{align*}
+          \begin{align*}
+          x + 3x & = \text{R}\,\text{20 000} \\
+          4x & = \text{R}\,\text{20 000} \\
+          \therefore x & = \text{R}\,\text{5 000} \\
+          & \\
+          A & = \text{15 000}\left(1 + \frac{\text{8}}{100}\right)^{3} \\
+          & = \text{15 000}(\text{1,08})^{3} \\
+          & = \text{18 895,68} \\
+          \text{Interest earned:} &= \text{R}\,\text{18 895,68} - \text{R}\,\text{15 000} \\
+          &= \text{R}\,\text{3 895,68}
+          \end{align*}

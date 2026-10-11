@@ -1,0 +1,622 @@
+# Chapter 5: Polynomials
+
+- Proofs of theorems are not examinable.
+- Be careful of spending too much time on revision. Learners should be familiar with these factorisation methods
+          from Grade 10 and 11.
+- Explain terminology carefully. It is very important for learners to understand what a factor is and how it
+          relates to the graphs of quadratic and cubic functions (covered in Differential Calculus chapter).
+- Long division and synthetic division are included as an introduction to the remainder theorem. Do not spend
+          too much time on these techniques.
+- It is important for learners to understand that a remainder of zero means that divisor is a factor.
+- Encourage learners to practise factorising by inspection.
+
+## 5.1 Revision (EMCGQ)
+
+### Identifying polynomials (EMCGR)
+
+| Terminology: |  |
+| --- | --- |
+| Polynomial | An expression that involves one or more variables having different powers and coefficients. \(a_{n}x^{n} + \ldots + a_2x^{2} + a_{1}x + a_{0}, \text{ where } n \in \mathbb{N}_0\) |
+| Monomial | A polynomial with one term. For example, \(7a^{2}b \text{ or } 15xyz^{2}\). |
+| Binomial | A polynomial that has two terms. For example, \(2x + 5z \text{ or } 26 - g^{2}k\). |
+| Trinomial | A polynomial that has three terms. For example, \(a - b + c \text{ or } 4x^2 + 17xy - y^3\). |
+| Degree/Order | The degree, also called the order, of a univariate polynomial is the value of the highest exponent in the
+              polynomial. For example, \(7p - 12p^2 + 3p^5 + 8\) has a degree of \(\text{5}\). |
+
+It is important to notice that the definition of a polynomial states that all exponents of the variables must
+        be elements of the set of natural numbers. If an expression contains terms with exponents that are not natural
+        numbers, then it is not a polynomial.
+
+The following examples are not polynomials:
+
+      \begin{align*}
+      & \frac{3}{y} - 4y^{2} + 1\\
+      & 5 \sqrt{k} + k - 2k^{2} \\
+      & x^{-2} + 3 + 7x^{2} \\
+      & t^{2} - 4t + 6t^{\frac{1}{3}}
+      \end{align*}
+
+## More on polynomials
+
+Discuss whether the following statements are true or false:
+
+2. The expression \(3y^2 + 2y - 4\) is a trinomial of degree \(\text{2}\).
+4. \(25z^{5} - 36\sqrt{z}\) is a binomial of order \(\text{5}\).
+6. \(\text{25}\) is a constant polynomial of degree \(\text{0}\).
+8. \(3x^{2} - 2x - 5\) is a quadratic polynomial.
+10. The expression \(23b^{-\text{2}}\) is a monomial because it only has one term.
+12. \(\text{0}\) is a constant polynomial of undefined degree.
+14. A cubic polynomial has three terms and all the exponents are natural numbers.
+16. \begin{align*}
+               \text{Given the expression } &: \frac{1}{t} - 3t^{2} + 1 \\
+               \text{If we multiply by } t &: 1 - 3t^{3} + t, \\
+               \text{we get a trinomial} &\text{ of degree } 3
+               \end{align*}
+
+<QuizCard id="m12-05-01a" title="Interactive Exercise 5.1" question="What type of polynomial is this?" options=[] answer="['trinomial', 'trinomials']" hint="" explanation="We see that this polynomial has \(\text{3}\) terms and is therefore called a trinomial. Submit your answer as:" />
+
+## Identifying polynomials
+
+### Textbook Exercise 5.1
+
+Given \(f(x) = 2x^{3} + 3x^{2} - 1\), determine whether the following statements are true or false. If
+                false, provide the correct statement.
+
+**Problem:**
+\(f(x)\) is a trinomial.
+
+**Solution:**
+True
+
+**Problem:**
+The coefficient of the \(x\) is zero.
+
+**Solution:**
+True
+
+**Problem:**
+\(f \left( \frac{1}{2} \right) = \frac{1}{12}\).
+
+**Solution:**
+\begin{align*}
+                f(x) &= 2x^{3} + 3x^{2} - 1 \\
+                f \left( \frac{1}{2} \right) &= 2\left( \frac{1}{2} \right)^{3} + 3\left( \frac{1}{2} \right)^{2} -
+                1 \\
+                &= 2\left( \frac{1}{8} \right) + 3\left( \frac{1}{4} \right)- 1 \\
+                &= \frac{1}{4} + \frac{3}{4} - 1 \\
+                &= 1 - 1 \\
+                &= 0 \\
+                \therefore & \text{ False}
+                \end{align*}
+
+**Problem:**
+\(f(x)\) is of degree \(\text{3}\).
+
+**Solution:**
+True
+
+**Problem:**
+The constant term is \(\text{1}\).
+
+**Solution:**
+False: \(-\text{1}\)
+
+**Problem:**
+\(f(x)\) will have \(\text{3}\) real roots.
+
+**Solution:**
+True
+
+Given \(g(x) = 2x^{3} - 9x^{2} + 7x + 6\), determine the following:
+
+**Problem:**
+the number of terms in \(g(x)\).
+
+**Solution:**
+\(\text{4}\)
+
+**Problem:**
+the degree of \(g(x)\).
+
+**Solution:**
+\(\text{3}\)
+
+**Problem:**
+the coefficient of the \(x^{2}\) term.
+
+**Solution:**
+\(-\text{9}\)
+
+**Problem:**
+the constant term.
+
+**Solution:**
+\(\text{6}\)
+
+Determine which of the following expressions are polynomials and which are not. For those that are not
+                polynomials, give reasons.
+
+**Problem:**
+\(y^{3} + \sqrt{5}\)
+
+**Solution:**
+Cubic polynomial
+
+**Problem:**
+\(-x^{2} - x - 1\)
+
+**Solution:**
+Quadratic polynomial
+
+**Problem:**
+\(4\sqrt{k} - 9\)
+
+**Solution:**
+Not a polynomial; in \(k^{\frac{1}{2}}\) the exponent is not a natural number.
+
+**Problem:**
+\(\frac{2}{p} + p + 3\)
+
+**Solution:**
+Not a polynomial; in \(p^{-1}\) the exponent is not a natural number.
+
+**Problem:**
+\(x(x - 1)(x - 2) - 2\)
+
+**Solution:**
+Cubic polynomial
+
+**Problem:**
+\(\left( \sqrt{m} - 1 \right) \left( \sqrt{m} + 1 \right)\)
+
+**Solution:**
+\begin{align*}
+                \left( \sqrt{m} - 1 \right) \left( \sqrt{m} + 1 \right) &= \left( \sqrt{m} \right)^{2} + \sqrt{m} -
+                \sqrt{m} - 1 \\
+                &= m - 1
+                \end{align*}
+
+
+
+Linear polynomial
+
+**Problem:**
+\(t^{0} - 1\)
+
+**Solution:**
+\begin{align*}
+                t^{0} - 1 &= 1 - 1 \\
+                &= 0
+                \end{align*}
+
+
+
+Zero polynomial
+
+**Problem:**
+\(16y^{7}\)
+
+**Solution:**
+Polynomial; degree \(\text{7}\)
+
+**Problem:**
+\(- \frac{x^{3}}{2} + 5x^{2} + \frac{x}{3} - 11\)
+
+**Solution:**
+Cubic polynomial
+
+**Problem:**
+\(4b^{0} + 3b^{-1} + 5b^{2} - b^{3}\)
+
+**Solution:**
+Not a polynomial; in \(b^{-1}\) the exponent is not a natural number.
+
+**Problem:**
+Peter's mathematics homework is shown below. Find and correct his mistakes.
+
+**Homework:**
+
+Given \(p(x) = x + \dfrac{4}{x} - 5\), answer the following questions:
+
+2. Simplify the expression.
+4. Is \(p(x)\) a polynomial?
+6. What is the coefficient of the \(x\) term?
+
+**Peter's answers:**
+
+2. \[\begin{array}{rll}
+                     p(x) &= x + \frac{4}{x} - 5 & (\text{restrictions: } x \ne 0) \\
+                     &= x^{2} + 4 - 5x & (\text{multiply through by } x) \\
+                     &= x^{2} - 5x + 4 & (\text{write in descending order}) \\
+                     &= (x - 1)(x + 4) & (\text{factorise, quadratic has two roots})
+                     \end{array}\]
+4. Yes, because it can be simplified to have exponents that are all natural numbers. It is a quadratic
+                     binomial because the highest exponent is two and there are only two terms; \((x-1)\) and \((x+4)\).
+6. Before I simplified, the coefficient of the \(x\) term was nothing and after I simplified it became
+                     \(\text{5}\).
+
+**Solution:**
+Peter made the following mistakes:
+
+2. This is not an equation, therefore Peter must not multiply through by \(x\). Peter did not
+                       factorise correctly, he made an error with the sign in the second bracket
+                     .
+                     \[\begin{array}{rll}
+                     p(x) &= x + \frac{4}{x} - 5 & (\text{restrictions: } x \ne 0) \\
+                     &= \frac{x^{2} + 4 - 5x}{x} & (\text{common denominator is } x) \\
+                     &= \frac{x^{2} - 5x + 4}{x} & (\text{write in standard form}) \\
+                     &= \frac{(x - 1)(x - 4)}{x} & (\text{factorise and be careful of the signs})
+                     \end{array}\]
+4. The original expression is not a polynomial because the exponent of the second term \(\left(
+                     \frac{4}{x} = 4x^{-1}\right)\) is not a natural number. Peter's simplified expression is a quadratic
+                     trinomial because it has three terms and two factors.
+6. In the original expression, the coefficient of the \(x\) term is \(\text{1}\). After Peter wrongly
+                     simplified the expression, the coefficient of the \(x\) term was \(-\text{5}\) and not \(\text{+5}\).
+                     Always remember that the coefficient includes the sign and the number in front of the variable.
+
+### Quadratic polynomials (EMCGS)
+
+In earlier grades we learnt the following useful techniques and methods for factorising an expression:
+
+- taking out a common factor
+- factorising the difference of two squares
+- grouping in pairs
+- factorising the sum and difference of two cubes
+
+We also looked at the different methods for factorising quadratic expressions:
+
+- factorising by inspection
+- completing the square
+- using the quadratic formula
+- making a suitable substitution
+
+It is important to revise these methods; we use the quadratic formula for factorising cubic polynomials and we
+        also use completing the square to find the equation of a circle in Chapter 7.
+
+| Terminology: |  |
+| --- | --- |
+| Variable | A symbol used to represent an unknown numerical value. For example, \(a, b, x, y,\alpha, \theta\). |
+| Coefficient | The number or parameter that is multiplied by the variable of an expression. |
+| Expression | A term or group of terms consisting of numbers, variables and the basic operators (\(+, -, \times,
+            \div\)). |
+| Univariate expression | An expression containing only one variable. |
+| Equation | A mathematical statement that asserts that two expressions are equal. |
+| Identity | A mathematical relationship that equates one expression with another. |
+| Solution | A value or set of values that satisfies the original problem statement. |
+| Root/Zero | A root, also referred to as the “zero”, of an equation is the value of \(x\) such that
+            \(f(x)=0\) is satisfied. |
+
+<Callout type="tip" title="Worked example 1: Solving quadratic equations using factorisation">
+**Question:**
+Solve for \(x\): \[\frac{3x}{x+2} + 1 = \frac{4}{x+1}\]
+
+**Determine the restrictions:**
+The restrictions are the values for \(x\) that would result in the denominator being equal to \(\text{0}\),
+            which would make the fraction undefined. Therefore \(x ≠ -\text{2}\) and \(x ≠ -\text{1}\).
+
+**Determine the lowest common denominator:**
+The lowest common denominator is \(\left(x+2\right)\left(x+1\right)\).
+
+**Multiply each term in the equation by the lowest common denominator and simplify:**
+\begin{align*}
+          \frac{3x(x+2)(x+1)}{x+2} + (x+2)(x+1) &= \frac{4(x+2)(x+1)}{x+1} \\
+          3x(x+1) + (x+2)(x+1) &= 4(x+2) \\
+          3x^2 + 3x + x^2+3x+2 &= 4x+8 \\
+          4x^2 + 2x - 6 &= 0 \\
+          2x^2 + x - 3 &= 0
+          \end{align*}
+
+**Factorise and solve the equation:**
+\begin{align*}
+          (2x + 3)(x - 1)&= 0\\
+          2x + 3 =0 & \text{ or } x-1 = 0 \\
+          x = -\frac{3}{2} & \text{ or } x = 1
+          \end{align*}
+
+**Check the solution by substituting both answers back into the original equation:**
+
+**Write the final answer:**
+Therefore \(x=-1\frac{1}{2}\) or \(x = 1\).
+</Callout>
+
+<Callout type="tip" title="Worked example 2: Using the quadratic formula">
+**Question:**
+Find the roots of the function \(f(x)= 3x^2 + 4x - 8\).
+
+**Finding the roots:**
+To determine the roots of \(f(x)\), we let \(3x^2 + 4x - 8 = 0\).
+
+**Check whether the expression can be factorised:**
+The expression cannot be factorised, so the general quadratic formula must be used.
+
+**Identify the coefficients to substitute into the formula:**
+\[a = 3; \qquad b = 4; \qquad c = -8\]
+
+**Apply the quadratic formula:**
+\begin{align*}
+          x &= \frac{-b±\sqrt{{b}^{2}-4ac}}{2a} \\
+          &= \frac{-\left(4\right)±\sqrt{{\left(4\right)}^{2}-4\left(3\right)\left(-8\right)}}{2\left(3\right)}
+          \\
+          &= \frac{-4±\sqrt{16 + 96}}{6} \\
+          &= \frac{-4±\sqrt{112}}{6} \\
+          &= \frac{-4±\sqrt{16 \times 7}}{6} \\
+          &= \frac{-4±4\sqrt{7}}{6} \\
+          &= \frac{-2±2\sqrt{7}}{3}
+          \end{align*}
+
+**Write the final answer:**
+Therefore \(x = \dfrac{-2+2\sqrt{7}}{3}\) or \(x = \dfrac{-2-2\sqrt{7}}{3}\)
+</Callout>
+
+<Callout type="tip" title="Worked example 3: Solving quadratic equations by completing the square">
+**Question:**
+Solve by completing the square: \(y^2-10y-11=0\)
+
+**The equation is already in the form \(ax^2 + bx + c = 0\):**
+
+**Make sure the coefficient of the \(y^2\) term is equal to \(\text{1}\):**
+\[y^2-10y-11=0\]
+
+**Take half the coefficient of the \(y\) term and square it, then add and subtract it from the
+            equation:**
+The coefficient of the \(y\) term is \(-\text{10}\). Half of the coefficient of the \(y\) term is
+            \(-\text{5}\) and the square of it is \(\text{25}\). Therefore \(y^2 - 10y + 25 - 25 - 11 = 0\).
+
+**Write the trinomial as a perfect square:**
+\begin{align*}
+          (y^2 - 10y + 25) - 25 - 11 &= 0 \\
+          (y-5)^2 - 36 &= 0
+          \end{align*}
+
+**Method \(\text{1}\): Take square roots on both sides of the equation:**
+\begin{align*}
+          (y-5)^2 &= 36 \\
+          y-5 &= \pm\sqrt{36}
+          \end{align*}
+
+
+**Important:** When taking a square root always remember that there is a positive and negative
+            answer, since \((6)^2 = 36\) and \((-6)^2 = 36\).
+
+          \[y - 5 = \pm 6\]
+
+**Solve for \(y\):**
+\begin{align*}
+          \text{If } y - 5 &= 6 \\
+          y &= 11 \\
+          \text{Or if } y - 5 &= -6 \\
+          y &= - 1
+          \end{align*}
+
+
+Therefore \(y = 11\) or \(y = -1\).
+
+**Method \(\text{2}\): Factorise the expression as a difference of two squares:**
+\begin{align*}
+          (y-5)^2 - (6)^2 &= 0 \\
+          \left[\left(y-5\right) + 6\right] \left[\left(y-5\right) - 6\right] &= 0
+          \end{align*}
+
+**Simplify and solve for \(y\):**
+\begin{align*}
+          (y+1)(y-11) &= 0 \\
+          \therefore y = -1 \text{ or } y &= 11
+          \end{align*}
+
+**Write the final answer:**
+\[y = -1 \text{ or } y = 11\]
+
+
+
+Notice that both methods produce the same answer. These roots are rational because \(\text{36}\) is a
+            perfect square.
+</Callout>
+
+## Quadratic polynomials
+
+### Textbook Exercise 5.2
+
+Solve the following quadratic equations by factorisation. Answers may be left in surd form, where
+                applicable.
+
+**Problem:**
+\(7p^2+14p=0\)
+
+**Solution:**
+\begin{align*}
+                7p^2 + 14p &= 0 \\
+                7p(p+2) &= 0 \\
+                p(p+2) &= 0 \\
+                p = 0 &\text{ or } p = -2
+                \end{align*}
+
+**Problem:**
+\({k}^{2}+5k-36=0\)
+
+**Solution:**
+\begin{align*}
+                k^2 + 5k - 36 &= 0\\
+                (k-4)(k+9) &= 0\\
+                k = 4 &\text{ or } k = -9
+                \end{align*}
+
+**Problem:**
+\(400 = 16h^2\)
+
+**Solution:**
+\begin{align*}
+                16h^2 - 400 &= 0\\
+                16(h^2 - 25)&= 0\\
+                (h-5)(h+5) &= 0\\
+                h &= \pm 5
+                \end{align*}
+
+**Problem:**
+\((x-1)(x+10) + 24 = 0\)
+
+**Solution:**
+\begin{align*}
+                (x-1)(x+10) + 24 &= 0 \\
+                x^2 + 9x - 10 + 24 &= 0 \\
+                x^2 + 9x + 14 &= 0 \\
+                (x+7)(x+2) &= 0\\
+                x = -7 &\text{ or } x=-2
+                \end{align*}
+
+**Problem:**
+\(y^2 - 5ky + 4k^2 = 0\)
+
+**Solution:**
+\begin{align*}
+                y^2 - 5ky + 4k^2 &= 0\\
+                (y-4k)(y-k) &= 0\\
+                y = 4k &\text{ or } y=k
+                \end{align*}
+
+Solve the following equations by completing the square:
+
+**Problem:**
+\({p}^{2}+10p-2=0\)
+
+**Solution:**
+\begin{align*}
+                p^2 + 10p - 2 &= 0\\
+                p^2 +10p&= 2\\
+                p^2 +10p +25 &= 2 + 25\\
+                (p+5)^2 - 27 &= 0\\
+                (p+5)^2 &= 27\\
+                \therefore (p + 5) &= \pm \sqrt{27} \\
+                \therefore (p+5) = -\sqrt{27} &\text{ or } (p+5) = \sqrt{27}\\
+                \therefore p = -5 - 3\sqrt{3} &\text{ or } p= -5 + 3\sqrt{3}
+                \end{align*}
+
+**Problem:**
+\(2(6y + y^2) = -4\)
+
+**Solution:**
+\begin{align*}
+                y^2 +6y &= -2\\
+                y^2 + 6y + 9&= -2 + 9\\
+                (y+3)^2 &= 7\\
+                y + 3 &= \pm \sqrt{7}\\
+                y &= -3 \pm \sqrt{7}
+                \end{align*}
+
+**Problem:**
+\({x}^{2}+5x+9=0\)
+
+**Solution:**
+\begin{align*}
+                x^2+5x+9 &= 0\\
+                x^2 + 5x &= -9\\
+                x^2 + 5x + \frac{25}{4} &= -9 + \frac{25}{4}\\
+                \left(x+\frac{5}{2}\right)^2 &= -\frac{11}{4}\\
+                x + \frac{5}{2} &= \pm \sqrt{-\frac{11}{4}}\\
+                \text{ No real solution }
+                \end{align*}
+
+**Problem:**
+\(f^2 + 30 = 2(10-8f)\)
+
+**Solution:**
+\begin{align*}
+                f^2 + 30 &= 2(10 - 8f) \\
+                f^2+16f+10 &=0\\
+                f^2 +16f &= -10\\
+                f^2 + 16f+64 &= -10 +64\\
+                (f+8)^2 &=54\\
+                f + 8 &= \pm \sqrt{54}\\
+                f &= -8 \pm \sqrt{9 \times 6} \\
+                \therefore f &= -8 \pm 3\sqrt{6}
+                \end{align*}
+
+**Problem:**
+\(3{x}^{2}+6x-2=0\)
+
+**Solution:**
+\begin{align*}
+                3x^2+6x-2&=0\\
+                \text{Divide through by } & 3 \text{ to get leading coefficient of } 1 \\
+                x^2 + 2x &= \frac{2}{3}\\
+                x^2 + 2x + 1 &= \frac{2}{3} + 1\\
+                (x+1)^2 &= \frac{5}{3}\\
+                x +1 &= \pm \sqrt{\frac{5}{3}}\\
+                x &= -1 \pm \sqrt{\frac{5}{3}}
+                \end{align*}
+
+Solve the following using the quadratic formula.
+
+**Problem:**
+\(3{m}^{2}+m-4=0\)
+
+**Solution:**
+\[a=3 ; \quad b = 1; \quad c = -4\]
+
+                \begin{align*}
+                3m^2 + m - 4 &= 0\\
+                m &= \dfrac{-(1) \pm \sqrt{1^2 - 4(3)(-4)}}{2(3)}\\
+                & = \dfrac{-1 \pm \sqrt{1+48}}{6}\\
+                &=\dfrac{-1 \pm \sqrt{49}}{6}\\
+                &=\dfrac{-1 \pm 7}{6}\\
+                m = \dfrac{-1+7}{6}= \frac{6}{6}=1 &\text{ or } m = \dfrac{-1-7}{6}=\frac{-8}{6} = - \frac{4}{3}
+                \end{align*}
+
+
+
+Note: it would be easier and faster to solve by factorisation rather than using the quadratic
+                  formula. If the question does not specify which method to use, first try to solve by factorisation.
+
+**Problem:**
+\(2{t}^{2}+6t+5=0\)
+
+**Solution:**
+\begin{align*}
+                  2t^2 + 6t + 5 &= 0\\
+                  t&=\dfrac{-6 \pm \sqrt{(6)^2 - 4(2)(5)}}{2(2)}\\
+                  &= \dfrac{-6 \pm \sqrt{36 - 40}}{4}\\
+                  &=\dfrac{-6 \pm \sqrt{-4}}{4}\\
+                  \text{No real solution}
+                  \end{align*}
+
+**Problem:**
+\({y}^{2}-4y+2=0\)
+
+**Solution:**
+\begin{align*}
+                y^2 - 4y + 2 &= 0\\
+                y &= \dfrac{-(-4) \pm \sqrt{(-4)^2 - 4(1)(2)}}{2(1)}\\
+                &= \dfrac{4 \pm \sqrt{16-8}}{2}\\
+                &=\dfrac{4 \pm \sqrt{8}}{2}\\
+                &= 2 \pm \sqrt{2} \\
+                \therefore y &= 2 + \sqrt{2}\text{ or } y = 2 - \sqrt{2}
+                \end{align*}
+
+**Problem:**
+\(3f -2 = -2f^2\)
+
+**Solution:**
+\begin{align*}
+                2f^2 + 3f - 2 &= 0\\
+                f &= \dfrac{-3 \pm \sqrt{3^2-4(2)(-2)}}{2(2)}\\
+                &= \dfrac{-3 \pm \sqrt{9+16}}{4}\\
+                &= \dfrac{-3 \pm \sqrt{25}}{4}\\
+                &= \dfrac{-3 \pm 5}{4}\\
+                \text{therefore } f =\dfrac{-3 + 5}{4} = \frac{1}{2}&\text{ or } f =\dfrac{-3 - 5}{4} = -2
+                \end{align*}
+
+Factorise the following:
+
+**Problem:**
+\(27p^{3} - 1\)
+
+**Solution:**
+\[27p^{3} - 1 = (3p-1)(9p^{2} + 3p + 1)\]
+
+**Problem:**
+\(16 + \frac{2}{x^{3}}\)
+
+**Solution:**
+\begin{align*}
+                16 + \frac{2}{x^{3}} &= 2 \left( 8 + \frac{1}{x^{3}} \right) \\
+                &= 2 \left( 2 + \frac{1}{x} \right) \left( 4 - \frac{2}{x} + \frac{1}{x^{2}} \right)
+                \end{align*}
